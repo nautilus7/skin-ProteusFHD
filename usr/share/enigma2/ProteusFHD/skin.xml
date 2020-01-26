@@ -590,9 +590,7 @@ self[&quot;list&quot;].instance.move(ePoint(30, wsizey - 30 - listlen))
 
     <screen name="Dish" title="Dish" flags="wfNoBorder" position="e-280,center" size="240,360" backgroundColor="ThemeBG" zPosition="99">
         <eLabel position="10,10" size="e-20,e-20" backgroundColor="BG" zPosition="-20"/>
-        <widget name="Dishpixmap" position="center,30" size="120,120" pixmap="icons/other/compass_small.png" alphatest="blend">
-            <convert type="ConditionalShowHide">Blink</convert>
-        </widget>
+        <widget name="Dishpixmap" position="center,30" size="120,120" pixmap="icons/other/compass_small.png" alphatest="blend"/>
         <widget name="tunerName" position="30,160" size="e-60,44" font="Body" valign="center" halign="center"/>
         <widget name="From" position="30,e-138" size="(e-60)/2,38" font="RM" valign="center"/>
         <widget name="posFrom" position="c,e-138" size="(e-60)/2,38" font="RM" valign="center" halign="right"/>
@@ -602,20 +600,21 @@ self[&quot;list&quot;].instance.move(ePoint(30, wsizey - 30 - listlen))
         <widget name="turnSpeed" position="c,e-62" size="(e-60)/2,38" font="RM" valign="center" halign="right"/>
     </screen>
 
-    <screen name="Dishpip" flags="wfNoBorder" position="86,100" size="130,220" title="DishPiP" zPosition="1" backgroundColor="#11396D" >
-        <widget source="Dishpixmap" render="Pixmap" pixmap="icons/dish.png" zPosition="-1" position="0,0" size="130,160" alphatest="on">
+    <screen name="Dishpip" title="DishPiP" flags="wfNoBorder" position="e-280,center" size="240,400" backgroundColor="ThemeBG" zPosition="99">
+        <eLabel position="10,10" size="e-20,e-20" backgroundColor="BG" zPosition="-20"/>
+        <widget source="Dishpixmap" render="Pixmap" position="center,30" size="120,120" pixmap="icons/other/compass_small.png" alphatest="blend">
             <convert type="ConditionalShowHide">Blink</convert>
         </widget>
-        <widget name="turnTime"   position="5,0"   size="120,20" zPosition="1" font="Regular;20" halign="right" shadowColor="black" shadowOffset="-2,-2" transparent="1" />
-        <widget name="From"       position="5,162" size="50,17" zPosition="1" font="Regular;17" halign="left"  shadowColor="black" shadowOffset="-2,-1" transparent="1" />
-        <widget name="posFrom"    position="57,160" size="70,20" zPosition="1" font="Regular;20" halign="left"  shadowColor="black" shadowOffset="-2,-2" transparent="1" />
-        <widget name="Goto"       position="5,182"  size="50,17" zPosition="1" font="Regular;17" halign="left"  shadowColor="black" shadowOffset="-2,-1" transparent="1" />
-        <widget name="posGoto"    position="57,180" size="70,20" zPosition="1" font="Regular;20" halign="left"  shadowColor="black" shadowOffset="-2,-2" transparent="1" />
-        <widget name="tunerName"  position="5,144"  size="90,16" zPosition="2" font="Regular;14" halign="left"  shadowColor="black" shadowOffset="-2,-1" transparent="1" />
-        <widget name="turnSpeed"  position="75,95" size="50,16" zPosition="2" font="Regular;14" halign="right" shadowColor="black" shadowOffset="-2,-1" transparent="1" />
-        <widget source="Frontend" render="Progress" position="5,205" size="120,10" pixmap="bar_snr.png" zPosition="2" borderWidth="2" borderColor="#cccccc">
+        <widget name="tunerName" position="30,160" size="e-60,44" font="Body" valign="center" halign="center"/>
+        <widget source="Frontend" render="Progress" position="30,210" size="e-60,28" borderWidth="1">
             <convert type="FrontendInfo">SNR</convert>
         </widget>
+        <widget name="From" position="30,e-138" size="(e-60)/2,38" font="RM" valign="center"/>
+        <widget name="posFrom" position="c,e-138" size="(e-60)/2,38" font="RM" valign="center" halign="right"/>
+        <widget name="Goto" position="30,e-100" size="(e-60)/2,38" font="RM" valign="center"/>
+        <widget name="posGoto" position="c,e-100" size="(e-60)/2,38" font="RM" valign="center" halign="right"/>
+        <widget name="turnTime" position="30,e-62" size="(e-60)/2,38" font="RM" valign="center"/>
+        <widget name="turnSpeed" position="c,e-62" size="(e-60)/2,38" font="RM" valign="center" halign="right"/>
     </screen>
 
     <!-- .../python/Screens/EPGSelection.py -->
@@ -1048,8 +1047,8 @@ self.instance.move(ePoint((1920 - wsizex) / 2, (1080 - wsizey) / 2))
                 dirShift="8" partIconeShiftMinimal="8" partIconeShiftCompact="8" partIconeShiftOriginal="8" spaceIconeText="15"/>
         <widget name="freeDiskSpace" position="780,732" size="800,38" font="Description" halign="right"/>
         <widget name="DescriptionBorder" position="0,0" size="0,0"/> <!-- hidden -->
-        <widget name="movie_sort" pixmaps="icons/az.png,icons/newtop.png,icons/shuffle.png,icons/za.png,icons/oldtop.png,icons/faz.png,icons/fza.png" position="350,739" size="28,28" alphatest="blend"/>
-        <widget name="movie_off" pixmaps="icons/ask.png,icons/movielist.png,icons/quit.png,icons/pause.png,icons/playlist.png,icons/playlistquit.png,icons/repeat.png" position="390,739" size="28,28" alphatest="blend"/>
+        <widget name="movie_sort" pixmaps="icons/az.png,icons/newtop.png,icons/shuffle.png,icons/za.png,icons/oldtop.png,icons/faz.png,icons/fza.png,icons/default.png" position="350,739" size="28,28" alphatest="blend"/>
+        <widget name="movie_off" pixmaps="icons/ask.png,icons/movielist.png,icons/quit.png,icons/pause.png,icons/playlist.png,icons/playlistquit.png,icons/loop.png,icons/repeat.png" position="390,739" size="28,28" alphatest="blend"/>
         <panel name="TemplateSimple"/>
     </screen>
 
@@ -1571,7 +1570,7 @@ self.instance.move(ePoint((1920 - wsizex) / 2, (1080 - wsizey) / 2))
         <widget source="session.CurrentService" render="Label" position="160+1410,100+234" size="120,38" font="Description" valign="center" halign="left">
             <convert type="ServicePosition">Remaining</convert>
         </widget>
-        <widget name="repeat" position="160+1552,100+239" size="28,28" pixmaps="icons/repeat-off.png,icons/repeat.png" alphatest="blend"/>
+        <widget name="repeat" position="160+1552,100+239" size="28,28" pixmaps="icons/loop_off.png,icons/loop.png" alphatest="blend"/>
 
         <widget name="filelist" position="160+350,100+322" size="605,396" font="Body" itemHeight="44" scrollbarMode="showOnDemand"/>
         <widget name="playlist" position="160+975,100+322" size="605,396" font="Body" itemHeight="44" scrollbarMode="showOnDemand" selectionDisabled="1"/>
