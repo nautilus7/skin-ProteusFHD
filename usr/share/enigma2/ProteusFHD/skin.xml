@@ -1373,8 +1373,8 @@ self.instance.move(ePoint((1920 - wsizex) / 2, (1080 - wsizey) / 2))
 
     <screen name="StreamingClientsInfo" title="Streaming clients info" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
         <ePixmap pixmap="icons/panel/info-square.png" position="40,center" size="240,240" alphatest="blend"/>
-        <widget name="info" position="350,110" size="1230,44" font="Body" halign="center" valign="center"/>
-        <widget name="menu" position="350,110" size="1230,660" font="Body" itemHeight="44" textOffset="15,0" scrollbarMode="showOnDemand" transparent="1"/> <!-- untested -->
+        <widget name="info" position="350,110" size="1230,44" font="Body" halign="center" valign="center" zPosition="-1"/>
+        <widget name="menu" position="350,110" size="1230,660" font="Body" itemHeight="44" textOffset="15,0" scrollbarMode="showOnDemand" transparent="1"/>
         <panel name="TemplateSimple"/>
     </screen>
 
@@ -1629,7 +1629,7 @@ self.instance.move(ePoint((1920 - wsizex) / 2, (1080 - wsizey) / 2))
 
     <screen name="HddFastRemove" title="Fast Mounted Remove" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
         <ePixmap pixmap="icons/panel/hdd.png" position="40,center" size="240,240" alphatest="blend"/>
-        <widget name="text" position="350,110" size="1230,44" font="Body" halign="center" valign="center"/>
+        <widget name="text" position="350,110" size="1230,44" font="Body" halign="center" valign="center" zPosition="-1"/>
         <widget source="menu" render="Listbox" position="350,110" size="1230,660" transparent="1">
             <convert type="TemplatedMultiContent">
                 {
