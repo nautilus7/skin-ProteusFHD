@@ -1,0 +1,2238 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<skin>
+
+    <!-- Skin: ProteusFHD -->
+
+    <output id="0">
+        <resolution bpp="32" xres="1920" yres="1080"/>
+    </output>
+
+    <!-- Colors -->
+
+    <colors>
+
+        <!-- Presets -->
+
+        <color name="White" value="#FFFFFF"/>
+        <color name="Black" value="#000000"/>
+        <color name="Red" value="#B71C1C"/>
+        <color name="Pink" value="#880E4F"/>
+        <color name="Purple" value="#4A148C"/>
+        <color name="DeepPurple" value="#311B92"/>
+        <color name="Indigo" value="#1A237E"/>
+        <color name="Blue" value="#0D47A1"/>
+        <color name="LightBlue" value="#01579B"/>
+        <color name="Cyan" value="#006064"/>
+        <color name="Teal" value="#004D40"/>
+        <color name="Green" value="#1B5E20"/>
+        <color name="LightGreen" value="#33691E"/>
+        <color name="Lime" value="#827717"/>
+        <color name="Yellow" value="#F57F17"/>
+        <color name="Amber" value="#FF6F00"/>
+        <color name="Orange" value="#E65100"/>
+        <color name="DeepOrange" value="#BF360C"/>
+        <color name="Brown" value="#3E2723"/>
+        <color name="Grey" value="#212121"/>
+        <color name="BlueGrey" value="#263238"/>
+
+        <!-- Theme colors -->
+
+        <color name="Transp" value="#FF000000"/>
+        <color name="BG" value="#0A070707"/>
+        <color name="FG" value="#FFFFFF"/>
+        <color name="ThemeBG" value="#0D47A1"/>
+        <color name="ThemeFG" value="#E65100"/>
+        <color name="ThemeGrey" value="#7F7F7F"/>
+    </colors>
+
+    <!-- Font files - attributes: filename, name, scale -->
+
+    <fonts>
+        <!-- <font filename="fonts/SourceSansPro-Light.otf" name="Light"/> --> <!-- 300 -->
+        <font filename="fonts/SourceSansPro-Regular.otf" name="Light"/> <!-- 400 -->
+        <font filename="fonts/SourceSansPro-Semibold.otf" name="Regular"/> <!-- 600 -->
+        <font filename="fonts/SourceSansPro-Bold.otf" name="Medium"/> <!-- 700 -->
+        <font filename="fonts/SourceCodePro-Regular.otf" name="Mono"/> <!-- 400 -->
+        <!-- <font filename="fonts/SourceCodePro-Medium.otf" name="Mono"/> --> <!-- 500 -->
+
+        <!-- Font aliases - attributes: name, font, size (px), (item) height, width -->
+
+        <!-- Enigma2 defined -->
+
+        <alias name="ChoiceList"       font="Regular" size="31" height="44"/> <!-- class ChoiceList -->
+
+        <alias name="FileList"         font="Regular" size="31" height="44"/> <!-- class FileList -->
+
+        <alias name="FileListMulti"    font="Regular" size="31" height="44"/> <!-- class MultiFileSelectList -->
+
+        <alias name="HelpMenuList"     font="Regular" size="31" height="44"/> <!-- class HelpMenuList -->
+        <alias name="HelpMenuListExt0" font="Regular" size="31" height="44"/>
+        <alias name="HelpMenuListExt1" font="Regular" size="27" height="38"/>
+
+        <alias name="PlayList"         font="Regular" size="31" height="44"/>
+
+        <alias name="PluginBrowser0"   font="Regular" size="31" height="44"/>
+        <alias name="PluginBrowser1"   font="Light"   size="27" height="38"/>
+
+        <alias name="SelectionList"    font="Regular" size="31" height="44"/> <!-- class SelectionList -->
+        <alias name="ServiceInfo"      font="Regular" size="31" height="44"/> <!-- class ServiceInfoList -->
+
+        <alias name="VirtualKeyBoard"  font="Regular" size="31" height="68"/> <!-- class VirtualKeyBoard -->
+
+        <!-- Skin defined -->
+
+        <alias name="Title"       font="Medium"  size="44"/>
+        <alias name="SecTitle"    font="Regular" size="36"/>
+
+        <!-- <alias name="Menu"   font="Regular" size="44"/> -->
+        <alias name="Button"      font="Regular" size="24" height="34"/>
+        <alias name="Body"        font="Regular" size="31" height="44"/>
+        <alias name="Description" font="Light"   size="27" height="38"/>
+        <alias name="ConfigList"  font="Light"   size="27" height="38"/>
+        <alias name="Console"     font="Mono"    size="27" height="38"/>
+
+        <!-- Regular Large, Medium, Small styles -->
+
+        <alias name="RL" font="Regular" size="31" height="44"/> <!-- use with itemHeight="44" -->
+        <alias name="RM" font="Regular" size="27" height="38"/> <!-- use with itemHeight="38" -->
+        <alias name="RS" font="Regular" size="24" height="32"/> <!-- use with itemHeight="34" -->
+
+        <!-- Light Large, Medium, Small styles -->
+
+        <alias name="LL" font="Light" size="31" height="44"/> <!-- use with itemHeight="44" -->
+        <alias name="LM" font="Light" size="27" height="38"/> <!-- use with itemHeight="38" -->
+        <alias name="LS" font="Light" size="24" height="34"/> <!-- use with itemHeight="34" -->
+    </fonts>
+
+    <!-- Parameters - attributes: pos-x, pos-y, size-x, size-y -->
+
+    <parameters>
+        <parameter name="AboutHddSplit" value="1"/> <!-- screen "About" -->
+
+        <parameter name="ChoicelistIcon" value="15,8,28,28"/> <!-- class ChoiceList -->
+        <parameter name="ChoicelistDash" value="15,8,28,28"/>
+        <parameter name="ChoicelistName" value="58,0,1000,44"/>
+        <parameter name="ChoicelistNameSingle" value="15,0,1200,44"/>
+
+        <parameter name="ConfigListSeperator" value="350"/>
+        <parameter name="ConfigListSlider" value="18,700"/> <!-- thickness and space (from the left) for the horizontal slider in configlists -->
+
+        <parameter name="ExpandableListIcon" value="15,8,28,28"/> <!-- class ExpandableSelectionList -->
+        <parameter name="ExpandableListDescr" value="58,0,1000,44"/>
+
+        <parameter name="FileListIcon" value="15,8,28,28"/> <!-- class FileList -->
+        <parameter name="FileListName" value="58,0,1000,44"/>
+
+        <parameter name="FileListMultiLock" value="15,8,28,28"/> <!-- class MultiFileSelectList -->
+        <parameter name="FileListMultiIcon" value="58,8,28,28"/>
+        <parameter name="FileListMultiName" value="101,0,1000,44"/>
+
+        <parameter name="FrontendInfoColors" value="ThemeFG,FG,ThemeGrey"/> <!-- tuner active, busy, available colors -->
+
+        <parameter name="HelpMenuListHlp" value="15,0,910,44"/>
+        <parameter name="HelpMenuListExtHlp0" value="15,3,910,44"/>
+        <parameter name="HelpMenuListExtHlp1" value="15,47,910,38"/>
+
+        <parameter name="PicturePlayerThumb" value="30,160,30,160,30,24"/> <!-- spaceX, picX, spaceY, picY, text size, thumb txt -->
+
+        <parameter name="PlayListIcon" value="15,8,28,28"/>
+        <parameter name="PlayListName" value="58,0,1000,44"/>
+
+        <parameter name="PliExtraInfoColors" value="ThemeFG,FG,ThemeGrey,FG"/> <!-- found, not found, available, default colors -->
+
+        <parameter name="PluginBrowserIcon" value="15,26,200,80"/>
+        <parameter name="PluginBrowserName" value="230,25,44"/>
+        <parameter name="PluginBrowserDescr" value="230,69,38"/>
+
+        <parameter name="PluginBrowserDownloadIcon" value="15,8,28,28"/>
+        <parameter name="PluginBrowserDownloadName" value="58,3,44"/>
+        <parameter name="PluginBrowserDownloadDescr" value="58,47,38"/>
+
+        <parameter name="SelectionListLock" value="15,8,28,28"/> <!-- class SelectionList -->
+        <parameter name="SelectionListDescr" value="58,0,1000,44"/>
+
+        <parameter name="ServiceInfoLeft" value="0,0,550,44"/> <!-- class ServiceInfoList -->
+        <parameter name="ServiceInfoRight" value="580,0,650,44"/>
+        <parameter name="ServiceInfoAltColor" value="ThemeFG"/>
+
+        <parameter name="VirtualKeyBoardAlignment" value="0,0"/> <!-- class VirtualKeyBoard -->
+        <parameter name="VirtualKeyBoard" value="68,68"/>
+        <parameter name="VirtualKeyBoardPadding" value="7,7"/>
+        <parameter name="VirtualKeyBoardShiftColors" value="#00ffffff,#00ffffff,#0000ffff,#00ff00ff"/>
+    </parameters>
+
+    <!-- This is for main screen (id="0") -->
+
+    <windowstyle type="skinned" id="0">
+        <title offset="20,10" font="Title"/>
+
+        <color name="Background" color="BG"/>
+        <color name="LabelForeground" color="White"/>
+        <color name="ListboxBackground" color="BG"/>
+        <color name="ListboxForeground" color="White"/>
+        <color name="ListboxSelectedBackground" color="ThemeBG"/>
+        <color name="ListboxSelectedForeground" color="White"/>
+        <color name="ListboxMarkedBackground" color="BG"/>
+        <color name="ListboxMarkedForeground" color="White"/>
+        <color name="ListboxMarkedAndSelectedBackground" color="ThemeBG"/>
+        <color name="ListboxMarkedAndSelectedForeground" color="White"/>
+        <color name="WindowTitleBackground" color="BG"/>
+        <color name="WindowTitleForeground" color="ThemeFG"/>
+
+        <!-- Main screen border png's -->
+
+        <borderset name="bsWindow">
+            <pixmap pos="bpTopLeft" filename="window/window_top_lelf.png"/>
+            <pixmap pos="bpTop" filename="window/window_top.png"/>
+            <pixmap pos="bpTopRight" filename="window/window_top_right.png"/>
+            <pixmap pos="bpLeft" filename="window/window_left.png"/>
+            <pixmap pos="bpRight" filename="window/window_right.png"/>
+            <pixmap pos="bpBottomLeft" filename="window/window_bottom_left.png"/>
+            <pixmap pos="bpBottom" filename="window/window_bottom.png"/>
+            <pixmap pos="bpBottomRight" filename="window/window_bottom_right.png"/>
+        </borderset>
+    </windowstyle>
+
+    <!-- This is for LCD screen (id="1") -->
+
+    <windowstyle type="skinned" id="1">
+        <color name="Background" color="Black"/>
+        <color name="LabelForeground" color="White"/>
+        <color name="ListboxBackground" color="Black"/>
+        <color name="ListboxForeground" color="White"/>
+        <color name="ListboxSelectedBackground" color="White"/>
+        <color name="ListboxSelectedForeground" color="Black"/>
+        <color name="ListboxMarkedBackground" color="Black"/>
+        <color name="ListboxMarkedForeground" color="White"/>
+        <color name="ListboxMarkedAndSelectedBackground" color="White"/>
+        <color name="ListboxMarkedAndSelectedForeground" color="Black"/>
+        <color name="WindowTitleForeground" color="White"/>
+        <color name="WindowTitleBackground" color="Black"/>
+    </windowstyle>
+
+    <!-- Subtitle effects -->
+
+    <subtitles>
+        <sub name="Subtitle_TTX" font="Regular;35" foregroundColor="White"/>
+        <sub name="Subtitle_Regular" font="Regular;35" foregroundColor="White"/>
+        <sub name="Subtitle_Bold" font="Regular;35" foregroundColor="White"/>
+        <sub name="Subtitle_Italic" font="Regular;35" foregroundColor="White"/>
+    </subtitles>
+
+    <!-- Included files -->
+
+    <include filename="skin_templates.xml"/>
+    <include filename="skin_infobar.xml"/>
+    <include filename="skin_plugins.xml"/>
+    <include filename="skin_sdg_panel.xml"/>
+
+    <!-- unknown source - used in: AutoBackup screen -->
+
+    <screen name="Config" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/sliders-h.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="config" position="350,110" size="1230,440" font="Body" itemHeight="44" secondfont="ConfigList" scrollbarMode="showOnDemand"/>
+        <widget name="status" position="350,600" size="1230,38" font="Description"/>
+        <widget name="statusbar" position="350,640" size="1230,38" font="Description"/>
+        <panel name="TemplateSimpleDivided2To1"/>
+    </screen>
+
+    <!-- .../python/Screens/About.py -->
+
+    <screen name="About" title="About" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/info-square.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="AboutScrollLabel" position="350,110" size="1230,660" font="Body" split="1"/>
+        <panel name="TemplateSimple"/>
+    </screen>
+
+    <screen name="TranslationInfo" title="Translation" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/info-square.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget source="TranslatorName" render="Label" position="350,110" size="1230,200" font="Body" halign="center" valign="center"/>
+        <widget source="TranslationInfo" render="Label" position="350,350" size="1230,200" font="Body" halign="center" valign="center"/>
+        <panel name="TemplateSimple"/>
+    </screen>
+
+    <screen name="CommitInfo" title="Latest Commits" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/info-square.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="AboutScrollLabel" position="350,110" size="1230,660" font="Body"/>
+        <panel name="TemplateSimple"/>
+    </screen>
+
+    <screen name="MemoryInfo" title="Memory Info" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <panel name="TemplateSimple"/>
+        <ePixmap pixmap="icons/panel/info-square.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="params" rowsincolumn="19"/>
+        <widget name="lmemtext" position="350,110" size="180,660" font="LS"/>
+        <widget name="lmemvalue" position="530,110" size="180,660" font="LS" halign="right"/>
+        <widget name="rmemtext" position="1220,110" size="180,660" font="LS"/>
+        <widget name="rmemvalue" position="1400,110" size="180,660" font="LS" halign="right"/>
+        <widget name="pused" position="c+5,300" size="320,44" font="Description" valign="center" halign="center"/>
+        <widget name="pfree" position="0,0" size="0,0"/> <!-- hidden -->
+        <widget name="slide" position="c+5,350" size="320,28" borderWidth="1"/>
+        <widget name="info" position="c-55,450" size="440,320" font="Description" halign="center"/>
+    </screen>
+
+    <screen name="Troubleshoot" title="Troubleshoot" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/info-square.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="AboutScrollLabel" position="350,110" size="1230,660" font="Console"/>
+        <panel name="TemplateSimple"/>
+    </screen>
+
+    <!-- .../python/Screens/AudioSelection.py -->
+
+    <screen name="AudioSelection" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <panel name="TemplateSimple"/>
+        <eLabel position="330,306" size="e-330,10" backgroundColor="Transp" zPosition="-20"/>
+        <ePixmap pixmap="icons/panel/tasks.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget source="key_red" render="Pixmap" pixmap="buttons/key_red.png" position="350,118" size="28,28" alphatest="blend">
+            <convert type="ConditionalShowHide"/>
+        </widget>
+        <widget source="key_green" render="Pixmap" pixmap="buttons/key_green.png" position="350,162" size="28,28" alphatest="blend">
+            <convert type="ConditionalShowHide"/>
+        </widget>
+        <widget source="key_yellow" render="Pixmap" pixmap="buttons/key_yellow.png" position="350,206" size="28,28" alphatest="blend">
+            <convert type="ConditionalShowHide"/>
+        </widget>
+        <widget source="key_blue" render="Pixmap" pixmap="buttons/key_blue.png" position="350,250" size="28,28" alphatest="blend">
+            <convert type="ConditionalShowHide"/>
+        </widget>
+        <widget name="config" position="380,110" size="1200,176" font="Body" itemHeight="44" secondfont="ConfigList"/>
+        <widget source="streams" render="Listbox" position="350,336" size="1230,396">
+            <convert type="TemplatedMultiContent">
+                {
+                    "templates":
+                    {
+                        "default": (44, [
+                            MultiContentEntryText(pos = (6,0),    size = (80,44), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER,  text = 2), # key
+                            MultiContentEntryText(pos = (100,0),  size = (80,44), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER,  text = 1), # number
+                            MultiContentEntryText(pos = (200,0), size = (300,44), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER,  text = 3), # description
+                            MultiContentEntryText(pos = (600,0), size = (300,44), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER,  text = 4), # language
+                            MultiContentEntryText(pos = (1195,0), size = (20,34), font = 1, flags = RT_HALIGN_RIGHT|RT_VALIGN_CENTER, text = 5), # selected
+                        ], True, "showNever"),
+                        "notselected": (44, [
+                            MultiContentEntryText(pos = (6,0),    size = (80,44), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER,  text = 2), # key
+                            MultiContentEntryText(pos = (100,0),  size = (80,44), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER,  text = 1), # number
+                            MultiContentEntryText(pos = (200,0), size = (300,44), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER,  text = 3), # description
+                            MultiContentEntryText(pos = (600,0), size = (300,44), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER,  text = 4), # language
+                            MultiContentEntryText(pos = (1195,0), size = (20,34), font = 1, flags = RT_HALIGN_RIGHT|RT_VALIGN_CENTER, text = 5), # selected
+                        ], False, "showNever")
+                    },
+                    "fonts": [ gFont("Regular", 31), gFont("Regular", 27) ],
+                    "itemHeight": 44
+                }
+            </convert>
+        </widget>
+    </screen>
+
+    <screen name="QuickSubtitlesConfigMenu" title="Subtitle settings" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <panel name="TemplateSimpleDivided2To1"/>
+        <ePixmap pixmap="icons/sliders-h.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="config" position="350,110" size="1230,440" font="Body" itemHeight="44" secondfont="ConfigList" scrollbarMode="showOnDemand"/>
+        <widget name="videofps" position="350,600" size="1230,170" font="Description" valign="center"/>
+        <applet type="onLayoutFinish">
+from enigma import eSize
+self.instance.resize(eSize(*(1600, 880)))
+        </applet>
+
+    </screen>
+
+    <!-- .../python/Screens/AutoDiseqc.py -->
+
+    <screen name="AutoDiseqc" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <panel name="TemplateSimpleDivided1To2"/>
+        <ePixmap pixmap="icons/sliders-h.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="config" position="350,110" size="1230,440" font="Body" itemHeight="44" secondfont="ConfigList" scrollbarMode="showOnDemand"/>
+        <widget source="statusbar" render="Label" position="350,600" size="1230,38" font="Description" valign="center"/>
+        <widget source="tunerstatusbar" render="Label" position="350,638" size="1230,38" font="Description" valign="center"/>
+    </screen>
+
+    <!-- .../python/Screens/ChannelSelection.py -->
+
+    <screen name="BouquetSelector" title="Choose bouquet" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp"> <!-- used in "Add service to bouquest" -->
+        <ePixmap pixmap="icons/panel/list.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="menu" position="350,110" size="1230,660" font="Body" itemHeight="44" textOffset="15,0" scrollbarMode="showOnDemand"/>
+        <panel name="TemplateSimple"/>
+    </screen>
+
+    <screen name="ChannelContextMenu" title="Channel context menu" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/tasks.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="menu" position="350,110" size="1230,660" font="Body" itemHeight="44"/>
+        <panel name="TemplateSimple"/>
+    </screen>
+
+    <screen name="SimpleChannelSelection" title="Channel Selection" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/list.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="list" position="350,110" size="1230,660" scrollbarMode="showOnDemand"
+                serviceItemHeight="44" fieldMargins="15" itemsDistances="15" serviceNumberFont="Description" serviceNameFont="Body" serviceInfoFont="Description"
+                foregroundColorMarked="FG" foregroundColorMarkedSelected="FG" backgroundColorMarked="ThemeBG" backgroundColorMarkedSelected="ThemeFG"
+                foregroundColorServiceNotAvail="ThemeGrey" colorServiceRecorded="Red" foregroundColorEvent="ThemeGrey" foregroundColorEventSelected="FG"
+                colorEventProgressbar="ThemeGrey" colorEventProgressbarSelected="FG" colorEventProgressbarBorder="ThemeGrey" colorEventProgressbarBorderSelected="FG"
+                progressbarHeight="10" progressBarWidth="50" progressbarBorderWidth="2"/>
+        <panel name="TemplateSimple"/>
+    </screen>
+
+    <screen name="ChannelSelection" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <widget name="list" position="670,110" size="910,660" scrollbarMode="showOnDemand"
+                serviceItemHeight="44" fieldMargins="15" itemsDistances="15" serviceNumberFont="RM" serviceNameFont="Body" serviceInfoFont="RM"
+                foregroundColorMarked="FG" foregroundColorMarkedSelected="FG" backgroundColorMarked="ThemeBG" backgroundColorMarkedSelected="ThemeFG"
+                foregroundColorServiceNotAvail="ThemeGrey" colorServiceRecorded="Red" foregroundColorEvent="ThemeGrey" foregroundColorEventSelected="FG"
+                colorEventProgressbar="ThemeGrey" colorEventProgressbarSelected="FG" colorEventProgressbarBorder="ThemeGrey" colorEventProgressbarBorderSelected="FG"
+                progressbarHeight="10" progressBarWidth="50" progressbarBorderWidth="2"/>
+
+        <widget source="Service" render="Label" position="30,110" size="580,44" font="Body" halign="center" valign="center" backgroundColor="ThemeBG" noWrap="1">
+            <convert type="ServiceName">Name</convert>
+        </widget>
+        <widget source="Service" render="Label" position="40,154" size="560,38" font="LM" halign="center" valign="center" backgroundColor="ThemeBG" noWrap="1">
+            <convert type="TransponderInfo"/>
+        </widget>
+
+        <widget source="Service" render="Label" position="40,228" size="560,76" font="LM" halign="center" valign="center">
+            <convert type="EventName">Name</convert>
+        </widget>
+
+        <widget source="Service" render="Label" position="140,306" size="60,38" font="LM" halign="center" valign="center">
+            <convert type="EventTime">StartTime</convert>
+            <convert type="ClockToText">Format:%H:%M</convert>
+        </widget>
+        <widget source="Service" render="Progress" position="220,319" size="200,12" borderWidth="1">
+            <convert type="EventTime">Progress</convert>
+        </widget>
+        <widget source="Service" render="Label" position="440,306" size="60,38" font="LM" halign="center" valign="center">
+            <convert type="EventTime">EndTime</convert>
+            <convert type="ClockToText">Format:%H:%M</convert>
+        </widget>
+
+        <widget source="Service" render="Label" position="40,357" size="560,266" font="LM" halign="block">
+            <convert type="EventName">ExtendedDescription</convert>
+        </widget>
+        <widget source="Service" render="NextEpgInfo" position="40,641" size="560,149" font="LM" valign="bottom"
+                foregroundColor="ThemeGrey" noLabel="1" NumberOfItems="3" numOfSpaces="3" noWrap="1"/>
+        <eLabel position="0,770" size="640,20" backgroundColor="ThemeBG" zPosition="5"/> <!-- "NextEpgInfo" adds an extra new line at the end... -->
+
+        <panel name="TemplateChannelSelection"/>
+        <panel name="ButtonsMenuInfo"/>
+    </screen>
+
+    <screen name="ChannelSelectionRadio" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <panel name="TemplateChannelSelection"/>
+        <panel name="ButtonsMenuInfo"/>
+        <widget name="list" position="670,110" size="910,660" scrollbarMode="showOnDemand"
+                serviceItemHeight="44" fieldMargins="15" itemsDistances="15" serviceNumberFont="RM" serviceNameFont="Body" serviceInfoFont="RM"
+                foregroundColorMarked="FG" foregroundColorMarkedSelected="FG" backgroundColorMarked="ThemeBG" backgroundColorMarkedSelected="ThemeFG"
+                foregroundColorServiceNotAvail="ThemeGrey" colorServiceRecorded="Red" foregroundColorEvent="ThemeGrey" foregroundColorEventSelected="FG"
+                colorEventProgressbar="ThemeGrey" colorEventProgressbarSelected="FG" colorEventProgressbarBorder="ThemeGrey" colorEventProgressbarBorderSelected="FG"
+                progressbarHeight="10" progressBarWidth="50" progressbarBorderWidth="2"/>
+    </screen>
+
+    <screen name="RadioInfoBar" flags="wfNoBorder" position="center,900" size="1920,180" backgroundColor="Transp">
+        <widget source="session.CurrentService" render="Label" position="5,1" size="325,26" font="Body" noWrap="1">
+            <convert type="ServiceName">Name</convert>
+        </widget>
+        <widget source="RdsDecoder" render="Pixmap" pixmap="icons/rass_logo.png" position="330,1" size="50,21" alphatest="blend">
+            <convert type="RdsInfo">RasInteractiveAvailable</convert>
+            <convert type="ConditionalShowHide"/>
+        </widget>
+        <widget source="session.RecordState" render="Pixmap" pixmap="icons/record.png" position="480,3" size="14,14" alphatest="blend">
+            <convert type="ConditionalShowHide">Blink</convert>
+        </widget>
+        <ePixmap pixmap="icons/clock.png" position="480,3" size="14,14" alphatest="blend"/>
+        <widget source="session.Event_Now" render="Progress" position="395,5" size="71,11" borderWidth="1">
+            <convert type="EventTime">Progress</convert>
+        </widget>
+        <widget source="global.CurrentTime" render="Label" position="500,1" size="55,28" font="Body" halign="right">
+            <convert type="ClockToText">Default</convert>
+        </widget>
+        <widget source="session.Event_Now" render="Label" position="5,25" size="60,22" font="Body">
+            <convert type="EventTime">StartTime</convert>
+            <convert type="ClockToText">Default</convert>
+        </widget>
+        <widget source="session.Event_Now" render="Label" position="73,25" size="390,22" font="Body" valign="top" noWrap="1">
+            <convert type="EventName">Name</convert>
+        </widget>
+        <widget source="session.Event_Now" render="Label" position="465,25" size="90,22" font="Body" halign="right">
+            <convert type="EventTime">Remaining</convert>
+            <convert type="RemainingToText">InMinutes</convert>
+        </widget>
+        <widget source="session.Event_Next" render="Label" position="5,47" size="60,22" font="Body">
+            <convert type="EventTime">StartTime</convert>
+            <convert type="ClockToText">Default</convert>
+        </widget>
+        <widget source="session.Event_Next" render="Label" position="73,47" size="390,22" font="Body" valign="top" noWrap="1">
+            <convert type="EventName">Name</convert>
+        </widget>
+        <widget source="session.Event_Next" render="Label" position="465,47" size="90,22" font="Body" halign="right">
+            <convert type="EventTime">Duration</convert>
+            <convert type="ClockToText">InMinutes</convert>
+        </widget>
+        <widget source="RdsDecoder" render="Label" position="5,71" size="550,50" font="Body" foregroundColor="#80ffff">
+            <convert type="RdsInfo">RadioText</convert>
+        </widget>
+    </screen>
+
+    <!-- .../python/Screens/ChoiceBox.py -->
+
+    <screen name="ChoiceBox" flags="wfNoBorder" position="center,center" size="960,480" backgroundColor="ThemeBG">
+        <widget name="autoresize" position="10,10" size="e-20,e-20" font="Body" backgroundColor="BG" foregroundColor="BG" noWrap="1" zPosition="-20"/> <!-- font needed for size calculation -->
+        <widget name="text" position="30,22" size="e-60,1h" font="Body" valign="center"/>
+        <widget name="list" position="fill" font="Body" itemHeight="44" scrollbarMode="showOnDemand"/>
+        <widget name="description" position="0,0" size="0,0"/> <!-- hidden -->
+        <applet type="onLayoutFinish">
+from enigma import eSize, ePoint
+
+textsize = self[&quot;text&quot;].getSize()
+wsizex = textsize[0] + 2 # there's a rounding error somewhere!
+wsizey = textsize[1]
+
+if (wsizex &gt; 900):
+    wsizex = 900
+if wsizex &lt; 420:
+    wsizex = 420
+
+for line in self[&quot;list&quot;].list:
+    self[&quot;autoresize&quot;].setText(line[0][0])
+    listwidth = 73 + self[&quot;autoresize&quot;].getSize()[0] # 15 + 28 + 15 + 15 for margins and icon
+    if (listwidth &gt; 1220):
+        listwidth = 1220
+    if listwidth &gt; wsizex:
+        wsizex = listwidth
+
+listlen = 44 * len(self[&quot;list&quot;].list)
+scrollbar = 0
+if listlen &gt; 44 * 8:
+    scrollbar = 5 + self[&quot;list&quot;].instance.getScrollbarWidth()
+    listlen = 44 * 8
+
+wsizex += 60 + scrollbar
+wsizey += 60 + 6 + listlen
+
+self.instance.resize(eSize(*(wsizex, wsizey)))
+self.instance.move(ePoint((1920 - wsizex) / 2, (1080 - wsizey) / 2))
+self[&quot;autoresize&quot;].instance.resize(eSize(*(wsizex - 20, wsizey - 20)))
+self[&quot;text&quot;].instance.resize(eSize(*(wsizex - 60, textsize[1])))
+self[&quot;list&quot;].instance.resize(eSize(*(wsizex - 60, listlen)))
+self[&quot;list&quot;].instance.move(ePoint(30, wsizey - 30 - listlen))
+        </applet>
+    </screen>
+
+    <!-- .../python/Screens/Ci.py -->
+
+    <screen name="MMIDialog" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/key.png" position="40,center" size="240,240" alphatest="blend"/>
+        <!-- title?? -->
+        <widget name="subtitle" position="350,110" size="1230,44" font="Body"/>
+        <widget name="entries" position="350,190" size="1230,360" font="Body" itemHeight="44" scrollbarMode="showOnDemand"/>
+        <widget name="bottom" position="350,600" size="1230,170" font="Description"/>
+        <panel name="TemplateSimpleDivided2To1"/>
+    </screen>
+
+    <screen name="CiSelection" title="Common Interface" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/key.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="entries" position="350,110" size="1230,440" font="Body" itemHeight="44" scrollbarMode="showOnDemand"/>
+        <widget name="text" position="350,600" size="1230,170" font="Description"/>
+        <panel name="TemplateSimpleDivided2To1"/>
+    </screen>
+
+    <!-- .../python/Plugins/SystemPlugins/CommonInterfaceAssignment/plugin.py -->
+
+    <screen name="CIselectMainMenu" title="CI assignment" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/key.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="CiList" position="350,110" size="1230,440" font="Body" itemHeight="44" scrollbarMode="showOnDemand"/>
+        <panel name="TemplateSimpleDivided2To1"/>
+    </screen>
+
+    <screen name="CIconfigMenu" title="CI assignment" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/key.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget source="CAidList_desc" render="Label" position="350,110" size="1230,44" font="Body"/>
+        <widget source="CAidList" render="Label" position="350,150" size="1230,80" font="Body"/>
+        <widget source="ServiceList_desc" render="Label" position="350,230" size="1230,44" font="Body"/>
+        <widget source="ServiceList_info" render="Label" position="350,270" size="1230,120" font="Body"/>
+        <widget name="ServiceList" position="350,430" size="1230,240" font="Body" itemHeight="44" scrollbarMode="showOnDemand"/>
+        <panel name="TemplateSimple"/>
+    </screen>
+
+    <screen name="easyCIconfigMenu" title="CI assignment" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/key.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget source="ServiceList_desc" render="Label" position="350,110" size="1230,44" font="Body"/>
+        <widget source="ServiceList_info" render="Label" position="350,150" size="1230,120" font="Body"/>
+        <widget name="ServiceList" position="350,310" size="1230,360" font="Body" itemHeight="44" scrollbarMode="showOnDemand"/>
+        <panel name="TemplateSimple"/>
+    </screen>
+
+    <screen name="CAidSelect" title="select CAId's" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/key.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="list" position="350,110" size="1230,440" font="Body" itemHeight="44" scrollbarMode="showOnDemand"/>
+        <widget source="introduction" render="Label" position="350,600" size="1230,170" font="Description" halign="center" valign="center"/>
+        <panel name="TemplateSimpleDivided2To1"/>
+    </screen>
+
+    <!-- <screen name="myProviderSelection" title="Select provider to add..." flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/key.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="list" position="350,110" size="1230,440" font="Body" itemHeight="44" scrollbarMode="showOnDemand"/>
+        <widget source="introduction" render="Label" position="350,600" size="1230,170" font="Description" halign="center" valign="center"/>
+        <panel name="TemplateSimpleDivided2To1"/>
+    </screen> -->
+
+    <!-- <screen name="myChannelSelection" title="Select service to add..." flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/key.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="list" position="350,110" size="12230,440" font="Body" itemHeight="44" scrollbarMode="showOnDemand"/>
+        <widget source="introduction" render="Label" position="350,600" size="1230,170" font="Description" halign="center" valign="center"/>
+        <panel name="TemplateSimpleDivided2To1"/>
+    </screen> -->
+
+    <!-- .../python/Screens/Console.py -->
+
+    <screen name="Console" title="Command execution" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/terminal.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="text" position="350,110" size="1230,660" font="Console"/>
+        <panel name="TemplateSimple"/>
+    </screen>
+
+    <!-- .../python/Screens/Dish.py -->
+
+    <screen name="Dish" title="Dish" flags="wfNoBorder" position="e-280,center" size="240,360" backgroundColor="ThemeBG" zPosition="99">
+        <eLabel position="10,10" size="e-20,e-20" backgroundColor="BG" zPosition="-20"/>
+        <widget name="Dishpixmap" position="center,30" size="120,120" pixmap="icons/other/compass_small.png" alphatest="blend">
+            <convert type="ConditionalShowHide">Blink</convert>
+        </widget>
+        <widget name="tunerName" position="30,160" size="e-60,44" font="Body" valign="center" halign="center"/>
+        <widget name="From" position="30,e-138" size="(e-60)/2,38" font="RM" valign="center"/>
+        <widget name="posFrom" position="c,e-138" size="(e-60)/2,38" font="RM" valign="center" halign="right"/>
+        <widget name="Goto" position="30,e-100" size="(e-60)/2,38" font="RM" valign="center"/>
+        <widget name="posGoto" position="c,e-100" size="(e-60)/2,38" font="RM" valign="center" halign="right"/>
+        <widget name="turnTime" position="30,e-62" size="(e-60)/2,38" font="RM" valign="center"/>
+        <widget name="turnSpeed" position="c,e-62" size="(e-60)/2,38" font="RM" valign="center" halign="right"/>
+    </screen>
+
+    <screen name="Dishpip" flags="wfNoBorder" position="86,100" size="130,220" title="DishPiP" zPosition="1" backgroundColor="#11396D" >
+        <widget source="Dishpixmap" render="Pixmap" pixmap="icons/dish.png" zPosition="-1" position="0,0" size="130,160" alphatest="on">
+            <convert type="ConditionalShowHide">Blink</convert>
+        </widget>
+        <widget name="turnTime"   position="5,0"   size="120,20" zPosition="1" font="Regular;20" halign="right" shadowColor="black" shadowOffset="-2,-2" transparent="1" />
+        <widget name="From"       position="5,162" size="50,17" zPosition="1" font="Regular;17" halign="left"  shadowColor="black" shadowOffset="-2,-1" transparent="1" />
+        <widget name="posFrom"    position="57,160" size="70,20" zPosition="1" font="Regular;20" halign="left"  shadowColor="black" shadowOffset="-2,-2" transparent="1" />
+        <widget name="Goto"       position="5,182"  size="50,17" zPosition="1" font="Regular;17" halign="left"  shadowColor="black" shadowOffset="-2,-1" transparent="1" />
+        <widget name="posGoto"    position="57,180" size="70,20" zPosition="1" font="Regular;20" halign="left"  shadowColor="black" shadowOffset="-2,-2" transparent="1" />
+        <widget name="tunerName"  position="5,144"  size="90,16" zPosition="2" font="Regular;14" halign="left"  shadowColor="black" shadowOffset="-2,-1" transparent="1" />
+        <widget name="turnSpeed"  position="75,95" size="50,16" zPosition="2" font="Regular;14" halign="right" shadowColor="black" shadowOffset="-2,-1" transparent="1" />
+        <widget source="Frontend" render="Progress" position="5,205" size="120,10" pixmap="bar_snr.png" zPosition="2" borderWidth="2" borderColor="#cccccc">
+            <convert type="FrontendInfo">SNR</convert>
+        </widget>
+    </screen>
+
+    <!-- .../python/Screens/EPGSelection.py -->
+
+    <screen name="EPGSelection" title="Single EPG" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp"> <!-- also used in "Similar EPG" -->
+        <ePixmap pixmap="icons/panel/table.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="list" position="350,110" size="1230,660" setEventItemFont="Body" setEventTimeFont="RM" setTimeWidth="140"
+                setColWidths="100,210" setColGap="45" setMargin="15" itemHeight="44" scrollbarMode="showOnDemand"/>
+        <panel name="TemplateSimple"/>
+    </screen>
+
+    <screen name="EPGSelectionMulti" title="Multi EPG" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <panel name="TemplateSimple"/>
+        <ePixmap pixmap="icons/panel/table.png" position="40,center" size="240,240" alphatest="blend"/>
+
+        <widget name="now_button" pixmap="buttons/border_grey.png" position="365,110" size="240,44" alphatest="blend"/>
+        <widget name="now_button_sel" pixmap="buttons/border_white.png" position="365,110" size="240,44" alphatest="blend"/>
+        <widget name="now_text" text="NOW" position="366,111" size="238,42" font="Body" valign="center" halign="center"/>
+
+        <widget name="next_button" pixmap="buttons/border_grey.png" position="680,110" size="240,44" alphatest="blend"/>
+        <widget name="next_button_sel" pixmap="buttons/border_white.png" position="680,110" size="240,44" alphatest="blend"/>
+        <widget name="next_text" text="NEXT" position="681,111" size="238,42" font="Body" valign="center" halign="center"/>
+
+        <widget name="more_button" pixmap="buttons/border_grey.png" position="1000,110" size="240,44" alphatest="blend"/>
+        <widget name="more_button_sel" pixmap="buttons/border_white.png" position="1000,110" size="240,44" alphatest="blend"/>
+        <widget name="more_text" text="MORE" position="1001,111" size="238,42" font="Body" valign="center" halign="center"/>
+
+        <widget name="date" position="1320,110" size="240,44" font="Body" valign="center" halign="center"/>
+        <widget name="list" position="350,198" size="1230,572" setEventItemFont="Body" setEventTimeFont="RM" setTimeWidth="180"
+                setColWidths="350,200" setColGap="45" setMargin="15" itemHeight="44" scrollbarMode="showOnDemand"/>
+    </screen>
+
+    <!-- .../python/Screens/EventView.py -->
+
+    <screen name="EventView" flags="wfNoBorder" position="center,center" size="960,880" backgroundColor="Transp">
+        <widget name="channel" position="center,110" size="e/2,44" font="Body" halign="center" valign="center" backgroundColor="ThemeBG" noWrap="1"/>
+        <widget name="datetime" position="0,0" size="0,0"/> <!-- hidden -->
+        <widget source="Event" render="Label" position="c+20-e/3,154" size="e/3,38" font="LM" halign="right" valign="center" backgroundColor="ThemeBG" noWrap="1">
+            <convert type="EventTime">StartTime</convert>
+            <convert type="ClockToText">Format:%A %-d %b,</convert>
+        </widget>
+        <widget name="duration" position="c+30,154" size="e/3,38" font="LM" halign="left" valign="center" backgroundColor="ThemeBG" noWrap="1"/>
+
+        <widget source="Event" render="Label" position="center,228" size="e/2,76" font="LM" halign="center" valign="center">
+            <convert type="EventName">Name</convert>
+        </widget>
+        <widget name="epg_eventname" position="0,0" size="0,0"/> --> <!-- scroll label does not valign and calculates size incorectly -->
+
+        <widget source="Event" render="Label" position="c-e/6-80,306" size="60,38" font="LM" halign="center" valign="center">
+            <convert type="EventTime">StartTime</convert>
+            <convert type="ClockToText">Format:%H:%M</convert>
+        </widget>
+        <widget source="Event" render="Progress" position="center,319" size="e/3,12" borderWidth="1">
+            <convert type="EventTime">Progress</convert>
+        </widget>
+        <widget source="Event" render="Label" position="c+e/6+20,306" size="60,38" font="LM" halign="center" valign="center">
+            <convert type="EventTime">EndTime</convert>
+            <convert type="ClockToText">Format:%H:%M</convert>
+        </widget>
+
+        <!--<widget source="Service" render="Label" position="40,376" size="e-80,374" font="LM" halign="block"> does not support scrolling
+            <convert type="EventName">FullDescription</convert>
+            <convert type="EventName">ExtendedDescription</convert>
+        </widget>370 380-->
+
+        <widget name="epg_description" position="0,0" size="0,0"/> <!-- hidden --> <!-- does not calculate size correctly when scrollbar is not present -->
+        <widget name="FullDescription" position="40,357" size="e-80,393" font="LM" halign="block" scrollbarWidth="10"/> <!-- does not calculate size correctly when scrollbar is not present -->
+
+        <panel name="TemplateEventView"/>
+    </screen>
+
+    <!-- .../python/Screens/FlashImage.py -->
+
+    <screen name="SelectImage" title="Select Image" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/bolt.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="list" position="350,110" size="1230,440" font="Body" itemHeight="44" scrollbarMode="showOnDemand"/>
+        <widget name="description" position="350,600" size="1230,170" font="Description"/> <!-- fix in source - debug message -->
+        <panel name="TemplateSimpleDivided2To1"/>
+    </screen>
+
+    <screen name="FlashImage" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/bolt.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="header" position="350,110" size="1230,44" font="Body"/>
+        <widget name="info" position="350,198" size="1230,88" font="Body"/>
+        <widget name="progress" position="350,338" size="1230,28" borderWidth="1"/>
+        <panel name="TemplateSimple"/>
+    </screen>
+
+    <!-- .../python/Screens/HarddiskSetup.py -->
+
+    <screen name="HarddiskSetup" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/hdd.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="model" position="350,110" size="1230,44" font="Body"/>
+        <widget name="capacity" position="350,150" size="1230,44" font="Body"/>
+        <widget name="bus" position="350,190" size="1230,44" font="Body"/>
+        <panel name="TemplateSimple"/>
+    </screen>
+
+    <screen name="HarddiskSelection" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/hdd.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="hddlist" position="350,110" size="1230,660" font="Body" itemHeight="44" textOffset="15,0" scrollbarMode="showOnDemand"/>
+        <panel name="TemplateSimple"/>
+    </screen>
+
+    <!-- .../python/Screens/HelpMenu.py -->
+
+    <screen name="HelpMenu" title="help..." flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <panel name="TemplateSimple"/>
+        <eLabel position="e-330,center" size="10,700" backgroundColor="BG" zPosition="-10"/>
+        <ePixmap pixmap="icons/panel/hands-helping.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="list" position="350,110" size="1000,660" scrollbarMode="showOnDemand"/>
+        <widget name="long_key" position="e-220,702" size="200,68" font="Description" halign="center" valign="bottom"/>
+        <widget name="rc" pixmaps="rc.png,rcold.png" position="1403,center" size="154,500" alphatest="blend" zPosition="10"/>
+        <widget name="arrowdown" pixmap="icons/other/long-arrow-alt-down.png" position="-100,-100" size="36,70" alphatest="blend" zPosition="15"/>
+        <widget name="arrowdown2" pixmap="icons/other/long-arrow-alt-down.png" position="-100,-100" size="36,70" alphatest="blend" zPosition="15"/>
+        <widget name="arrowup" pixmap="icons/other/long-arrow-alt-up.png" position="-100,-100" size="36,70" alphatest="blend" zPosition="15"/>
+        <widget name="arrowup2" pixmap="icons/other/long-arrow-alt-up.png" position="-100,-100" size="36,70" alphatest="blend" zPosition="15"/>
+    </screen>
+
+    <!-- .../python/Screens/Hotkey.py -->
+
+    <screen name="HotkeySetup" title="Hotkey Setup" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/fire-alt.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="list" position="350,110" size="1230,440" scrollbarMode="showOnDemand" font="Body" itemHeight="44"/>
+        <widget name="choosen" position="350,600" size="750,170" itemHeight="44"/> <!-- choicelist -->
+        <widget name="description" position="1100,668" size="480,102" font="Description"/>
+        <panel name="TemplateSimpleDivided2To1"/>
+    </screen>
+
+    <screen name="HotkeySetupSelect" title="Hotkey Setup" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/fire-alt.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="list" position="350,110" size="1230,440" font="Body" itemHeight="44" scrollbarMode="showOnDemand"/>
+        <widget name="choosen" position="350,600" size="750,170" itemHeight="44"/> <!-- choicelist -->
+        <widget name="description" position="1100,668" size="480,102" font="Description"/>
+        <widget name="h_prev" pixmap="icons/dummy.png" position="0,0" size="0,0"/> <!-- hidden -->
+        <widget name="h_next" pixmap="icons/dummy.png" position="0,0" size="0,0"/> <!-- hidden -->
+        <panel name="TemplateSimpleDivided2To1"/>
+    </screen>
+
+    <!-- .../python/Screens/InfoBarGenerics.py -->
+
+    <screen name="SecondInfoBar" flags="wfNoBorder" position="center,center" size="1920,1080" backgroundColor="Transp">
+        <panel name="TemplateSecondInfoBar"/>
+    </screen>
+
+    <screen name="BufferIndicator" flags="wfNoBorder" position="center,center" size="480,240" backgroundColor="ThemeBG">
+        <eLabel position="10,10" size="e-20,e-20" backgroundColor="BG" zPosition="-20"/>
+        <widget name="status" position="center,center" size="e-60,e-60" font="Regular;40" halign="center" valign="center"/>
+    </screen>
+
+    <screen name="NumberZap" flags="wfNoBorder" position="80,80" size="480,120" backgroundColor="ThemeBG">
+        <eLabel position="10,10" size="e-20,e-20" backgroundColor="BG" zPosition="-20"/>
+        <widget name="channel" position="0,0" size="0,0"/> <!-- hidden -->
+        <widget name="number" position="30,30" size="100,e-60" font="Regular;40" halign="center" valign="center"/>
+        <widget name="servicename" position="120,30" size="e-120-60,e-60" font="Regular;32" valign="center" noWrap="1"/>
+    </screen>
+
+    <screen name="VideoMode" flags="wfNoBorder" position="e-560,80" size="480,120" backgroundColor="ThemeBG">
+        <eLabel position="10,10" size="e-20,e-20" backgroundColor="BG" zPosition="-20"/>
+        <widget name="videomode" position="30,30" size="e-60,e-60" font="Regular;40" halign="center" valign="center"/>
+    </screen>
+
+    <screen name="InfoBar" flags="wfNoBorder" position="center,840" size="1920,240" backgroundColor="Transp">
+        <panel name="TemplateInfoBar"/>
+    </screen>
+
+    <screen name="InfoBarMoviePlayerSummary" flags="wfNoBorder" position="0,0" size="0,0"/>
+
+    <!-- .../python/Screens/InputBox.py -->
+
+    <screen name="InputBox" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/dummy.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="text" position="350,110" size="1000,44" font="Body"/>
+        <widget name="input" position="1350,190" size="230,44" font="Body" halign="right"/>
+        <panel name="TemplateSimple"/>
+    </screen>
+
+    <screen name="PinInput" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/key.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="text" position="350,110" size="1230,44" font="Body"/>
+        <widget name="input" position="1350,190" size="230,44" font="Body" halign="right"/>
+        <widget name="service" position="350,310" size="1230,44" font="Body"/>
+        <widget name="tries" position="350,350" size="1230,44" font="Body"/>
+        <panel name="TemplateSimple"/>
+    </screen>
+
+    <screen name="PinInputPopup" flags="wfNoBorder" position="center,center" size="480,300" backgroundColor="ThemeBG"> <!-- consider autoresizing -->
+        <eLabel position="10,10" size="e-20,e-20" backgroundColor="BG" zPosition="-20"/>
+        <widget name="text" position="c,30" size="e-60,44" font="Body" halign="center" valign="center" />
+        <widget name="input" position="c,110" size="e-60,44" font="Body" halign="center" valign="center"/>
+        <widget name="service" position="c,190" size="e-60,44" font="Body" halign="center" valign="center"/>
+        <widget name="tries" position="c,230" size="e-60,44" font="Body" halign="center" valign="center"/>
+    </screen>
+
+    <!-- .../python/Screens/InputDeviceSetup.py -->
+
+    <screen name="InputDeviceSelection" title="Select input device" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/keyboard.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget source="list" render="Listbox" position="350,110" size="1230,440">
+            <convert type="TemplatedMultiContent"> <!-- device, description, devicepng, divpng -->
+                {
+                    "template": [
+                        MultiContentEntryPixmapAlphaBlend(pos = (15,10), size = (50,50), png = 2), # interface pixmap
+                        MultiContentEntryText(pos = (80,15), size = (800,44), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1), # interface name
+                    ],
+                    "fonts": [ gFont("Regular", 31) ],
+                    "itemHeight": 70
+                }
+            </convert>
+        </widget>
+        <widget source="introduction" render="Label" position="0,0" size="0,0"/> <!-- hidden -->
+        <panel name="TemplateSimple"/>
+    </screen>
+
+    <screen name="InputDeviceSetup" title="Input device setup" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/keyboard.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="config" position="350,110" size="1230,440" font="Body" itemHeight="44" secondfont="ConfigList" scrollbarMode="showOnDemand"/>
+        <widget source="introduction" render="Label" position="350,600" size="1230,170" font="Description"/>
+        <panel name="TemplateSimpleDivided2To1"/>
+    </screen>
+
+    <!-- .../python/Screens/Ipkg.py -->
+
+    <screen name="Ipkg" title="Installing Software" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp"> <!-- untested -->
+        <ePixmap pixmap="icons/dummy.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="package" position="350,110" size="1230,44" font="Body"/>
+        <widget name="status" position="350,198" size="1230,88" font="Body"/>
+        <widget name="slider" position="350,338" size="1230,28"/>
+        <widget name="activityslider" position="350,382" size="1230,28" borderWidth="1"/>
+        <panel name="TemplateSimple"/>
+    </screen>
+
+    <!-- .../python/Screens/LanguageSelection.py -->
+
+    <screen name="LanguageSelection" title="Language selection" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/language.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget source="languages" render="Listbox" position="350,110" size="1230,660">
+            <convert type="TemplatedMultiContent">
+                {
+                    "template": [
+                        MultiContentEntryPixmapAlphaBlend(pos = (15,8), size = (75,50), png = 2), # flag
+                        MultiContentEntryText(pos = (105,13), size = (800,44), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1), # language name
+                    ],
+                    "fonts": [ gFont("Regular", 31) ],
+                    "itemHeight": 66
+                }
+            </convert>
+        </widget>
+        <panel name="TemplateSimple"/>
+    </screen>
+
+    <!-- missing LanguageWizard -->
+
+
+
+    <!-- .../python/Screens/LocationBox.py -->
+
+    <screen name="LocationBox" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp"> <!-- re-work -->
+        <ePixmap pixmap="icons/panel/location.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="text" position="350,110" size="800,44" font="Body"/>
+        <widget name="target" position="1150,116" size="430,34" font="Description" halign="right"/>
+        <widget name="filelist" position="350,190" size="1230,360" font="Body" itemHeight="44" selectionDisabled="1" scrollbarMode="showOnDemand"/>
+        <widget name="textbook" position="350,600" size="1230,34" font="Description"/>
+        <widget name="booklist" position="350,640" size="1230,130" font="Description" itemHeight="38" textOffset="15,0" scrollbarMode="showOnDemand"/>
+        <panel name="TemplateSimpleDivided2To1"/>
+    </screen>
+
+    <!-- .../python/Screens/Menu.py -->
+
+    <screen name="Menu" flags="wfNoBorder" position="center,center" size="1280,880" backgroundColor="Transp">
+        <panel name="TemplateSimple"/>
+        <widget source="menu" render="Listbox" position="350,110" size="910,660">
+            <convert type="TemplatedMultiContent">
+                {
+                    "template": [ MultiContentEntryText(pos = (15,0), size = (880,60), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0) ],
+                    "fonts": [ gFont("Regular", 40), gFont("Medium", 40) ],
+                    "itemHeight": 60
+                }
+            </convert>
+        </widget>
+    </screen>
+
+    <screen name="menu_mainmenu" flags="wfNoBorder" position="center,center" size="1280,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/home.png" position="40,center" size="240,240" alphatest="blend"/>
+        <panel name="Menu"/>
+    </screen>
+
+    <screen name="menu_expert" flags="wfNoBorder" position="center,center" size="1280,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/tools.png" position="40,center" size="240,240" alphatest="blend"/>
+        <panel name="Menu"/>
+    </screen>
+
+    <screen name="menu_gui" flags="wfNoBorder" position="center,center" size="1280,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/edit.png" position="40,center" size="240,240" alphatest="blend"/>
+        <panel name="Menu"/>
+    </screen>
+
+    <screen name="menu_harddisk" flags="wfNoBorder" position="center,center" size="1280,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/hdd.png" position="40,center" size="240,240" alphatest="blend"/>
+        <panel name="Menu"/>
+    </screen>
+
+    <screen name="menu_information" flags="wfNoBorder" position="center,center" size="1280,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/info-square.png" position="40,center" size="240,240" alphatest="blend"/>
+        <panel name="Menu"/>
+    </screen>
+
+    <screen name="menu_scan" flags="wfNoBorder" position="center,center" size="1280,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/satellite-dish.png" position="40,center" size="240,240" alphatest="blend"/>
+        <panel name="Menu"/>
+    </screen>
+
+    <screen name="menu_setup" flags="wfNoBorder" position="center,center" size="1280,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/cogs.png" position="40,center" size="240,240" alphatest="blend"/>
+        <panel name="Menu"/>
+    </screen>
+
+    <screen name="menu_shutdown" flags="wfNoBorder" position="center,center" size="1280,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/power-off.png" position="40,center" size="240,240" alphatest="blend"/>
+        <panel name="Menu"/>
+    </screen>
+
+    <screen name="menu_system" flags="wfNoBorder" position="center,center" size="1280,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/industry-alt.png" position="40,center" size="240,240" alphatest="blend"/>
+        <panel name="Menu"/>
+    </screen>
+
+    <screen name="menu_video" flags="wfNoBorder" position="center,center" size="1280,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/tv-alt.png" position="40,center" size="240,240" alphatest="blend"/>
+        <panel name="Menu"/>
+    </screen>
+
+    <screen name="MenuSort" flags="wfNoBorder" position="center,center" size="1280,880" backgroundColor="Transp">
+        <panel name="TemplateSimple"/>
+        <ePixmap pixmap="icons/panel/sort.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget source="menu" render="Listbox" position="350,110" size="910,660">
+            <convert type="TemplatedMultiContent">
+                {
+                    "template": [ MultiContentEntryText(pos = (15,0), size = (880,60), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0) ],
+                    "fonts": [ gFont("Regular", 40) ],
+                    "itemHeight": 60
+                }
+            </convert>
+        </widget>
+    </screen>
+
+    <screen name="MenuSummary" flags="wfNoBorder" position="0,0" size="0,0"/>
+
+    <!-- .../python/Screens/MessageBox.py -->
+
+    <screen name="MessageBox" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <widget name="ErrorPixmap" pixmap="icons/panel/times-circle.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="QuestionPixmap" pixmap="icons/panel/question-circle.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="InfoPixmap" pixmap="icons/panel/info-circle.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="WarningPixmap" pixmap="icons/panel/exclamation-circle.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="autoresize" position="0,0" size="0,0"/>
+        <widget name="text" position="350,110" size="1230,440" font="Body"/>
+        <widget name="list" position="350,600" size="1230,170" font="Body" itemHeight="44" textOffset="15,0" scrollbarMode="showOnDemand"/>
+        <panel name="TemplateSimpleDivided2To1"/>
+    </screen>
+
+    <screen name="MessageBoxSimple" flags="wfNoBorder" position="center,center" size="960,640" backgroundColor="ThemeBG"> <!-- add scrollbar calculation -->
+        <widget name="ErrorPixmap" pixmap="icons/other/times-circle_small.png" position="30,30" size="120,120" alphatest="blend"/>
+        <widget name="QuestionPixmap" pixmap="icons/other/question-circle_small.png" position="30,30" size="120,120" alphatest="blend"/>
+        <widget name="InfoPixmap" pixmap="icons/other/info-circle_small.png" position="30,30" size="120,120" alphatest="blend"/>
+        <widget name="WarningPixmap" pixmap="icons/other/exclamation-circle_small.png" position="30,30" size="120,120" alphatest="blend"/>
+        <widget name="autoresize" position="10,10" size="e-20,e-20" font="Body" backgroundColor="BG" foregroundColor="BG" noWrap="1" zPosition="-20"/> <!-- font needed for size calculation -->
+        <widget name="text" position="170,30" size="e-200,1h" font="Body" valign="center"/>
+        <widget name="list" position="fill" font="Body" itemHeight="44" textOffset="15,0" scrollbarMode="showOnDemand"/>
+        <applet type="onLayoutFinish">
+from enigma import eSize, ePoint
+
+textsize = self[&quot;text&quot;].getSize()
+wsizex = textsize[0] + 2 # there's a rounding error somewhere!
+wsizey = textsize[1]
+
+wsizex += 200 # space for icon and margins
+
+if (wsizex &gt; 960):
+    wsizex = 960
+if (wsizex &lt; 480):
+    wsizex = 480
+
+if (wsizey &lt; 180):
+    wsizey = 180
+
+if self.type == self.TYPE_YESNO:
+    listlen = len(self.list) * 44
+    if (listlen &gt; 44 * 6):
+        listlen = 44 * 6
+    wsizey += 20 + listlen
+    listwidth = self.getListWidth() + 30 # 15 + 15 for margins
+    if (listwidth &gt; 1220):
+        listwidth = 1220
+    if (listwidth &gt; wsizex):
+        wsizex = listwidth + 60
+    self[&quot;list&quot;].instance.resize(eSize(*(wsizex - 60, listlen)))
+    self[&quot;list&quot;].instance.move(ePoint(30, wsizey - 30 - listlen))
+
+self[&quot;autoresize&quot;].instance.resize(eSize(*(wsizex - 20, wsizey - 20)))
+self[&quot;text&quot;].instance.resize(eSize(*(wsizex - 200, 120)))
+self.instance.resize(eSize(*(wsizex, wsizey)))
+self.instance.move(ePoint((1920 - wsizex) / 2, (1080 - wsizey) / 2))
+        </applet>
+    </screen>
+
+    <!-- .../python/Screens/MinuteInput.py -->
+
+    <screen name="MinuteInput" flags="wfNoBorder" position="center,center" size="120,120" zPosition="99" backgroundColor="Transp">
+        <widget name="minutes" position="120,15" size="100,25" font="Body"/>
+    </screen>
+
+    <!-- .../python/Screens/MovieSelection.py -->
+
+    <screen name="MovieContextMenu" title="Movielist menu" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/tasks.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="menu" position="350,110" size="1230,660" font="Body" itemHeight="44"/>
+        <panel name="TemplateSimple"/>
+    </screen>
+
+    <screen name="MovieContextMenuSummary" flags="wfNoBorder" position="0,0" size="0,0"/>
+
+    <screen name="MovieSelection" title="Movie selection" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/film-alt.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="waitingtext" position="350,110" size="1230,440" font="Body"/>
+        <widget name="chosenletter" position="350,110" size="1230,440" font="Body"/>
+        <widget name="list" position="350,110" size="1230,572" scrollbarMode="showOnDemand" spacingOriginal="wide" spacingCompact="tight" margins="15,15"
+                fontNames="Regular,Light,Light" fontSizesOriginal="28,24,24" fontSizesCompact="28,24" fontSizesMinimal="28,24" itemHeights="110,80,44"
+                columnsOriginal="400,400" columnsCompactDescription="400,400,400" compactColumn="240" treeDescription="200" iconsWidth="26" trashShift="8"
+                dirShift="8" partIconeShiftMinimal="8" partIconeShiftCompact="8" partIconeShiftOriginal="8" spaceIconeText="15"/>
+        <widget name="freeDiskSpace" position="780,732" size="800,38" font="Description" halign="right"/>
+        <widget name="DescriptionBorder" position="0,0" size="0,0"/> <!-- hidden -->
+        <widget name="movie_sort" pixmaps="icons/az.png,icons/newtop.png,icons/shuffle.png,icons/za.png,icons/oldtop.png,icons/faz.png,icons/fza.png" position="350,739" size="28,28" alphatest="blend"/>
+        <widget name="movie_off" pixmaps="icons/ask.png,icons/movielist.png,icons/quit.png,icons/pause.png,icons/playlist.png,icons/playlistquit.png,icons/repeat.png" position="390,739" size="28,28" alphatest="blend"/>
+        <panel name="TemplateSimple"/>
+    </screen>
+
+    <screen name="MovieSelectionSummary" flags="wfNoBorder" position="0,0" size="0,0"/>
+
+    <!-- .../python/Screens/Mute.py -->
+
+    <screen name="Mute" flags="wfNoBorder" position="40,c-60" size="120,120" zPosition="99" backgroundColor="Transp">
+        <ePixmap pixmap="icons/other/volume-mute_small.png" position="0,0" size="120,120" alphatest="blend"/>
+    </screen>
+
+    <!-- .../python/Screens/NetworkSetup.py -->
+
+    <screen name="NetworkAdapterSelection" title="Select a network adapter" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/network-wired.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget source="list" render="Listbox" position="350,110" size="1230,440">
+            <convert type="TemplatedMultiContent">
+                {
+                    "template": [
+                        MultiContentEntryPixmapAlphaBlend(pos = (15,13), size = (56,56), png = 3), # interface pixmap
+                        MultiContentEntryPixmapAlphaBlend(pos = (1000,42), size = (15,16), png = 4), # default pixmap
+                        MultiContentEntryText(pos = (86,3),  size = (800,44), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1), # name
+                        MultiContentEntryText(pos = (86,47), size = (800,38), font = 1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 2), # description
+                    ],
+                    "fonts": [ gFont("Regular", 31), gFont("Light", 27) ],
+                    "itemHeight": 88
+                }
+            </convert>
+        </widget>
+        <widget source="introduction" render="Label" position="350,600" size="1230,170" font="Description" halign="center" valign="center"/>
+        <panel name="TemplateSimpleDivided2To1"/>
+    </screen>
+
+    <screen name="NameserverSetup" title="Configure nameservers" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/network-wired.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="config" position="350,110" size="1230,440" font="Body" itemHeight="44" secondfont="ConfigList"/>
+        <widget source="introduction" render="Label" position="350,600" size="1230,170" font="Description"/> <!-- move to green button in source -->
+        <panel name="TemplateSimpleDivided2To1"/>
+    </screen>
+
+    <screen name="AdapterSetup" title="Network setup" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp"> <!-- cleanup source -->
+        <panel name="TemplateSimpleDivided2To1"/>
+        <ePixmap pixmap="icons/panel/network-wired.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="config" position="350,110" size="1230,440" font="Body" itemHeight="44" secondfont="ConfigList"/>
+        <widget source="introduction2" render="Label" position="0,0" size="0,0"/> <!-- hidden -->
+
+        <widget source="introduction" render="Label" position="350,600" size="1230,38" font="Description"/>
+        <widget source="Adaptertext" render="Label" position="350,656" size="250,38" font="Description"/>
+        <widget source="IPtext" render="Label" position="350,694" size="250,38" font="Description"/>
+        <widget source="Netmasktext" render="Label" position="350,732" size="250,38" font="Description"/>
+
+        <widget source="Adapter" render="Label" position="600,656" size="250,38" font="Description"/>
+        <widget source="IP" render="Label" position="600,694" size="250,38" font="Description"/>
+        <widget source="Mask" render="Label" position="600,732" size="250,38" font="Description"/>
+
+        <widget source="Gatewaytext" render="Label" position="965,656" size="250,38" font="Description"/>
+        <widget source="DNS1text" render="Label" position="965,694" size="250,38" font="Description"/>
+        <widget source="DNS2text" render="Label" position="965,732" size="250,38" font="Description"/>
+
+        <widget source="Gateway" render="Label" position="1215,656" size="250,38" font="Description"/>
+        <widget source="DNS1" render="Label" position="1215,694" size="250,38" font="Description"/>
+        <widget source="DNS2" render="Label" position="1215,732" size="250,38" font="Description"/>
+
+        <widget name="HelpWindow" position="185,center" size="270,280"/>
+    </screen>
+
+    <screen name="AdapterSetupConfiguration" title="Network configuration" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp"> <!-- cleanup source -->
+        <panel name="TemplateSimpleDivided2To1"/>
+        <ePixmap pixmap="icons/panel/network-wired.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="menulist" position="350,110" size="1230,308" font="Body" itemHeight="44" textOffset="15,0" scrollbarMode="showOnDemand"/>
+        <widget source="IFtext" render="Label" position="350,462" size="200,44" font="Body" valign="center"/>
+        <widget source="IF" render="Label" position="550,462" size="300,44" font="Body" valign="center"/>
+        <widget source="Statustext" render="Label" position="350,506" size="200,44" font="Body" valign="center"/>
+        <widget name="statuspic" position="550,514" size="28,28" pixmaps="buttons/lock_on.png,buttons/lock_off.png" alphatest="blend"/>
+        <widget source="description" render="Label" position="350,600" size="1230,170" font="Description" halign="center" valign="center"/>
+    </screen>
+
+    <screen name="NetworkAdapterTest" title="Network test:" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <panel name="TemplateSimple"/>
+
+        <ePixmap pixmap="icons/panel/network-wired.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="Adaptertext" position="350,110" size="300,44" font="Body" valign="center"/>
+        <widget name="Networktext" position="350,154" size="300,44" font="Body" valign="center"/>
+        <widget name="Dhcptext" position="350,198" size="300,44" font="Body" valign="center"/>
+        <widget name="IPtext" position="350,242" size="300,44" font="Body" valign="center"/>
+        <widget name="DNStext" position="350,286" size="300,44" font="Body" valign="center"/>
+
+        <widget name="AdapterInfo_OK" position="750,118" size="28,28" pixmap="buttons/lock_on.png" alphatest="blend"/>
+        <widget name="NetworkInfo_Check" position="750,162" size="28,28" pixmaps="buttons/lock_on.png,buttons/lock_error.png" alphatest="blend"/>
+        <widget name="DhcpInfo_Check" position="750,206" size="28,28" pixmaps="buttons/lock_on.png,buttons/lock_error.png" alphatest="blend"/>
+        <widget name="IPInfo_Check" position="750,250" size="28,28" pixmaps="buttons/lock_on.png,buttons/lock_error.png" alphatest="blend"/>
+        <widget name="DNSInfo_Check" position="750,294" size="28,28" pixmaps="buttons/lock_on.png,buttons/lock_error.png" alphatest="blend"/>
+
+        <widget name="Adapter" position="800,110" size="250,44" font="Body" foregroundColors="BG,Red,Green"/>
+        <widget name="Network" position="800,154" size="250,44" font="Body" foregroundColors="BG,Red,Green"/>
+        <widget name="Dhcp" position="800,198" size="250,44" font="Body" foregroundColors="BG,Red,Green"/>
+        <widget name="IP" position="800,242" size="250,44" font="Body" foregroundColors="BG,Red,Green"/>
+        <widget name="DNS" position="800,286" size="250,44" font="Body" foregroundColors="BG,Red,Green"/>
+
+        <widget name="AdapterInfo_Text" position="1200,110" size="300,44" font="Body" foregroundColors="BG,ThemeGrey,FG"/>
+        <widget name="NetworkInfo_Text" position="1200,154" size="300,44" font="Body" foregroundColors="BG,ThemeGrey,FG"/>
+        <widget name="DhcpInfo_Text" position="1200,198" size="300,44" font="Body" foregroundColors="BG,ThemeGrey,FG"/>
+        <widget name="IPInfo_Text" position="1200,242" size="300,44" font="Body" foregroundColors="BG,ThemeGrey,FG"/>
+        <widget name="DNSInfo_Text" position="1200,286" size="300,44" font="Body" foregroundColors="BG,ThemeGrey,FG"/>
+
+        <widget name="EditSettings_Text" position="e-320,e-70" size="320,70" font="Button" halign="center" valign="center" foregroundColors="BG,BG,FG"/>
+        <widget name="EditSettingsButton" pixmaps="icons/dummy.png,window/tile_blue.png" position="e-320,e-80" size="320,10"/>
+
+        <widget name="AdapterInfo" position="1100,110" size="200,44" font="Body"/> <!-- ??? -->
+        <widget name="NetworkInfo" position="1100,154" size="200,44" font="Body"/> <!-- ??? -->
+        <widget name="DhcpInfo" position="1100,198" size="200,44" font="Body"/> <!-- ??? -->
+        <widget name="IPInfo" position="1100,242" size="200,44" font="Body"/> <!-- ??? -->
+        <widget name="DNSInfo" position="1100,286" size="200,44" font="Body"/> <!-- ??? -->
+
+        <widget name="InfoText" position="350,110" size="1230,660" font="Body" zPosition="5"/>
+        <widget name="InfoTextBorder" position="0,0" size="0,0"/> <!-- hidden -->
+    </screen>
+
+    <!-- .../python/Screens/NumericalTextInputHelpDialog.py -->
+
+    <screen name="NumericalTextInputHelpDialog" flags="wfNoBorder" position="185,center" size="270,280" backgroundColor="BG" zPosition="10">
+        <widget name="key1" position="0,0" size="90,44" font="Description" halign="center" valign="center"/>
+        <widget name="key2" position="90,0" size="90,44" font="Description" halign="center" valign="center"/>
+        <widget name="key3" position="180,0" size="90,44" font="Description" halign="center" valign="center"/>
+        <widget name="key4" position="0,80" size="90,44" font="Description" halign="center" valign="center"/>
+        <widget name="key5" position="90,80" size="90,44" font="Description" halign="center" valign="center"/>
+        <widget name="key6" position="180,80" size="90,44" font="Description" halign="center" valign="center"/>
+        <widget name="key7" position="0,160" size="90,44" font="Description" halign="center" valign="center"/>
+        <widget name="key8" position="90,160" size="90,44" font="Description" halign="center" valign="center"/>
+        <widget name="key9" position="180,160" size="90,44" font="Description" halign="center" valign="center"/>
+        <widget name="help1" position="0,240" size="90,44" font="Description" halign="center" valign="center"/>
+        <widget name="key0" position="90,240" size="90,44" font="Description" halign="center" valign="center"/>
+        <widget name="help2" position="180,240" size="90,44" font="Description" halign="center" valign="center"/>
+    </screen>
+
+    <!-- .../python/Screens/ParentalControlSetup.py -->
+
+    <screen name="ParentalControlSetup" title="Parental control setup" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/user-lock.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="config" position="350,110" size="1230,440" font="Body" itemHeight="44" secondfont="ConfigList" scrollbarMode="showOnDemand"/>
+        <panel name="TemplateSimpleDivided2To1"/>
+    </screen>
+
+    <!-- .../python/Screens/PluginBrowser.py -->
+
+    <screen name="PluginBrowser" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <panel name="TemplateSimple"/>
+        <panel name="ButtonsPrevNext"/>
+        <ePixmap pixmap="icons/panel/puzzle-piece.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="list" position="350,110" size="1230,660" itemHeight="132" scrollbarMode="showOnDemand"/>
+    </screen>
+
+    <screen name="PluginDownloadBrowser" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/puzzle-piece.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="text" position="350,110" size="1230,44" font="Body" halign="center" valign="center"/>
+        <widget name="list" position="350,110" size="1230,660" font="Body" itemHeight="88" scrollbarMode="showOnDemand"/>
+        <panel name="TemplateSimple"/>
+    </screen>
+
+    <screen name="PluginBrowserSummary" flags="wfNoBorder" position="0,0" size="0,0"/>
+
+    <!-- .../python/Screens/PVRState.py -->
+
+    <screen name="PVRState" flags="wfNoBorder" position="80,80" size="60,60" zPosition="99" backgroundColor="Transp">
+        <widget name="state" position="0,0" size="60,60" font="Title" halign="center" valign="center" />
+    </screen>
+
+    <screen name="TimeshiftState" flags="wfNoBorder" position="center,center" size="120,120" zPosition="99" backgroundColor="Transp">
+        <panel name="PVRState"/>
+    </screen>
+
+    <!-- .../python/Screens/Rc.py -->
+
+
+
+
+    <!-- .../python/Screens/RecordPaths.py -->
+
+    <screen name="RecordPathsSettings" title="Recording paths" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/folder-open.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="config" position="350,110" size="1230,440" font="Body" itemHeight="44" secondfont="ConfigList"/>
+        <panel name="TemplateSimpleDivided2To1"/>
+    </screen>
+
+    <!-- .../python/Screens/Satconfig.py -->
+
+    <screen name="NimSetup" title="Setup ..." flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/satellite-dish.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="config" position="350,110" size="1230,440" font="Body" itemHeight="44" secondfont="ConfigList" scrollbarMode="showOnDemand"/>
+        <widget name="description" position="350,600" size="1230,170" font="Description"/>
+        <panel name="TemplateSimpleDivided2To1"/>
+    </screen>
+
+    <screen name="NimSelection" title="Choose Tuner" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/satellite-dish.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget source="nimlist" render="Listbox" position="350,110" size="1230,660">
+            <convert type="TemplatedMultiContent">
+                {
+                    "template": [
+                        MultiContentEntryText(pos = (15,6), size = (1200,44), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1), # nim name
+                        MultiContentEntryText(pos = (15,50), size = (1200,76), font = 1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 2), # settings
+                    ],
+                    "fonts": [ gFont("Regular", 32), gFont("Light", 27) ],
+                    "itemHeight": 132
+                }
+            </convert>
+        </widget>
+        <panel name="TemplateSimple"/>
+    </screen>
+
+    <screen name="SelectSatsEntryScreen" title="Select satellites" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/satellite-dish.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="list" position="350,110" size="1230,440" font="Body" itemHeight="44"/>
+        <widget name="hint" position="350,600" size="1230,170" font="Description"/>
+        <panel name="TemplateSimpleDivided2To1"/>
+    </screen>
+
+    <!-- .../python/Screens/ScanSetup.py -->
+
+    <screen name="ScanSetup" title="Manual Scan" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/search.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="config" position="350,110" size="1230,440" font="Body" itemHeight="44" secondfont="ConfigList" scrollbarMode="showOnDemand"/>
+        <widget name="introduction" position="350,600" size="1230,170" font="Description" halign="center" valign="center"/>
+        <panel name="TemplateSimpleDivided2To1"/>
+    </screen>
+
+    <screen name="ScanSimple" title="Automatic Scan" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/search.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="config" position="350,110" size="1230,440" font="Body" itemHeight="44" secondfont="ConfigList" scrollbarMode="showOnDemand"/>
+        <widget name="footer" position="350,600" size="1230,170" font="Description"/> <!-- add explanatory text to source -->
+        <panel name="TemplateSimpleDivided2To1"/>
+    </screen>
+
+    <!-- .../python/Screens/ScreenSaver.py -->
+
+    <screen name="Screensaver" flags="wfNoBorder" position="fill" backgroundColor="BG">
+        <widget name="picture" pixmap="icons/dummy.png" position="0,0" size="0,0" alphatest="blend"/>
+    </screen>
+
+    <!-- .../python/Screens/ServiceInfo.py --> <!-- controlled by ServiceInfo parameters and font alias -->
+
+    <screen name="ServiceInfo" title="Service info" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/info-square.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="infolist" position="350,110" size="1230,660" scrollbarMode="showOnDemand" selectionDisabled="1"/>
+        <panel name="TemplateSimple"/>
+    </screen>
+
+    <screen name="ServiceInfoSimple" title="Service info" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/info-square.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="infolist" position="350,110" size="1230,660" scrollbarMode="showOnDemand" selectionDisabled="1"/>
+        <panel name="TemplateSimple"/>
+    </screen>
+
+    <!-- .../python/Screens/Setup.py -->
+
+    <screen name="Setup" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/sliders-h.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="config" position="350,110" size="1230,440" font="Body" itemHeight="44" secondfont="ConfigList" scrollbarMode="showOnDemand"/>
+        <widget name="description" position="350,600" size="1230,170" font="Description"/>
+        <widget name="HelpWindow" position="185,center" size="270,280"/>
+        <panel name="TemplateSimpleDivided2To1"/>
+    </screen>
+
+    <screen name="SetupSummary" flags="wfNoBorder" position="0,0" size="0,0"/>
+
+    <!-- .../python/Screens/ServiceScan.py -->
+
+    <screen name="ServiceScan" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <panel name="TemplateSimpleDivided1To2"/>
+        <ePixmap pixmap="icons/panel/search.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="scan_state" position="350,110" size="1230,44" font="Body" valing="center"/>
+        <widget name="scan_progress" position="350,162" size="1230,28" borderWidth="1"/>
+        <widget name="network" position="350,204" size="1000,38" font="Description" valing="center"/>
+        <widget name="pass" position="1400,204" size="180,38" font="Description" halign="right" valing="center"/>
+        <widget name="transponder" position="350,242" size="1230,38" font="Description" valing="center"/>
+        <widget name="servicelist" position="350,330" size="1230,440" font="Body" itemHeight="44" textOffset="15,0" scrollbarMode="showOnDemand" selectionDisabled="1"/>
+    </screen>
+
+    <screen name="ServiceScanSummary" flags="wfNoBorder" position="0,0" size="0,0">
+        <widget name="Title" position="0,0" size="0,0"/>
+        <widget name="scan_progress" position="0,0" size="0,0"/>
+        <widget name="Service" position="0,0" size="0,0"/>
+    </screen>
+
+    <!-- .../python/Screens/SimpleSummary.py -->
+
+    <screen name="SimpleSummary" flags="wfNoBorder" position="0,0" size="0,0"/>
+
+    <!-- .../python/Screens/SoftcamSetup.py -->
+
+    <screen name="SoftcamSetup" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/key.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="config" position="350,110" size="1230,170" font="Body" itemHeight="44" secondfont="ConfigList" scrollbarMode="showOnDemand"/>
+        <widget name="info" position="350,330" size="1230,440" font="Console"/>
+        <panel name="TemplateSimpleDivided1To2"/>
+    </screen>
+
+    <!-- .../python/Screens/SoftwareUpdate.py -->
+
+    <screen name="UpdatePlugin" title="Software update" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/sync-alt.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget source="package" render="Label" position="350,110" size="1230,44" font="Body" valign="center"/>
+        <widget source="status" render="Label" position="350,154" size="1230,44" font="Body" valign="center"/>
+        <widget name="slider" position="350,250" size="1230,28"/>
+        <widget name="activityslider" position="350,294" size="1230,28" borderWidth="1"/>
+        <panel name="TemplateSimpleDivided2To1"/>
+    </screen>
+
+    <!-- .../python/Screens/Standby.py -->
+
+    <screen name="Standby" flags="wfNoBorder" position="fill" backgroundColor="BG">
+        <ePixmap pixmap="icons/other/standby.png" position="center,center" size="500,500" alphatest="blend"/>
+    </screen>
+
+    <screen name="StandbySummary" flags="wfNoBorder" position="0,0" size="0,0"/>
+
+    <screen name="QuitMainloopScreen" flags="wfNoBorder" position="fill" backgroundColor="BG">
+        <widget name="text" position="center,center" size="720,480" font="Title" foregroundColor="ThemeFG" halign="center" valign="center"/>
+    </screen>
+
+    <!-- .../python/Screens/StreamingClientsInfo.py -->
+
+    <screen name="StreamingClientsInfo" title="Streaming clients info" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/info-square.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="info" position="350,110" size="1230,44" font="Body" halign="center" valign="center"/>
+        <widget name="menu" position="350,110" size="1230,660" font="Body" itemHeight="44" textOffset="15,0" scrollbarMode="showOnDemand" transparent="1"/> <!-- untested -->
+        <panel name="TemplateSimple"/>
+    </screen>
+
+    <!-- .../python/Screens/TaskView.py -->
+
+    <screen name="JobView" title="Job overview" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/hammer.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="config" position="350,110" size="1230,170" font="Body" itemHeight="44" secondfont="ConfigList" scrollbarMode="showOnDemand"/>
+        <widget source="job_name" render="Label" position="350,330" size="1230,44" font="Body" valign="center"/>
+        <widget source="job_task" render="Label" position="350,370" size="1230,44" font="Body" valign="center"/>
+        <widget source="job_progress" render="Progress" position="350,456" size="1060,28" borderWidth="1"/>
+        <widget source="job_progress" render="Label" position="1420,450" size="160,44" font="Body" valign="center">
+            <convert type="ProgressToText"/>
+        </widget>
+        <widget source="job_status" render="Label" position="350,530" size="1230,44" font="Body" valign="center"/>
+        <panel name="TemplateSimpleDivided1To2"/>
+    </screen>
+
+    <!-- .../python/Screens/TextBox.py -->
+
+    <screen name="TextBox" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/text.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="text" position="350,110" size="1230,660" font="Body"/> <!-- ????? problem with size in "available packets" -->
+        <panel name="TemplateSimple"/>
+    </screen>
+
+    <!-- .../python/Screens/TimeDateInput.py -->
+
+    <screen name="TimeDateInput" title="Date/time input" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/calendar-alt.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="config" position="350,110" size="1230,440" font="Body" itemHeight="44" secondfont="ConfigList" scrollbarMode="showOnDemand"/>
+        <panel name="TemplateSimpleDivided2To1"/>
+    </screen>
+
+    <!-- .../python/Screens/TimerEdit.py -->
+
+    <screen name="TimerEditList" title="Timer overview" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <panel name="TemplateSimpleDivided2To1"/>
+        <ePixmap pixmap="icons/panel/stopwatch.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="timerlist" position="350,110" size="1230,440" setServiceNameFont="Body" setEventNameFont="Body" setFont="LM" itemHeight="88"
+                rowSplit="44" iconMargin="30" satPosLeft="400" backupColor="ThemeBG" backupColorSel="ThemeFG"/>
+        <widget name="description" position="350,600" size="1230,170" font="Description"/>
+    </screen>
+
+    <!-- .../python/Screens/TimerEntry.py -->
+
+    <screen name="TimerEntry" title="Timer entry" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <panel name="TemplateSimple"/>
+        <ePixmap pixmap="icons/panel/stopwatch.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="config" position="350,110" size="1230,660" font="Body" itemHeight="44" secondfont="ConfigList" scrollbarMode="showOnDemand"/>
+    </screen>
+
+    <screen name="TimerLog" title="Timer log" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <panel name="TemplateSimpleDivided2To1"/>
+        <ePixmap pixmap="icons/panel/stopwatch.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="loglist" position="350,110" size="1230,440" font="Body" itemHeight="44" textOffset="15,0" scrollbarMode="showOnDemand"/>
+        <widget name="logentry" position="350,600" size="1230,170" font="Console"/>
+    </screen>
+
+    <!-- .../python/Screens/TimerSelection.py -->
+
+    <screen name="TimerSelection" title="Timer selection" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <panel name="TemplateSimple"/>
+        <ePixmap pixmap="icons/panel/stopwatch.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="timerlist" position="350,110" size="1230,660" setServiceNameFont="Body" setEventNameFont="Body" setFont="LM" itemHeight="88"
+                rowSplit="44" iconMargin="30" satPosLeft="400" backupColor="ThemeBG" backupColorSel="ThemeFG"/>
+    </screen>
+
+    <!-- .../python/Screens/UnhandledKey.py -->
+
+    <screen name="UnhandledKey" flags="wfNoBorder" position="center,center" size="120,120" backgroundColor="BG" zPosition="99">
+        <widget name="UnhandledKeyPixmap" pixmap="icons/other/hand-paper_small.png" position="0,0" size="120,120" alphatest="blend"/>
+    </screen>
+
+    <!-- .../python/Screens/VirtualKeyBoard.py -->
+
+    <screen name="VirtualKeyBoard" title="Virtual keyboard" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/keyboard.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="prompt" position="360,110" size="1230,44" font="Body" valign="center" noWrap="1"/>
+        <eLabel position="350,190" size="1230,44" backgroundColor="White"/>
+        <widget name="text" position="351,191" size="1228,42" font="Body" valign="center" halign="center" noWrap="1" zPosition="10"/>
+        <widget name="list" position="489,330" size="952,340" selectionDisabled="1" transparent="1"/>
+        <widget name="locale" position="350,730" size="800,44" font="Body" valign="center"/>
+        <widget name="mode" position="1420,730" size="160,44" font="Body" valign="center" halign="right"/>
+        <widget name="language" position="0,0" size="0,0" font="Body"/>
+        <panel name="TemplateSimpleDivided1To2"/>
+    </screen>
+
+    <!-- .../python/Screens/Volume.py -->
+
+    <screen name="Volume" flags="wfNoBorder" position="40,center" size="90,320" backgroundColor="ThemeBG" zPosition="99">
+        <eLabel position="10,10" size="e-20,e-20" backgroundColor="BG" zPosition="-20"/>
+        <widget name="Volume" position="35,35" size="20,210" orientation="orBottomToTop"/>
+        <widget name="VolumeText" position="25,255" size="40,44" font="LM" halign="center" valign="center"/>
+    </screen>
+
+
+    <!-- pre-installed plugins -->
+
+
+    <!-- .../python/Plugins/Extensions/DVDBurn/ProjectSettings.py --> <!-- more screens missing -->
+
+    <screen name="FileBrowser" title="DVD file browser" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/file-alt.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="filelist" position="350,110" size="1230,660" font="Body" itemHeight="44" scrollbarMode="showOnDemand"/>
+        <panel name="TemplateSimpleDivided1To2"/>
+    </screen>
+
+    <!-- .../python/Plugins/Extensions/GraphMultiEPG/GraphMultiEpg.py -->
+
+    <screen name="GraphMultiEPG" title="Electronic Program Guide" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <panel name="TemplateGraphMultiEpg"/>
+        <panel name="ButtonsMenuInfo"/>
+        <eLabel position="20,110" size="1560,44" backgroundColor="#202020" zPosition="-5"/>
+        <widget name="timeline_text" position="20,110" size="1560,44" font="RM" itemHeight="44" backgroundColor="#202020" foregroundColor="FG" transparent="1"/>
+        <widget name="list" position="20,156" size="1562,616" backgroundColor="BG" scrollbarMode="showNever" enableWrapAround="1"
+                ServiceBackgroundColor="#202020" ServiceBackgroundColorSelected="#303030" ServiceBackgroundColorRecording="#303030"
+                ServiceForegroundColor="FG" ServiceForegroundColorSelected="ThemeFG" ServiceForegroundColorRecording="Red"
+                ServiceFont="Body" ServiceNamePadding="15" ServiceBorderWidth="2" ServiceBorderColor="BG"
+                EntryBackgroundColor="#202020" EntryBackgroundColorSelected="ThemeBG" EntryBackgroundColorNow="#303030"
+                EntryForegroundColor="FG" EntryForegroundColorSelected="FG" EntryForegroundColorNow="FG" EntryForegroundColorSelectedRec="Red"
+                EntryFont="RM" EventNamePadding="15" EventBorderWidth="2" EntryBorderColor="BG"
+                RecIconSize="28" IconXPadding="4" IconYPadding="4"/>
+        <widget name="timeline0" pixmap="icons/timeline.png" position="0,150" size="1,620" zPosition="5"/>
+        <widget name="timeline1" pixmap="icons/timeline.png" position="0,150" size="1,620" zPosition="5"/>
+        <widget name="timeline2" pixmap="icons/timeline.png" position="0,150" size="1,620" zPosition="5"/>
+        <widget name="timeline3" pixmap="icons/timeline.png" position="0,150" size="1,620" zPosition="5"/>
+        <widget name="timeline4" pixmap="icons/timeline.png" position="0,150" size="1,620" zPosition="5"/>
+        <widget name="timeline5" pixmap="icons/timeline.png" position="0,150" size="1,620" zPosition="5"/>
+        <widget name="timeline_now" pixmap="icons/timeline-now.png" position="0,150" size="1,620" zPosition="10" alphatest="blend"/>
+    </screen>
+
+    <screen name="GraphMultiEPGList" title="Electronic Program Guide" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <panel name="TemplateGraphMultiEpg"/>
+        <panel name="ButtonsMenuInfo"/>
+        <eLabel position="20,110" size="1560,44" backgroundColor="#202020" zPosition="-5"/>
+        <widget name="timeline_text" position="20,110" size="1560,44" font="RM" itemHeight="44" backgroundColor="#202020" foregroundColor="FG" transparent="1"/>
+        <widget name="list" position="20,156" size="1562,616" backgroundColor="BG" scrollbarMode="showNever" enableWrapAround="1"
+                ServiceBackgroundColor="#202020" ServiceBackgroundColorSelected="#303030" ServiceBackgroundColorRecording="#303030"
+                ServiceForegroundColor="FG" ServiceForegroundColorSelected="ThemeFG" ServiceForegroundColorRecording="Red"
+                ServiceFont="Body" ServiceNamePadding="15" ServiceBorderWidth="2" ServiceBorderColor="BG"
+                EntryBackgroundColor="#202020" EntryBackgroundColorSelected="ThemeBG" EntryBackgroundColorNow="#303030"
+                EntryForegroundColor="FG" EntryForegroundColorSelected="FG" EntryForegroundColorNow="FG" EntryForegroundColorSelectedRec="Red"
+                EntryFont="RM" EventNamePadding="15" EventBorderWidth="2" EntryBorderColor="BG"
+                RecIconSize="28" IconXPadding="4" IconYPadding="4"/>
+        <widget name="timeline0" pixmap="icons/timeline.png" position="0,150" size="1,620" zPosition="5"/>
+        <widget name="timeline1" pixmap="icons/timeline.png" position="0,150" size="1,620" zPosition="5"/>
+        <widget name="timeline2" pixmap="icons/timeline.png" position="0,150" size="1,620" zPosition="5"/>
+        <widget name="timeline3" pixmap="icons/timeline.png" position="0,150" size="1,620" zPosition="5"/>
+        <widget name="timeline4" pixmap="icons/timeline.png" position="0,150" size="1,620" zPosition="5"/>
+        <widget name="timeline5" pixmap="icons/timeline.png" position="0,150" size="1,620" zPosition="5"/>
+        <widget name="timeline_now" pixmap="icons/timeline-now.png" position="0,150" size="1,620" zPosition="10" alphatest="blend"/>
+    </screen>
+
+    <!-- .../python/Plugins/Extensions/GraphMultiEPG/GraphMultiEpgSetup.py -->
+
+    <screen name="GraphMultiEpgSetup" title="GraphMultiEpg Settings" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/sliders-h.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="config" position="350,110" size="1230,440" font="Body" itemHeight="44" secondfont="ConfigList" scrollbarMode="showOnDemand"/>
+        <panel name="TemplateSimpleDivided2To1"/>
+    </screen>
+
+    <!-- .../python/Plugins/Extensions/MediaPlayer/plugin.py -->
+
+    <screen name="MoviePlayer" flags="wfNoBorder" position="center,840" size="1920,240" backgroundColor="Transp"> <!-- this is actually the infobar -->
+        <panel name="TemplateMediaPlayerInfoBar"/>
+    </screen>
+
+    <screen name="MediaPlayer" title="Media player" flags="wfNoBorder" position="center,center" size="1920,1080" backgroundColor="Grey">
+        <panel name="TemplateSpecial"/>
+        <eLabel position="160+330,100+292" size="e-330,10" backgroundColor="Grey"/>
+        <widget name="coverArt" pixmap="icons/panel/film-alt.png" position="160+40,center" size="240,240" alphatest="blend"/>
+
+        <widget name="titletext" position="160+350,100+110" size="160,38" font="Description" valign="center"/>
+        <widget name="title" position="160+550,100+110" size="800,38" font="Description" valign="center"/>
+        <widget name="artisttext" position="160+350,100+148" size="160,38" font="Description" valign="center"/>
+        <widget name="artist" position="160+550,100+148" size="550,38" font="Description" valign="center"/>
+        <widget name="albumtext" position="160+350,100+186" size="160,38" font="Description" valign="center"/>
+        <widget name="album" position="160+550,100+186" size="550,38" font="Description" valign="center"/>
+
+        <widget name="yeartext" position="160+1150,100+148" size="160,38" font="Description" valign="center"/>
+        <widget name="year" position="160+1350,100+148" size="230,38" font="Description" valign="center"/>
+        <widget name="genretext" position="160+1150,100+186" size="160,38" font="Description" valign="center"/>
+        <widget name="genre" position="160+1350,100+186" size="230,38" font="Description" valign="center"/>
+
+        <widget source="session.CurrentService" render="Label" position="160+350,100+234" size="120,38" font="Description" valign="center" halign="right">
+            <convert type="ServicePosition">Position</convert>
+        </widget>
+        <widget source="session.CurrentService" render="Progress" position="160+490,100+247" size="900,12" foregroundColor="FG" borderColor="FG" borderWidth="2">
+            <convert type="ServicePosition">Position</convert>
+        </widget>
+        <widget name="PositionGauge" position="160+490,100+247" size="900,8" zPosition="5" transparent="1"/>
+        <widget source="session.CurrentService" render="Label" position="160+1410,100+234" size="120,38" font="Description" valign="center" halign="left">
+            <convert type="ServicePosition">Remaining</convert>
+        </widget>
+        <widget name="repeat" position="160+1552,100+239" size="28,28" pixmaps="icons/repeat-off.png,icons/repeat.png" alphatest="blend"/>
+
+        <widget name="filelist" position="160+350,100+322" size="605,396" font="Body" itemHeight="44" scrollbarMode="showOnDemand"/>
+        <widget name="playlist" position="160+975,100+322" size="605,396" font="Body" itemHeight="44" scrollbarMode="showOnDemand" selectionDisabled="1"/>
+
+        <widget name="currenttext" position="160+350,100+732" size="1000,38" font="Description" valign="center"/>
+    </screen>
+
+    <!-- .../python/Plugins/Extensions/MediaPlayer/settings.py -->
+
+    <screen name="MediaPlayerSettings" title="Edit settings" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/sliders-h.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="config" position="350,110" size="1230,440" font="Body" itemHeight="44" secondfont="ConfigList" scrollbarMode="showOnDemand"/>
+        <panel name="TemplateSimpleDivided2To1"/>
+    </screen>
+
+    <!-- .../python/Plugins/SystemPlugins/CableScan/plugin.py -->
+
+    <screen name="CableScanScreen" title="Cable Scan" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/search.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="config" position="350,110" size="1230,440" font="Body" itemHeight="44" secondfont="ConfigList" scrollbarMode="showOnDemand"/>
+        <widget name="introduction" position="350,600" size="1230,170" font="Description" halign="center" valign="center"/>
+        <panel name="TemplateSimpleDivided2To1"/>
+    </screen>
+
+    <screen name="CableScanStatus" title="Cable Scan" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/search.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="scan_state" position="350,110" size="1230,44" font="Body" itemHeight="44"/>
+        <widget name="scan_progress" position="350,156" size="1230,28" borderWidth="1"/>
+        <panel name="TemplateSimple"/>
+    </screen>
+
+    <!-- .../python/Plugins/SystemPlugins/DeviceManager/HddInfo.py -->
+
+    <screen name="HddInfo" title="Device Details" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/hdd.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="model" position="350,110" size="1230,44" font="Body" valign="center"/>
+        <widget name="serial" position="350,150" size="1230,44" font="Body" valign="center"/>
+        <widget name="firmware" position="350,190" size="1230,44" font="Body" valign="center"/>
+        <widget name="cylinders" position="350,230" size="1230,44" font="Body" valign="center"/>
+        <widget name="heads" position="350,270" size="1230,44" font="Body" valign="center"/>
+        <widget name="sectors" position="350,310" size="1230,44" font="Body" valign="center"/>
+        <widget name="readDisk" position="350,350" size="1230,44" font="Body" valign="center"/>
+        <widget name="readCache" position="350,390" size="1230,44" font="Body" valign="center"/>
+        <widget name="temp" position="350,430" size="1230,44" font="Body" valign="center"/>
+        <widget name="config" position="350,600" size="1230,170" font="Body" itemHeight="44" secondfont="ConfigList" scrollbarMode="showOnDemand"/>
+        <panel name="TemplateSimpleDivided2To1"/>
+    </screen>
+
+    <!-- .../python/Plugins/SystemPlugins/DeviceManager/HddMount.py -->
+
+    <screen name="HddMountDevice" title="Mountpoints" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/hdd.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="menu" position="350,110" size="1230,660" font="Body" itemHeight="44" textOffset="15,0" scrollbarMode="showOnDemand"/>
+        <panel name="TemplateSimple"/>
+    </screen>
+
+    <screen name="HddFastRemove" title="Fast Mounted Remove" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/hdd.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="text" position="350,110" size="1230,44" font="Body" halign="center" valign="center"/>
+        <widget source="menu" render="Listbox" position="350,110" size="1230,660" transparent="1">
+            <convert type="TemplatedMultiContent">
+                {
+                    "template": [
+                        MultiContentEntryText(pos = (15,3),  size = (1200,44), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1),
+                        MultiContentEntryText(pos = (15,47), size = (1200,38), font = 1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 2),
+                    ],
+                    "fonts": [ gFont("Regular", 31), gFont("Light", 27) ],
+                    "itemHeight": 88
+                }
+            </convert>
+        </widget>
+        <panel name="TemplateSimple"/>
+    </screen>
+
+    <!-- .../python/Plugins/SystemPlugins/DeviceManager/ExtraActionBox.py -->
+
+    <screen name="ExtraActionBox" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/hammer.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="message" position="350,110" size="1230,440" font="Body"/>
+        <panel name="TemplateSimple"/>
+    </screen>
+
+    <!-- .../python/Plugins/SystemPlugins/DeviceManager/HddPartitions.py -->
+
+    <screen name="HddPartitions" title="Partitions" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/hdd.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="label_disk" position="350,110" size="1230,44" font="Body" valign="center"/>
+        <widget source="menu" render="Listbox" position="350,330" size="1230,440">
+            <convert type="TemplatedMultiContent">
+                {
+                    "template": [
+                        MultiContentEntryText(pos = (15,0),   size = (950,44), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1), # description
+                        MultiContentEntryText(pos = (1000,0), size = (215,44), font = 0, flags = RT_HALIGN_RIGHT|RT_VALIGN_CENTER, text = 2) # size
+                    ],
+                    "fonts": [ gFont("Regular", 31) ],
+                    "itemHeight": 44
+                }
+            </convert>
+        </widget>
+        <panel name="TemplateSimpleDivided1To2"/>
+    </screen>
+
+    <!-- .../python/Plugins/SystemPlugins/DeviceManager/HddSetup.py -->
+
+    <screen name="HddSetup" title="Device Manager" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/hdd.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget source="menu" render="Listbox" position="350,110" size="1230,660">
+            <convert type="TemplatedMultiContent">
+                {
+                    "template": [
+                        MultiContentEntryText(pos = (15,0),   size = (950,44), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1), # model
+                        MultiContentEntryText(pos = (1000,0), size = (215,44), font = 0, flags = RT_HALIGN_RIGHT|RT_VALIGN_CENTER, text = 2) # size
+                    ],
+                    "fonts": [ gFont("Regular", 30) ],
+                    "itemHeight": 44
+                }
+            </convert>
+        </widget>
+        <panel name="TemplateSimple"/>
+    </screen>
+
+    <!-- .../python/Plugins/SystemPlugins/DiseqcTester/plugin.py -->
+
+    <screen name="DiseqcTester" title="DiSEqC Tester" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <panel name="TemplateSimple"/>
+        <eLabel position="330,300" size="e-330,10" backgroundColor="Transp" zPosition="-20"/>
+        <ePixmap pixmap="icons/panel/stethoscope.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="Failed" position="350,106" size="320,44" font="Body" valign="center"/>
+        <widget name="Succeeded" position="350,150" size="320,44" font="Body" valign="center"/>
+        <widget name="With_errors" position="350,194" size="320,44" font="Body" valign="center"/>
+        <widget name="Not_tested" position="350,238" size="320,44" font="Body" valign="center"/>
+        <widget source="failed_counter" render="Label" position="670,106" size="80,44" font="Body" valign="center" halign="right"/>
+        <widget source="succeeded_counter" render="Label" position="670,150" size="80,44" font="Body" valign="center" halign="right"/>
+        <widget source="witherrors_counter" render="Label" position="670,194" size="80,44" font="Body" valign="center" halign="right"/>
+        <widget source="untestable_counter" render="Label" position="670,238" size="80,44" font="Body" valign="center" halign="right"/>
+        <widget name="Overall_progress" position="860,106" size="320,44" font="Body" valign="center"/>
+        <widget name="Progress" position="860,150" size="320,44" font="Body" valign="center"/>
+        <widget source="overall_progress" render="Progress" position="1180,114" size="400,28" borderWidth="1"/>
+        <widget source="sub_progress" render="Progress" position="1180,158" size="400,28" borderWidth="1"/>
+        <widget source="CmdText" render="Label" position="860,194" size="720,88" font="Body" valign="bottom"/>
+        <widget source="progress_list" render="Listbox" position="350,330" size="1230,440" scrollbarMode="showOnDemand">
+            <convert type="TemplatedMultiContent">
+                {
+                    "template": [
+                        MultiContentEntryText(pos = (15,0),  size = (800,44), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1), # index name
+                        MultiContentEntryText(pos = (870,0), size = (320,44), font = 0, flags = RT_HALIGN_RIGHT|RT_VALIGN_CENTER, text = 2) # status
+                    ],
+                    "fonts": [ gFont("Regular", 31) ],
+                    "itemHeight": 44
+                }
+            </convert>
+        </widget>
+    </screen>
+
+    <!-- .../python/Plugins/SystemPlugins/FastScan/plugin.py -->
+
+    <screen name="FastScanScreen" title="Fast Scan" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/search.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="config" position="350,110" size="1230,440" font="Body" itemHeight="44" secondfont="ConfigList" scrollbarMode="showOnDemand"/>
+        <widget name="introduction" position="350,600" size="1230,170" font="Description" halign="center" valign="center"/>
+        <panel name="TemplateSimpleDivided2To1"/>
+    </screen>
+
+    <screen name="FastScanStatus" title="Fast Scan" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/search.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="scan_state" position="350,110" size="1230,44" font="Body" itemHeight="44"/>
+        <widget name="scan_progress" position="350,156" size="1230,28" borderWidth="1"/>
+        <panel name="TemplateSimple"/>
+    </screen>
+
+    <!-- .../python/Plugins/SystemPlugins/HdmiCEC/plugin.py -->
+
+    <screen name="HdmiCECSetupScreen" title="HDMI-CEC Setup" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/sliders-h.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="config" position="350,110" size="1230,440" font="Body" itemHeight="44" secondfont="ConfigList" scrollbarMode="showOnDemand"/>
+        <widget source="current_address" render="Label" position="350,600" size="1230,38" font="Description"/>
+        <widget source="fixed_address" render="Label" position="350,638" size="1230,38" font="Description"/>
+        <panel name="TemplateSimpleDivided2To1"/>
+    </screen>
+
+    <!-- .../python/Plugins/SystemPlugins/MPHelp/MPHelp.py -->
+
+    <screen name="MPHelp" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/hands-helping.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="detailtext" position="350,110" size="1230,660" font="Body"/>
+        <panel name="TemplateSimple"/>
+    </screen>"
+
+    <!-- .../python/Plugins/SystemPlugins/NetworkBrowser/MountEdit.py -->
+
+    <screen name="AutoMountEdit" title="MountEdit" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <panel name="TemplateSimpleDivided2To1"/>
+        <ePixmap pixmap="icons/panel/map-marker-alt.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="config" position="350,110" size="1230,440" font="Body" itemHeight="44" secondfont="ConfigList" scrollbarMode="showOnDemand"/>
+        <widget source="introduction" render="Label" position="0,0" size="0,0"/> <!-- hidden -->
+        <widget name="VKeyIcon" pixmap="buttons/key_text.png" position="196,608" size="40,28" alphatest="blend"/>
+        <widget name="HelpWindow" position="185,center" size="270,280"/>
+    </screen>
+
+    <!-- .../python/Plugins/SystemPlugins/NetworkBrowser/MountManager.py -->
+
+    <screen name="AutoMountManager" title="MountManager" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/map-marker-alt.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget source="config" render="Listbox" position="350,110" size="1230,440">
+            <convert type="TemplatedMultiContent">
+                {
+                    "template": [ MultiContentEntryText(pos = (15,0), size = (1200,44), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0) ], # menu
+                    "fonts": [ gFont("Regular", 31) ],
+                    "itemHeight": 44
+                }
+            </convert>
+        </widget>
+        <widget source="config" render="Listbox" position="350,600" size="1230,170" scrollbarMode="showNever" selectionDisabled="1">
+            <convert type="TemplatedMultiContent">
+                {
+                    "template": [ MultiContentEntryText(pos = (0,0), size = (1230,170), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP|RT_WRAP, text = 2) ], # description
+                    "fonts": [ gFont("Light", 27) ],
+                    "itemHeight": 170
+                }
+            </convert>
+        </widget>
+        <widget source="introduction" render="Label" position="0,0" size="0,0"/> <!-- hidden -->
+        <panel name="TemplateSimpleDivided2To1"/>
+    </screen>
+
+    <!-- .../python/Plugins/SystemPlugins/NetworkBrowser/MountView.py -->
+
+    <screen name="AutoMountView" title="Mount view" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp"> <!-- fix me (test with a share) -->
+        <ePixmap pixmap="icons/panel/map-marker-alt.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget source="legend1" render="Label" position="350,110" size="400,44" font="Body" valign="center" halign="Left"/>
+        <widget source="legend2" render="Label" position="765,110" size="400,44" font="Body" valign="center" halign="center"/>
+        <widget source="legend3" render="Label" position="1180,110" size="400,44" font="Body" valign="center" halign="center"/>
+        <widget source="config" render="Listbox" position="350,170" size="1230,600">
+            <convert type="TemplatedMultiContent">
+                {
+                    "template": [
+                        MultiContentEntryPixmapAlphaBlend(pos = (15,1), size = (48,48), png = 0), # isMounted pixmap
+                        MultiContentEntryText(pos = (60,0),  size = (320,44), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1), # share name
+                        MultiContentEntryText(pos = (400,3), size = (320,34), font = 1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 2), # ip description
+                        MultiContentEntryText(pos = (750,3), size = (320,34), font = 1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 3), # dir description
+                        MultiContentEntryPixmapAlphaBlend(pos = (1100,9), size = (48,48), png = 4), # activepng pixmap
+                        MultiContentEntryPixmapAlphaBlend(pos = (1100,1), size = (48,48), png = 5), # mounttype pixmap
+                    ],
+                    "fonts": [ gFont("Regular", 31), gFont("Light", 27) ],
+                    "itemHeight": 44
+                }
+            </convert>
+        </widget>
+        <widget source="introduction" render="Label" position="0,0" size="0,0"/> <!-- hidden -->
+        <panel name="TemplateSimple"/>
+    </screen>
+
+    <!-- .../python/Plugins/SystemPlugins/NetworkBrowser/NetworkBrowser.py -->
+
+    <screen name="NetworkBrowser" title="Browse network neighbourhood" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/map-marker-alt.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget source="list" render="Listbox" position="350,110" size="1230,440">
+            <convert type="TemplatedMultiContent">
+                {
+                    "template": [
+                        MultiContentEntryPixmapAlphaBlend(pos = (15,15), size = (28,28), png = 1), # expandable/expanded/vertical line icon
+                        MultiContentEntryText(pos = (80,3),  size = (1000,44), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 2), # host name
+                        MultiContentEntryText(pos = (80,47), size = (500,38), font = 1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 3), # share name
+                        MultiContentEntryText(pos = (600,47), size = (500,38), font = 1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 4), # share description
+                        MultiContentEntryPixmapAlphaBlend(pos = (1100,15), size = (48,48), png = 5), # nfs/cifs icon
+                        MultiContentEntryPixmapAlphaBlend(pos = (1150,15), size = (48,48), png = 6), # isMounted icon
+                    ],
+                    "fonts": [ gFont("Regular", 31), gFont("Light", 27) ],
+                    "itemHeight": 88
+                }
+            </convert>
+        </widget>
+        <widget source="infotext" render="Label" position="350,600" size="1230,170" font="Description" halign="center" valign="center"/>
+        <panel name="TemplateSimpleDivided2To1"/>
+    </screen>
+
+    <screen name="ScanIP" title="Enter IP to scan..." flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/search.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="config" position="350,110" size="1230,440" font="Body" itemHeight="44" secondfont="ConfigList" scrollbarMode="showOnDemand"/>
+        <panel name="TemplateSimpleDivided2To1"/>
+    </screen>
+
+    <!-- .../python/Plugins/SystemPlugins/NetworkBrowser/UserDialog.py -->
+
+    <screen name="UserDialog" title="Enter user and password for host: " flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/user-friends.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="config" position="350,110" size="1230,440" font="Body" itemHeight="44" secondfont="ConfigList" scrollbarMode="showOnDemand"/>
+        <widget source="introduction" render="Label" position="0,0" size="0,0"/> <!-- hidden --> <!-- add green in source -->
+        <widget name="HelpWindow" position="185,center" size="270,280"/>
+        <widget name="VKeyIcon" pixmap="buttons/key_text.png" position="161,611" size="43,32" alphatest="blend"/>
+        <panel name="TemplateSimpleDivided2To1"/>
+    </screen>
+
+    <!-- .../python/Plugins/SystemPlugins/NetworkBrowser/UserManager.py -->
+
+    <screen name="UserManager" title="Usermanager" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/user-friends.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget source="config" render="Listbox" position="330,150" size="790,350">
+            <convert type="TemplatedMultiContent">
+                {
+                    "template": [
+                        MultiContentEntryPixmapAlphaBlend(pos = (15,6), size = (48,48), png = 3), # status pixmap
+                        MultiContentEntryText(pos = (80,10), size = (800,44), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0), # name
+                    ],
+                    "fonts": [ gFont("Regular", 31) ],
+                    "itemHeight": 60
+                }
+            </convert>
+        </widget>
+        <widget source="introduction" render="Label" position="350,600" size="1230,170" font="Description" halign="center" valign="center"/>
+        <panel name="TemplateSimpleDivided2To1"/>
+    </screen>
+
+    <!-- .../python/Plugins/SystemPlugins/OSD3DSetup/plugin.py -->
+
+    <screen name="OSD3DSetupScreen" title="OSD 3D setup" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/sliders-h.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="config" position="350,110" size="1230,660" font="Body" itemHeight="44" secondfont="ConfigList" scrollbarMode="showOnDemand"/>
+        <panel name="TemplateSimple"/>
+    </screen>
+
+    <!-- .../python/Plugins/SystemPlugins/PositionerSetup/plugin.py -->
+
+    <screen name="PositionerSetup" title="Positioner setup" flags="wfNoBorder" position="center,center" size="1920,1080" backgroundColor="Grey">
+        <panel name="TemplateSpecial"/>
+        <eLabel position="160+330,100+570" size="e-330,10" backgroundColor="Grey"/>
+        <ePixmap pixmap="icons/panel/compass.png" position="160+40,center" size="240,240" alphatest="blend"/>
+        <widget name="list" position="160+350,100+110" size="1230,396" font="Body" itemHeight="44"/>
+
+        <widget name="status_bar" position="160+350,100+506" size="1230,44" font="Body" halign="center" valign="center"/>
+        <widget name="rotorstatus" position="160+350,100+506" size="1230,44" font="Body" halign="center" valign="center"/>
+
+        <widget name="lock_state" position="0,0" size="0,0"/> <!-- hidden -->
+        <widget name="snr_percentage" position="0,0" size="0,0"/> <!-- hidden -->
+
+        <widget name="Lock" position="160+350,100+594" size="100,44" font="Body" valign="center"/>
+        <widget name="SNR" position="160+350,100+638" size="100,44" font="Body" valign="center"/>
+        <widget name="AGC" position="160+350,100+682" size="100,44" font="Body" valign="center"/>
+        <widget name="BER" position="160+350,100+726" size="100,44" font="Body" valign="center"/>
+
+        <widget name="lock_on" position="160+450,100+602" size="28,28" pixmap="buttons/lock_on.png" alphatest="blend"/>
+        <widget name="lock_off" position="160+450,100+602" size="28,28" pixmap="buttons/lock_off.png" alphatest="blend"/>
+        <widget name="snr_bar" position="160+450,100+646" size="320,28" borderWidth="1"/>
+        <widget name="agc_bar" position="160+450,100+690" size="320,28" borderWidth="1"/>
+        <widget name="ber_bar" position="160+450,100+734" size="320,28" borderWidth="1"/>
+
+        <widget name="snr_db" position="160+810,100+638" size="150,44" font="Body" valign="center"/>
+        <widget name="agc_percentage" position="160+810,100+682" size="150,44" font="Body" valign="center"/>
+        <widget name="ber_value" position="160+810,100+726" size="150,44" font="Body" valign="center"/>
+
+        <widget name="Frequency" position="160+1120,100+638" size="280,44" font="Body" valign="center"/>
+        <widget name="Symbolrate" position="160+1120,100+682" size="280,44" font="Body" valign="center"/>
+        <widget name="FEC" position="160+1120,100+726" size="280,44" font="Body" valign="center"/>
+
+        <widget name="frequency_value" position="160+1400,100+638" size="180,44" font="Body" valign="center"/>
+        <widget name="symbolrate_value" position="160+1400,100+682" size="180,44" font="Body" valign="center"/>
+        <widget name="fec_value" position="160+1400,100+726" size="180,44" font="Body" valign="center"/>
+    </screen>
+
+    <screen name="PositionerSetupLog" flags="wfNoBorder" position="center,center" size="1920,1080" backgroundColor="Grey">
+        <panel name="TemplateSpecial"/>
+        <ePixmap pixmap="icons/panel/satellite.png" position="160+40,center" size="240,240" alphatest="blend"/>
+        <widget name="list" position="160+350,100+110" size="1230,660" font="Body"/>
+    </screen>
+
+    <screen name="TunerScreen" title="Tune" flags="wfNoBorder" position="center,center" size="1920,1080" backgroundColor="Grey">
+        <ePixmap pixmap="icons/panel/satellite.png" position="160+40,200+320" size="240,240" alphatest="blend"/>
+        <widget name="config" position="160+350,100+110" size="1230,660" font="Body" itemHeight="44" secondfont="ConfigList" scrollbarMode="showOnDemand"/>
+        <widget name="introduction" position="0,0" size="0,0"/> <!-- hidden -->
+        <panel name="TemplateSpecial"/>
+    </screen>
+
+    <screen name="RotorNimSelection" title="select slot" flags="wfNoBorder" position="center,center" size="1920,1080" backgroundColor="Grey">
+        <panel name="TemplateSpecial"/>
+        <ePixmap pixmap="icons/panel/satellite.png" position="160+40,center" size="240,240" alphatest="blend"/>
+        <widget name="nimlist" position="160+350,100+110" size="1230,660" font="Body" itemHeight="44" textOffset="15,0" scrollbarMode="showOnDemand"/>
+    </screen>
+
+    <!-- .../python/Plugins/SystemPlugins/Satfinder/plugin.py -->
+
+    <screen name="Satfinder" title="Signal finder" flags="wfNoBorder" position="center,center" size="1920,1080" backgroundColor="Grey">
+        <panel name="TemplateSpecial"/>
+        <eLabel position="160+330,100+570" size="e-330,10" backgroundColor="Grey"/>
+        <ePixmap pixmap="icons/panel/satellite.png" position="160+40,center" size="240,240" alphatest="blend"/>
+        <widget name="config" position="160+350,100+110" size="1230,440" font="Body" itemHeight="44" secondfont="ConfigList" scrollbarMode="showOnDemand"/>
+        <widget name="introduction" position="0,0" size="0,0"/> <!-- hidden -->
+
+        <eLabel text="LOCK:" position="160+350,100+594" size="100,44" font="Body" valign="center"/>
+        <widget source="Frontend" render="Pixmap" pixmap="buttons/lock_on.png" position="160+450,100+602" size="28,28" alphatest="blend">
+            <convert type="FrontendInfo">LOCK</convert>
+            <convert type="ConditionalShowHide"/>
+        </widget>
+        <widget source="Frontend" render="Pixmap" pixmap="buttons/lock_off.png" position="160+450,100+602" size="28,28" alphatest="blend">
+            <convert type="FrontendInfo">LOCK</convert>
+            <convert type="ConditionalShowHide">Invert</convert>
+        </widget>
+
+        <eLabel text="SNR:" position="160+350,100+638" size="100,44" font="Body" valign="center"/>
+        <widget source="Frontend" render="Progress" position="160+450,100+646" size="320,28" borderWidth="1">
+            <convert type="FrontendInfo">SNR</convert>
+        </widget>
+        <widget source="Frontend" render="Label" position="160+810,100+638" size="150,44" font="Body" valign="center">
+            <convert type="FrontendInfo">SNRdB</convert>
+        </widget>
+
+        <eLabel text="AGC:" position="160+350,100+682" size="100,44" font="Body" valign="center"/>
+        <widget source="Frontend" render="Progress" position="160+450,100+690" size="320,28" borderWidth="1">
+            <convert type="FrontendInfo">AGC</convert>
+        </widget>
+        <widget source="Frontend" render="Label" position="160+810,100+682" size="150,44" font="Body" valign="center">
+            <convert type="FrontendInfo">AGC</convert>
+        </widget>
+
+        <eLabel text="BER:" position="160+350,100+726" size="100,44" font="Body" valign="center"/>
+        <widget source="Frontend" render="Progress" position="160+450,100+734" size="320,28" borderWidth="1">
+            <convert type="FrontendInfo">BER</convert>
+        </widget>
+        <widget source="Frontend" render="Label" position="160+810,100+726" size="150,44" font="Body" valign="center">
+            <convert type="FrontendInfo">BER</convert>
+        </widget>
+    </screen>
+
+    <!-- .../python/Plugins/SystemPlugins/SkinSelector/plugin.py -->
+
+    <screen name="SkinSelector" title="Select your Skin" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/sliders-h.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="SkinList" position="350,110" size="930,660" font="Body" itemHeight="44" textOffset="15,0" scrollbarMode="showOnDemand"/>
+        <widget name="Preview" position="1300,110" size="280,210" alphatest="blend"/>
+        <widget source="introduction" render="Label" position="0,0" size="0,0"/> <!-- hidden -->
+        <panel name="TemplateSimple"/>
+    </screen>
+
+    <!-- .../python/Plugins/SystemPlugins/SoftwareManager/plugin.py -->
+
+    <screen name="UpdatePluginMenu" title="Software management" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/sync-alt.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget source="menu" render="Listbox" position="350,110" size="1230,440">
+            <convert type="TemplatedMultiContent">
+                {
+                    "template": [ MultiContentEntryText(pos = (15,0), size = (1200,44), flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1) ], # menu
+                    "fonts": [ gFont("Regular", 31) ],
+                    "itemHeight": 44
+                }
+            </convert>
+        </widget>
+        <widget source="menu" render="Listbox" position="350,600" size="1230,170" scrollbarMode="showNever" selectionDisabled="1">
+            <convert type="TemplatedMultiContent">
+                {
+                    "template": [ MultiContentEntryText(pos = (0,0), size = (1230,170), flags = RT_HALIGN_LEFT|RT_VALIGN_TOP|RT_WRAP, text = 2) ], # description
+                    "fonts": [ gFont("Light", 27) ],
+                    "itemHeight": 170
+                }
+            </convert>
+        </widget>
+        <widget source="status" render="Label" position="0,0" size="0,0"/> <!-- hidden -->
+        <panel name="TemplateSimpleDivided2To1"/>
+    </screen>
+
+    <screen name="SoftwareManagerSetup" title="Software manager setup" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/sync-alt.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="config" position="350,110" size="1230,440" font="Body" itemHeight="44" secondfont="ConfigList" scrollbarMode="showOnDemand"/>
+        <widget source="introduction" render="Label" position="350,600" size="1230,170" font="Description"/>
+        <panel name="TemplateSimpleDivided2To1"/>
+    </screen>
+
+    <screen name="SoftwareManagerInfo" title="Software manager information" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/sync-alt.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget source="list" render="Listbox" position="350,110" size="1230,440" selectionDisabled="0">
+            <convert type="TemplatedMultiContent">
+                {
+                    "template": [ MultiContentEntryText(pos = (15,0), size = (1200,44), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0) ], # name
+                    "fonts": [ gFont("Regular", 31) ],
+                    "itemHeight": 44
+                }
+            </convert>
+        </widget>
+        <widget source="introduction" render="Label" position="350,600" size="1230,170" font="Description"/> <!-- remove from source (empty) -->
+        <panel name="TemplateSimple"/>
+    </screen>
+
+    <screen name="PluginManager" title="Extensions management" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp"> <!-- untested -->
+        <ePixmap pixmap="icons/panel/sync-alt.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget source="list" render="Listbox" position="350,110" size="1230,440">
+            <convert type="TemplatedMultiContent">
+                {
+                    "templates":
+                        {
+                            "default": (88, [
+                                MultiContentEntryText(pos = (15,3),  size = (1100,44), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0), # name
+                                MultiContentEntryText(pos = (15,47), size = (1100,38), font = 1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 2), # description
+                                MultiContentEntryPixmapAlphaBlend(pos = (1160,18), size = (52,52), png = 5), # status pixmap
+                            ]),
+                            "category": (88, [
+                                MultiContentEntryText(pos = (15,3),  size = (1100,44), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0), # name
+                                MultiContentEntryText(pos = (15,47), size = (1100,38), font = 1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1), # description
+                            ])
+                        },
+                    "fonts": [ gFont("Regular", 31), gFont("Light", 27) ],
+                    "itemHeight": 88
+                }
+            </convert>
+        </widget>
+        <widget source="status" render="Label" position="350,600" size="1230,170" font="Description" halign="center"/>
+        <panel name="TemplateSimpleDivided2To1"/>
+    </screen>
+
+    <screen name="PluginManagerInfo" title="Plugin manager activity information" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp"> <!-- untested -->
+        <ePixmap pixmap="icons/panel/sync-alt.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget source="list" render="Listbox" position="350,110" size="1230,440">
+            <convert type="TemplatedMultiContent">
+                {
+                    "template": [
+                        MultiContentEntryPixmapAlphaBlend(pos = (15,20), size = (48,48), png = 2), # status pixmap
+                        MultiContentEntryText(pos = (80,3),  size = (1100,44), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0), # name
+                        MultiContentEntryText(pos = (80,47), size = (1100,38), font = 1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1), # state
+                    ],
+                    "fonts": [ gFont("Regular", 31), gFont("Light", 27) ],
+                    "itemHeight": 88
+                }
+            </convert>
+        </widget>
+        <widget source="status" render="Label" position="350,600" size="1230,170" font="Description" halign="center" valign="center"/> <!-- hide??? -->
+        <panel name="TemplateSimpleDivided2To1"/>
+    </screen>
+
+    <screen name="PluginManagerHelp" title="Plugin manager help" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp"> <!-- untested (same as above) -->
+        <ePixmap pixmap="icons/panel/sync-alt.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget source="list" render="Listbox" position="350,110" size="1230,440">
+            <convert type="TemplatedMultiContent">
+                {
+                    "template": [
+                        MultiContentEntryPixmapAlphaBlend(pos = (15,20), size = (48,48), png = 2), # status pixmap
+                        MultiContentEntryText(pos = (80,3),  size = (1100,44), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0), # name
+                        MultiContentEntryText(pos = (80,47), size = (1100,38), font = 1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1), # state
+                    ],
+                    "fonts": [ gFont("Regular", 31), gFont("Light", 27) ],
+                    "itemHeight": 88
+                }
+            </convert>
+        </widget>
+        <widget source="status" render="Label" position="350,600" size="1230,170" font="Description" halign="center" valign="center"/> <!-- hide??? -->
+        <panel name="TemplateSimpleDivided2To1"/>
+    </screen>
+
+    <screen name="PluginDetails" title="Details for plugin: " flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp"> <!-- untested -->
+        <ePixmap pixmap="icons/panel/sync-alt.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget source="author" render="Label" position="350,110" size="640,44" font="Body" valign="center"/>
+        <widget name="statuspic" position="1100,110" size="48,48" alphatest="blend"/>
+        <widget name="detailtext" position="350,190" size="640,320" font="Body" valign="center"/>
+        <widget name="screenshot" position="110,190" size="350,120" alphatest="blend"/>
+        <widget name="divpic" position="0,0" size="0,0"/>
+        <panel name="TemplateSimple"/>
+    </screen>
+
+    <screen name="IPKGMenu" title="Select upgrade source to edit" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/sync-alt.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="filelist" position="350,110" size="1230,660" font="Body" itemHeight="44" textOffset="15,0" scrollbarMode="showOnDemand"/>
+        <panel name="TemplateSimple"/>
+    </screen>
+
+    <screen name="IPKGSource" title="Edit upgrade source url" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/sync-alt.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="text" position="350,110" size="1230,44" font="Body" valign="center"/>
+        <panel name="TemplateSimple"/>
+    </screen>
+
+    <screen name="PacketManager" title="Packet manager" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/sync-alt.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget source="list" render="Listbox" position="350,110" size="1230,660">
+            <convert type="TemplatedMultiContent">
+                {
+                    "template": [
+                        MultiContentEntryText(pos = (15,3),  size = (1100,44), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 0), # name
+                        MultiContentEntryText(pos = (15,47), size = (1100,38), font = 1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 2), # description
+                        MultiContentEntryPixmapAlphaBlend(pos = (1140,20), size = (48,48), png = 4), # status pixmap (25px to the left to leave space for scrollbar)
+                    ],
+                    "fonts": [ gFont("Regular", 31), gFont("Light", 27) ],
+                    "itemHeight": 88
+                }
+            </convert>
+        </widget>
+        <panel name="TemplateSimple"/>
+    </screen>
+
+    <screen name="IpkgInstaller" title="Install extensions from ..." flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/sync-alt.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="list" position="350,110" size="1230,440"/> <!-- SelectionList -->
+        <widget source="introduction" render="Label" position="350,600" size="1230,170" font="Description" halign="center" valign="center"/> <!-- hide??? -->
+        <panel name="TemplateSimpleDivided2To1"/>
+    </screen>
+
+    <!-- .../python/Plugins/SystemPlugins/SoftwareManager/BackupRestore.py -->
+
+    <screen name="BackupScreen" title="Backup is running..." flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/save.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="config" position="350,110" size="1230,440" font="Body" itemHeight="44" secondfont="ConfigList" scrollbarMode="showOnDemand"/>
+        <panel name="TemplateSimpleDivided2To1"/>
+    </screen>
+
+    <screen name="BackupSelection" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/save.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="checkList" position="350,110" size="1230,660" font="Body" itemHeight="44" scrollbarMode="showOnDemand"/>
+        <panel name="TemplateSimple"/>
+    </screen>
+
+    <screen name="RestoreMenu" title="Restore Backups" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/undo-alt.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="filelist" position="350,110" size="1230,660" font="Body" itemHeight="44" textOffset="15,0" scrollbarMode="showOnDemand"/>
+        <panel name="TemplateSimple"/>
+    </screen>
+
+    <screen name="RestoreScreen" title="Restore is running" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/undo-alt.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="config" position="350,110" size="1230,440" font="Body" itemHeight="44" secondfont="ConfigList" scrollbarMode="showOnDemand"/>
+        <panel name="TemplateSimpleDivided2To1"/>
+    </screen>
+
+    <!-- .../python/Plugins/SystemPlugins/WirelessLan/plugin.py -->
+
+    <screen name="WlanStatus" title="Wireless network state" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <panel name="TemplateSimpleDivided2To1"/>
+        <ePixmap pixmap="icons/panel/wifi.png" position="40,center" size="240,240" alphatest="blend"/>
+
+        <widget source="LabelBSSID" render="Label" position="350,110" size="600,44" font="Body" valign="center"/>
+        <widget source="LabelESSID" render="Label" position="350,154" size="600,44" font="Body" valign="center"/>
+        <widget source="LabelQuality" render="Label" position="350,198" size="600,44" font="Body" valign="center"/>
+        <widget source="LabelSignal" render="Label" position="350,242" size="600,44" font="Body" valign="center"/>
+        <widget source="LabelBitrate" render="Label" position="350,286" size="600,44" font="Body" valign="center"/>
+        <widget source="LabelEnc" render="Label" position="350,330" size="600,44" font="Body" valign="center"/>
+
+        <widget source="BSSID" render="Label" position="1100,110" size="480,44" font="ConfigList" valign="center" halign="right"/>
+        <widget source="ESSID" render="Label" position="1100,154" size="480,44" font="ConfigList" valign="center" halign="right"/>
+        <widget source="quality" render="Label" position="1100,198" size="480,44" font="ConfigList" valign="center" halign="right"/>
+        <widget source="signal" render="Label" position="1100,242" size="480,44" font="ConfigList" valign="center" halign="right"/>
+        <widget source="bitrate" render="Label" position="1110,286" size="480,44" font="ConfigList" valign="center" halign="right"/>
+        <widget source="enc" render="Label" position="1100,330" size="480,44" font="ConfigList" valign="center" halign="right"/>
+
+        <widget source="IFtext" render="Label" position="350,462" size="200,44" font="Body" valign="center"/>
+        <widget source="IF" render="Label" position="550,462" size="300,44" font="Body" valign="center"/>
+        <widget source="Statustext" render="Label" position="350,506" size="200,44" font="Body" valign="center"/>
+        <widget name="statuspic" position="550,514" size="28,28" pixmaps="buttons/lock_on.png,buttons/lock_off.png" alphatest="blend"/>
+    </screen>
+
+    <screen name="WlanScan" title="Select a wireless network" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/wifi.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget source="list" render="Listbox" position="350,110" size="1230,440" scrollbarMode="showOnDemand">
+            <convert type="TemplatedMultiContent">
+                {
+                    "template": [
+                        MultiContentEntryText(pos = (15,3),  size = (1200,44), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER,   text = 0), # essid
+                        MultiContentEntryText(pos = (15,47),  size = (400,38), font = 1, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER,   text = 4), # encryption
+                        MultiContentEntryText(pos = (415,47), size = (400,38), font = 1, flags = RT_HALIGN_CENTER|RT_VALIGN_CENTER, text = 3), # maxrate
+                        MultiContentEntryText(pos = (815,47), size = (375,38), font = 1, flags = RT_HALIGN_RIGHT|RT_VALIGN_CENTER,  text = 2), # signal
+                    ],
+                    "fonts": [ gFont("Regular", 31), gFont("Light", 27) ],
+                    "itemHeight": 88
+                }
+            </convert>
+        </widget>
+        <widget source="info" render="Label" position="350,600" size="1230,170" font="Description" halign="center" valign="center"/>
+        <panel name="TemplateSimpleDivided2To1"/>
+    </screen>
+
+</skin>

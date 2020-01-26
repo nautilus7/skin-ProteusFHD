@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<skin>
+
+    <!-- Template parts -->
+
+    <screen name="TopBar" flags="wfNoBorder" position="top" size="*,80">
+        <eLabel position="0,0" size="e,80" backgroundColor="BG" zPosition="-10"/>
+        <ePixmap pixmap="window/caret-right.png" position="13,26" size="28,28" zPosition="5" alphatest="blend"/>
+        <ePixmap pixmap="window/caret-left.png" position="e-41,26" size="28,28" zPosition="5" alphatest="blend"/>
+        <widget source="Title" render="Label" position="center,0" size="0.9*e,80" font="Title" halign="center" valign="center" noWrap="1" foregroundColor="ThemeFG"/>
+    </screen>
+
+    <screen name="MainPanel" flags="wfNoBorder" position="center" size="*,720">
+        <eLabel position="0,center" size="320,700" backgroundColor="ThemeBG" zPosition="-20"/>
+        <eLabel position="20,center" size="280,460" backgroundColor="BG" zPosition="-15"/>
+        <eLabel position="330,center" size="e-330,700" backgroundColor="BG" zPosition="-20"/>
+        <ePixmap pixmap="window/line_short.png" position="80,80+140" size="160,1" zPosition="-10" alphatest="blend"/>
+        <ePixmap pixmap="window/line_short.png" position="80,80+580" size="160,1" zPosition="-10" alphatest="blend"/>
+        <!-- Date -->
+        <widget source="global.CurrentTime" render="Label" position="20,80+30" size="280,38" backgroundColor="ThemeBG" font="Medium;26" halign="center" valign="center">
+            <convert type="ClockToText">Format:%A</convert>
+        </widget>
+        <widget source="global.CurrentTime" render="Label" position="20,80+70" size="280,38" backgroundColor="ThemeBG" font="Medium;26" halign="center" valign="center">
+            <convert type="ClockToText">Format:%-d %b %Y</convert>
+        </widget>
+        <!-- Time -->
+        <widget source="global.CurrentTime" render="Label" position="60,80+600" size="152,80" backgroundColor="ThemeBG" font="Medium;44" halign="right" valign="center">
+            <convert type="ClockToText">Format:%H:%M</convert>
+        </widget>
+        <widget source="global.CurrentTime" render="Label" position="220,80+600" size="40,66" backgroundColor="ThemeBG" font="Medium;26" halign="left" valign="center" foregroundColor="ThemeFG">
+            <!--<convert type="ConditionalShowHide">Blink</convert> --> <!-- default 500ms -->
+            <convert type="ClockToText">Format:%S</convert>
+        </widget>
+    </screen>
+
+    <screen name="ButtonsXFixedSize" flags="wfNoBorder" position="bottom" size="*,80">
+        <eLabel position="0,e-80" size="e,80" backgroundColor="BG" zPosition="-10"/>
+
+        <ePixmap objectTypes="key_help,Button,Label" pixmap="window/tile_white.png" position="e-1600,e-80" size="320,10"/>
+        <ePixmap objectTypes="key_info,Button,Label" pixmap="window/tile_white.png" position="e-1600,e-80" size="320,10"/>
+        <ePixmap objectTypes="key_menu,Button,Label" pixmap="window/tile_white.png" position="e-1600,e-80" size="320,10"/>
+        <ePixmap objectTypes="key_red,Button,Label" pixmap="window/tile_red.png" position="e-1280,e-80" size="320,10"/>
+        <ePixmap objectTypes="key_green,Button,Label" pixmap="window/tile_green.png" position="e-960,e-80" size="320,10"/>
+        <ePixmap objectTypes="key_yellow,Button,Label" pixmap="window/tile_yellow.png" position="e-640,e-80" size="320,10"/>
+        <ePixmap objectTypes="key_blue,Button,Label" pixmap="window/tile_blue.png" position="e-320,e-80" size="320,10"/>
+
+        <widget objectTypes="key_help,StaticText" source="key_help" render="Pixmap" pixmap="window/tile_white.png" position="e-1600,e-80" size="320,10">
+            <convert type="ConditionalShowHide"/>
+        </widget>
+        <widget objectTypes="key_info,StaticText" source="key_info" render="Pixmap" pixmap="window/tile_white.png" position="e-1600,e-80" size="320,10">
+            <convert type="ConditionalShowHide"/>
+        </widget>
+        <widget objectTypes="key_menu,StaticText" source="key_menu" render="Pixmap" pixmap="window/tile_white.png" position="e-1600,e-80" size="320,10">
+            <convert type="ConditionalShowHide"/>
+        </widget>
+        <widget objectTypes="key_red,StaticText" source="key_red" render="Pixmap" pixmap="window/tile_red.png" position="e-1280,e-80" size="320,10">
+            <convert type="ConditionalShowHide"/>
+        </widget>
+        <widget objectTypes="key_green,StaticText" source="key_green" render="Pixmap" pixmap="window/tile_green.png" position="e-960,e-80" size="320,10">
+            <convert type="ConditionalShowHide"/>
+        </widget>
+        <widget objectTypes="key_yellow,StaticText" source="key_yellow" render="Pixmap" pixmap="window/tile_yellow.png" position="e-640,e-80" size="320,10">
+            <convert type="ConditionalShowHide"/>
+        </widget>
+        <widget objectTypes="key_blue,StaticText" source="key_blue" render="Pixmap" pixmap="window/tile_blue.png" position="e-320,e-80" size="320,10">
+            <convert type="ConditionalShowHide"/>
+        </widget>
+
+        <widget objectTypes="key_help,Button,Label" name="key_help" position="e-1600,e-70" size="320,70" font="Button" halign="center" valign="center"/>
+        <widget objectTypes="key_info,Button,Label" name="key_info" position="e-1600,e-70" size="320,70" font="Button" halign="center" valign="center"/>
+        <widget objectTypes="key_menu,Button,Label" name="key_menu" position="e-1600,e-70" size="320,70" font="Button" halign="center" valign="center"/>
+        <widget objectTypes="key_red,Button,Label" name="key_red" position="e-1280,e-70" size="320,70" font="Button" halign="center" valign="center"/>
+        <widget objectTypes="key_green,Button,Label" name="key_green" position="e-960,e-70" size="320,70" font="Button" halign="center" valign="center"/>
+        <widget objectTypes="key_yellow,Button,Label" name="key_yellow" position="e-640,e-70" size="320,70" font="Button" halign="center" valign="center"/>
+        <widget objectTypes="key_blue,Button,Label" name="key_blue" position="e-320,e-70" size="320,70" font="Button" halign="center" valign="center"/>
+
+        <widget objectTypes="key_help,StaticText" source="key_help" render="Label" position="e-1600,e-70" size="320,70" font="Button" halign="center" valign="center"/>
+        <widget objectTypes="key_info,StaticText" source="key_info" render="Label" position="e-1600,e-70" size="320,70" font="Button" halign="center" valign="center"/>
+        <widget objectTypes="key_menu,StaticText" source="key_menu" render="Label" position="e-1600,e-70" size="320,70" font="Button" halign="center" valign="center"/>
+        <widget objectTypes="key_red,StaticText" source="key_red" render="Label" position="e-1280,e-70" size="320,70" font="Button" halign="center" valign="center"/>
+        <widget objectTypes="key_green,StaticText" source="key_green" render="Label" position="e-960,e-70" size="320,70" font="Button" halign="center" valign="center"/>
+        <widget objectTypes="key_yellow,StaticText" source="key_yellow" render="Label" position="e-640,e-70" size="320,70" font="Button" halign="center" valign="center"/>
+        <widget objectTypes="key_blue,StaticText" source="key_blue" render="Label" position="e-320,e-70" size="320,70" font="Button" halign="center" valign="center"/>
+    </screen>
+
+    <screen name="Buttons4AutoSize" flags="wfNoBorder" position="bottom" size="*,80">
+        <eLabel position="0,e-80" size="e,80" backgroundColor="BG" zPosition="-10"/>
+
+        <ePixmap objectTypes="key_red,Button,Label" pixmap="window/tile_red.png" position="0,e-80" size="e/4,10"/>
+        <ePixmap objectTypes="key_green,Button,Label" pixmap="window/tile_green.png" position="e/4,e-80" size="e/4,10"/>
+        <ePixmap objectTypes="key_yellow,Button,Label" pixmap="window/tile_yellow.png" position="e/2,e-80" size="e/4,10"/>
+        <ePixmap objectTypes="key_blue,Button,Label" pixmap="window/tile_blue.png" position="3*e/4,e-80" size="e/4,10"/>
+
+        <widget objectTypes="key_red,StaticText" source="key_red" render="Pixmap" pixmap="window/tile_red.png" position="0,e-80" size="e/4,10">
+            <convert type="ConditionalShowHide"/>
+        </widget>
+        <widget objectTypes="key_green,StaticText" source="key_green" render="Pixmap" pixmap="window/tile_green.png" position="e/4,e-80" size="e/4,10">
+            <convert type="ConditionalShowHide"/>
+        </widget>
+        <widget objectTypes="key_yellow,StaticText" source="key_yellow" render="Pixmap" pixmap="window/tile_yellow.png" position="e/2,e-80" size="e/4,10">
+            <convert type="ConditionalShowHide"/>
+        </widget>
+        <widget objectTypes="key_blue,StaticText" source="key_blue" render="Pixmap" pixmap="window/tile_blue.png" position="3*e/4,e-80" size="e/4,10">
+            <convert type="ConditionalShowHide"/>
+        </widget>
+
+        <widget objectTypes="key_red,Button,Label" name="key_red" position="0,e-70" size="e/4,70" font="Button" halign="center" valign="center"/>
+        <widget objectTypes="key_green,Button,Label" name="key_green" position="e/4,e-70" size="e/4,70" font="Button" halign="center" valign="center"/>
+        <widget objectTypes="key_yellow,Button,Label" name="key_yellow" position="e/2,e-70" size="e/4,70" font="Button" halign="center" valign="center"/>
+        <widget objectTypes="key_blue,Button,Label" name="key_blue" position="3*e/4,e-70" size="e/4,70" font="Button" halign="center" valign="center"/>
+
+        <widget objectTypes="key_red,StaticText" source="key_red" render="Label" position="0,e-70" size="e/4,70" font="Button" halign="center" valign="center"/>
+        <widget objectTypes="key_green,StaticText" source="key_green" render="Label" position="e/4,e-70" size="e/4,70" font="Button" halign="center" valign="center"/>
+        <widget objectTypes="key_yellow,StaticText" source="key_yellow" render="Label" position="e/2,e-70" size="e/4,70" font="Button" halign="center" valign="center"/>
+        <widget objectTypes="key_blue,StaticText" source="key_blue" render="Label" position="3*e/4,e-70" size="e/4,70" font="Button" halign="center" valign="center"/>
+    </screen>
+
+    <screen name="ButtonsMenu" flags="wfNoBorder" position="bottom" size="*,80">
+        <ePixmap pixmap="window/tile_white.png" position="e-1600,e-80" size="320,10"/>
+        <ePixmap pixmap="buttons/menu.png" position="e-1600+115,e-49" size="90,28" alphatest="blend"/>
+    </screen>
+
+    <screen name="ButtonsInfo" flags="wfNoBorder" position="bottom" size="*,80">
+        <ePixmap pixmap="window/tile_white.png" position="e-1600,e-80" size="320,10"/>
+        <ePixmap pixmap="buttons/info.png" position="e-1600+115,e-49" size="90,28" alphatest="blend"/>
+    </screen>
+
+    <screen name="ButtonsMenuInfo" flags="wfNoBorder" position="bottom" size="*,80">
+        <ePixmap pixmap="window/tile_white.png" position="e-1600,e-80" size="320,10"/>
+        <ePixmap pixmap="buttons/menu.png" position="e-1600+60,e-49" size="90,28" alphatest="blend"/>
+        <ePixmap pixmap="buttons/info.png" position="e-1600+170,e-49" size="90,28" alphatest="blend"/>
+    </screen>
+
+    <screen name="ButtonsPrevNext" flags="wfNoBorder" position="bottom" size="*,80">
+        <ePixmap pixmap="window/tile_white.png" position="e-1600,e-80" size="320,10"/>
+        <ePixmap pixmap="buttons/prev.png" position="e-1600+60,e-49" size="90,28" alphatest="blend"/>
+        <ePixmap pixmap="buttons/next.png" position="e-1600+170,e-49" size="90,28" alphatest="blend"/>
+    </screen>
+
+    <!-- Templates -->
+
+    <screen name="TemplateSimple" flags="wfNoBorder">
+        <panel name="TopBar"/>
+        <panel name="MainPanel"/>
+        <panel name="ButtonsXFixedSize"/>
+    </screen>
+
+    <screen name="TemplateSimpleDivided1To2" flags="wfNoBorder">
+        <panel name="TemplateSimple"/>
+        <eLabel position="330,300" size="e-330,10" backgroundColor="Transp" zPosition="-20"/>
+    </screen>
+
+    <screen name="TemplateSimpleDivided2To1" flags="wfNoBorder">
+        <panel name="TemplateSimple"/>
+        <eLabel position="330,570" size="e-330,10" backgroundColor="Transp" zPosition="-20"/>
+    </screen>
+
+    <screen name="TemplateHelp" flags="wfNoBorder">
+        <panel name="TemplateSimple"/>
+        <eLabel position="e-330,center" size="10,700" backgroundColor="Transp" zPosition="-20"/>
+        <eLabel position="e-320,center" size="320,700" backgroundColor="ThemeBG" zPosition="-20"/>
+        <!-- <eLabel position="e-300,center" size="280,540" backgroundColor="BG" zPosition="-20"/> -->
+        <!-- <ePixmap pixmap="window/line_short.png" position="e-80-160,80+140" size="160,1" zPosition="-10" alphatest="blend"/>
+        <ePixmap pixmap="window/line_short.png" position="e-80-160,80+580" size="160,1" zPosition="-10" alphatest="blend"/> -->
+    </screen>
+
+    <!-- Special template for screens in need of a background, like signal finder, positioner setup, etc. -->
+
+    <screen name="TemplateSpecial" flags="wfNoBorder">
+        <panel flags="wfNoBorder" position="center,center" size="1600,880">
+            <panel name="TopBar"/>
+            <panel name="MainPanel"/>
+            <panel name="ButtonsXFixedSize"/>
+        </panel>
+    </screen>
+
+    <!-- Channel selection template -->
+
+    <screen name="TemplateChannelSelection" flags="wfNoBorder" position="center,center" size="1600,880">
+        <eLabel position="0,90" size="640,700" backgroundColor="ThemeBG" zPosition="-20"/>
+        <eLabel position="20,210" size="600,560" backgroundColor="BG" zPosition="-15"/>
+        <eLabel position="650,90" size="950,700" backgroundColor="BG" zPosition="-20"/>
+        <!-- <ePixmap pixmap="window/line_medium.png" position="160,220" size="320,1" zPosition="-10" alphatest="blend"/> -->
+        <!-- <ePixmap pixmap="window/line_medium.png" position="160,660" size="320,1" zPosition="-10" alphatest="blend"/> -->
+        <panel name="TopBar"/>
+        <panel name="ButtonsXFixedSize"/>
+    </screen>
+
+    <screen name="TemplateGraphMultiEpg" flags="wfNoBorder" position="center,center" size="1600,880">
+        <eLabel position="0,90" size="1600,700" backgroundColor="BG" zPosition="-20"/>
+        <panel name="TopBar"/>
+        <panel name="ButtonsXFixedSize"/>
+    </screen>
+
+    <screen name="TemplateEventView">
+        <panel name="TopBar"/>
+        <eLabel position="0,90" size="e,700" backgroundColor="ThemeBG" zPosition="-20"/>
+        <eLabel position="20,210" size="e-40,560" backgroundColor="BG" zPosition="-15"/>
+        <!-- <ePixmap pixmap="window/line_long.png" position="center,220" size="640,1" zPosition="-10" alphatest="blend"/> -->
+        <!-- <ePixmap pixmap="window/line_long.png" position="center,660" size="640,1" zPosition="-10" alphatest="blend"/> -->
+        <panel name="Buttons4AutoSize"/>
+    </screen>
+
+</skin>

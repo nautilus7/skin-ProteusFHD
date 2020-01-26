@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<skin>
+
+    <!-- SatDreamGr Panel+ -->
+
+    <screen name="Panel" flags="wfNoBorder" position="center,center" size="1280,880" backgroundColor="Transp">
+        <panel name="TemplateSimple"/>
+        <ePixmap pixmap="icons/panel/layer-plus.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget source="list" render="Listbox" position="350,110" size="910,660">
+            <convert type="TemplatedMultiContent">
+                {
+                    "template": [ MultiContentEntryText(pos = (15,0), size = (880,60), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1) ],
+                    "fonts": [ gFont("Regular", 40) ],
+                    "itemHeight": 60
+                }
+            </convert>
+        </widget>
+    </screen>
+
+    <screen name="System_Panel" flags="wfNoBorder" position="center,center" size="1280,880" backgroundColor="Transp">
+        <panel name="Panel"/>
+    </screen>
+
+    <screen name="Plugins_Panel" flags="wfNoBorder" position="center,center" size="1280,880" backgroundColor="Transp">
+        <panel name="Panel"/>
+    </screen>
+
+    <!-- Archive explorer -->
+
+    <screen name="PluginStart" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/archive.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="myliste" position="350,110" size="1230,660" font="Body" itemHeight="44" scrollbarMode="showOnDemand"/>
+        <panel name="TemplateSimple"/>
+    </screen>
+
+    <screen name="TextExit" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/archive.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="filedata" position="350,110" size="1230,660" font="Body" itemHeight="44" textOffset="15,0" scrollbarMode="showOnDemand"/>
+        <panel name="TemplateSimple"/>
+    </screen>
+
+    <screen name="AboutScreen" title="About Explorer" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/archive.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="text" position="350,110" size="1230,660" font="Body" itemHeight="44" noWrap="1" halign="center"/>
+        <panel name="TemplateSimple"/>
+    </screen>
+
+    <!-- Hardware info -->
+
+    <screen name="HardwareInfo" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/microchip.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="menu" position="350,110" size="1230,660" font="Body" itemHeight="44" textOffset="15,0" scrollbarMode="showOnDemand"/>
+        <panel name="TemplateSimple"/>
+    </screen>
+
+    <screen name="system_info" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <panel name="TemplateSimple"/>
+        <ePixmap pixmap="icons/panel/microchip.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget source="session.CurrentService" render="Label" position="c-155,110" size="640,44" font="Body" halign="center" valign="center">
+            <convert type="PanelCpuUsage">Total</convert>
+        </widget>
+        <widget source="session.CurrentService" render="Label" position="c-155,190" size="640,44" font="Body" halign="center" valign="center">
+            <convert type="PanelSpaceInfo">MemTotal,Full</convert>
+        </widget>
+        <widget source="session.Event_Now" render="Progress" position="c-155,236" size="640,28" borderWidth="1">
+            <convert type="PanelSpaceInfo">MemTotal</convert>
+        </widget>
+        <widget source="session.CurrentService" render="Label" position="c-155,310" size="640,44" font="Body" halign="center" valign="center">
+            <convert type="PanelSpaceInfo">Flesh,Full</convert>
+        </widget>
+        <widget source="session.Event_Now" render="Progress" position="c-155,356" size="640,28" borderWidth="1">
+            <convert type="PanelSpaceInfo">FleshInfo</convert>
+        </widget>
+        <widget source="session.CurrentService" render="Label" position="c-155,430" size="640,44" font="Body" halign="center" valign="center">
+            <convert type="PanelSpaceInfo">HddInfo,Full</convert>
+        </widget>
+        <widget source="session.Event_Now" render="Progress" position="c-155,476" size="640,28" borderWidth="1">
+            <convert type="PanelSpaceInfo">HddInfo</convert>
+        </widget>
+        <widget source="session.CurrentService" render="Label" position="c-155,550" size="640,44" font="Body" halign="center" valign="center">
+            <convert type="PanelSpaceInfo">UsbInfo,Full</convert>
+        </widget>
+        <widget source="session.Event_Now" render="Progress" position="c-155,596" size="640,28" borderWidth="1">
+            <convert type="PanelSpaceInfo">UsbInfo</convert>
+        </widget>
+        <widget source="session.CurrentService" render="Label" position="c-155,670" size="640,44" font="Body" halign="center" valign="center">
+            <convert type="PanelSpaceInfo">SwapTotal,Full</convert>
+        </widget>
+        <widget source="session.Event_Now" render="Progress" position="c-155,716" size="640,28" borderWidth="1">
+            <convert type="PanelSpaceInfo">SwapTotal</convert>
+        </widget>
+    </screen>
+
+    <!-- Enigma2 settings -->
+
+    <screen name="SDG_Menu" title="Enigma2 settings" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/list-ul.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget source="list" render="Listbox" position="350,110" size="1230,660">
+            <convert type="TemplatedMultiContent">
+                {
+                    "template": [ MultiContentEntryText(pos = (15,0), size = (1200,44), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1) ],
+                    "fonts": [ gFont("Regular", 31) ],
+                    "itemHeight": 44
+                }
+            </convert>
+        </widget>
+        <panel name="TemplateSimple"/>
+    </screen>
+
+    <screen name="SDG_ActionBox" title="Downloading..." flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/list-ul.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="logo" position="0,0" size="0,0"/> <!-- hidden -->
+        <widget name="message" position="350,110" size="1230,44" font="Body" halign="center" valign="center"/>
+        <panel name="TemplateSimple"/>
+    </screen>
+
+    <screen name="SDG_SettingsList" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/list-ul.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget source="list" render="Listbox" position="350,110" size="1230,660">
+            <convert type="TemplatedMultiContent">
+                {
+                    "template": [
+                        MultiContentEntryText(pos = (15,0),  size = (800,44), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER,  text = 0),
+                        MultiContentEntryText(pos = (885,0), size = (300,44), font = 0, flags = RT_HALIGN_RIGHT|RT_VALIGN_CENTER, text = 1), # 25 px shorter to leave space for the scrollbar
+                    ],
+                    "fonts": [ gFont("Regular", 31) ],
+                    "itemHeight": 44
+                }
+            </convert>
+        </widget>
+        <panel name="TemplateSimple"/>
+    </screen>
+
+    <!-- Remove opkg -->
+
+    <screen name="Removeopkg" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/trash.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="list" position="350,110" size="1230,660" font="Body" itemHeight="44" textOffset="15,0" scrollbarMode="showOnDemand"/>
+        <panel name="TemplateSimple"/>
+    </screen>
+
+    <!-- Swap manager -->
+
+    <screen name="SystemToolsSwap" title="Swap manager" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/memory.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="entries" position="350,110" size="1230,660" font="Body" itemHeight="44" textOffset="15,0" scrollbarMode="showOnDemand"/>
+        <panel name="TemplateSimple"/>
+    </screen>
+
+    <!-- SDG radio -->
+
+    <screen name="SDGRadioScreen" title="SDG radio" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <panel name="TemplateSimpleDivided1To2"/>
+        <ePixmap pixmap="icons/panel/radio.png" position="40,center" size="240,240" alphatest="blend"/>
+        <panel name="ButtonsMenuInfo"/>
+
+        <widget name="modulation" position="350,150" size="200,44" font="RL" valign="center" halign="left"/>
+        <widget name="dab_channel" position="350,240" size="200,44" font="RL" valign="center" halign="left"/>
+
+        <widget name="freq_off" position="565,150" size="800,120" font="SDGRadio;120" valign="center" halign="center" foregroundColor="#1F1F1F"/>
+        <widget name="freq" position="565,150" size="800,120" font="SDGRadio;120" valign="center" halign="center" transparent="1"/>
+
+        <widget name="freq_units" position="1380,240" size="200,44" font="RL" valign="center" halign="right"/>
+
+        <ePixmap pixmap="buttons/key_left.png" position="350,370" size="28,28" alphatest="blend"/>
+        <ePixmap pixmap="buttons/key_right.png" position="430,370" size="28,28" alphatest="blend"/>
+        <ePixmap pixmap="buttons/key_up.png" position="390,330" size="28,28" alphatest="blend"/>
+        <ePixmap pixmap="buttons/key_down.png" position="390,410" size="28,28" alphatest="blend"/>
+
+        <widget name="mem_1" pixmaps="buttons/key_1_empty.png,buttons/key_1.png,buttons/key_1_pressed.png" position="1392,350" size="28,28" alphatest="blend"/>
+        <widget name="mem_2" pixmaps="buttons/key_2_empty.png,buttons/key_2.png,buttons/key_2_pressed.png" position="1432,350" size="28,28" alphatest="blend"/>
+        <widget name="mem_3" pixmaps="buttons/key_3_empty.png,buttons/key_3.png,buttons/key_3_pressed.png" position="1552,350" size="28,28" alphatest="blend"/>
+        <widget name="mem_4" pixmaps="buttons/key_4_empty.png,buttons/key_4.png,buttons/key_4_pressed.png" position="1512,350" size="28,28" alphatest="blend"/>
+        <widget name="mem_5" pixmaps="buttons/key_5_empty.png,buttons/key_5.png,buttons/key_5_pressed.png" position="1552,350" size="28,28" alphatest="blend"/>
+        <widget name="mem_6" pixmaps="buttons/key_6_empty.png,buttons/key_6.png,buttons/key_6_pressed.png" position="1552,390" size="28,28" alphatest="blend"/>
+        <widget name="mem_7" pixmaps="buttons/key_7_empty.png,buttons/key_7.png,buttons/key_7_pressed.png" position="1432,390" size="28,28" alphatest="blend"/>
+        <widget name="mem_8" pixmaps="buttons/key_8_empty.png,buttons/key_8.png,buttons/key_8_pressed.png" position="1472,390" size="28,28" alphatest="blend"/>
+        <widget name="mem_9" pixmaps="buttons/key_9_empty.png,buttons/key_9.png,buttons/key_9_pressed.png" position="1552,390" size="28,28" alphatest="blend"/>
+        <widget name="mem_0" pixmaps="buttons/key_0_empty.png,buttons/key_0.png,buttons/key_0_pressed.png" position="1552,452" size="28,28" alphatest="blend"/>
+
+        <widget name="prog_type" position="350,330" size="1230,44" font="RL" valign="center" halign="center"/>
+        <widget name="radiotext" position="350,374" size="800,396" font="RL" valign="center" halign="center"/>
+        <widget name="pic" position="1150,374" size="430,396" alphatest="blend"/>
+    </screen>
+
+    <!-- Internet radio -->
+
+    <screen name="GreekNetRadio" title="Internet radio" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <panel name="TemplateSimple"/>
+        <ePixmap pixmap="icons/panel/radio.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="menu" position="350,110" size="1230,660" font="Body" itemHeight="44" textOffset="15,0" scrollbarMode="showOnDemand"/>
+    </screen>
+
+    <!-- Picture camera -->
+
+    <screen name="PictureCamera" title="Picture camera" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/photo-video.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="menu" position="350,110" size="240,660" font="Body" itemHeight="44" textOffset="15,0" scrollbarMode="showOnDemand"/>
+        <widget name="pic" position="600,110" size="800,660"/>
+        <panel name="TemplateSimple"/>
+    </screen>
+
+    <!-- GreekStreamTV -->
+
+    <screen name="GSMenu" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/stream.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="menu" position="350,110" size="1230,660" font="Body" itemHeight="44" textOffset="15,0" scrollbarMode="showOnDemand"/>
+        <panel name="TemplateSimple"/>
+    </screen>
+
+    <screen name="GreekStreamTVList" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/stream.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="streamlist" position="350,110" size="1230,616" serviceNameFont="Body" serviceUrlFont="Description" itemHeight="88" scrollbarMode="showOnDemand"
+                serviceNamePosition="86,4" serviceNameSize="1100,44" serviceUrlPosition="86,49" serviceUrlSize="1100,38" iconPosition="15,16" iconSize="56,56"/>
+        <widget name="info" position="350,732" size="1230,38" font="Description" halign="center"/>
+        <panel name="TemplateSimple"/>
+    </screen>
+
+    <screen name="SelectQuality" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/stream.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="menu" position="350,110" size="1230,660" font="Body" itemHeight="44" textOffset="15,0" scrollbarMode="showOnDemand"/>
+        <panel name="TemplateSimple"/>
+    </screen>
+
+</skin>

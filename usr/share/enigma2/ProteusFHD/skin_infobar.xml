@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<skin>
+
+    <!-- Infobar template -->
+
+    <screen name="InfoBarTop" flags="wfNoBorder">
+        <widget source="session.CurrentService" render="Label" position="40,30" size="480,38" font="RM" valign="center">
+            <convert type="PliExtraInfo">TransponderInfo</convert>
+        </widget>
+
+        <widget source="session.CurrentService" render="Label" position="40,68" size="480,38" font="RM" valign="center">
+            <convert type="ServiceName">Provider</convert>
+        </widget>
+
+        <widget source="session.CurrentService" render="Label" position="center,30" size="480,38" font="RM" valign="center" halign="center">
+            <convert type="PliExtraInfo">CryptoBar</convert>
+        </widget>
+
+        <widget source="session.CurrentService" render="Label" position="center,68" size="480,38" font="RM" valign="center" halign="center">
+            <convert type="PliExtraInfo">CryptoSpecial</convert>
+        </widget>
+
+        <widget source="session.CurrentService" render="Label" position="e-520,30" size="480,38" font="RM" valign="center" halign="right">
+            <convert type="PliExtraInfo">Resolution</convert>
+        </widget>
+
+        <!-- HbbTV -->
+
+        <widget source="session.CurrentService" render="Pixmap" pixmap="icons/hbbtv.png" position="e-550,68" size="70,28" alphatest="blend">
+            <convert type="ServiceInfo">HasHBBTV</convert>
+            <convert type="ConditionalShowHide"/>
+        </widget>
+
+        <!-- Teletext -->
+
+        <widget source="session.CurrentService" render="Pixmap" pixmap="icons/txt.png" position="e-470,68" size="60,28" alphatest="blend">
+            <convert type="ServiceInfo">HasTelext</convert>
+            <convert type="ConditionalShowHide"/>
+        </widget>
+
+        <!-- Audio type -->
+
+        <widget source="session.CurrentService" render="Pixmap" pixmap="icons/2-0.png" position="e-400,68" size="60,28" alphatest="blend">
+            <convert type="ServiceInfo">IsStereo</convert>
+            <convert type="ConditionalShowHide"/>
+        </widget>
+        <widget source="session.CurrentService" render="Pixmap" pixmap="icons/5-1.png" position="e-400,68" size="60,28" alphatest="blend">
+            <convert type="ServiceInfo">IsMultichannel</convert>
+            <convert type="ConditionalShowHide"/>
+        </widget>
+
+         <!-- Resolution -->
+
+        <widget source="session.CurrentService" render="Pixmap" pixmap="icons/sd.png" position="e-330,68" size="60,28" alphatest="blend">
+            <convert type="ServiceInfo">IsSD</convert>
+            <convert type="ConditionalShowHide"/>
+        </widget>
+        <widget source="session.CurrentService" render="Pixmap" pixmap="icons/hd.png" position="e-330,68" size="60,28" alphatest="blend">
+            <convert type="ServiceInfo">Is720</convert>
+            <convert type="ConditionalShowHide"/>
+        </widget>
+        <widget source="session.CurrentService" render="Pixmap" pixmap="icons/fhd.png" position="e-330,68" size="60,28" alphatest="blend">
+            <convert type="ServiceInfo">Is1080</convert>
+            <convert type="ConditionalShowHide"/>
+        </widget>
+        <widget source="session.CurrentService" render="Pixmap" pixmap="icons/uhd.png" position="e-330,68" size="60,28" alphatest="blend">
+            <convert type="ServiceInfo">Is4K</convert>
+            <convert type="ConditionalShowHide"/>
+        </widget>
+
+        <!-- Widescreen -->
+
+        <widget source="session.CurrentService" render="Pixmap" pixmap="icons/16-9.png" position="e-260,68" size="60,28" alphatest="blend">
+            <convert type="ServiceInfo">IsWidescreen</convert>
+            <convert type="ConditionalShowHide"/>
+        </widget>
+        <widget source="session.CurrentService" render="Pixmap" pixmap="icons/4-3.png" position="e-260,68" size="60,28" alphatest="blend">
+            <convert type="ServiceInfo">IsNotWidescreen</convert>
+            <convert type="ConditionalShowHide"/>
+        </widget>
+
+        <!-- Video Codec -->
+
+        <widget source="session.CurrentService" render="Pixmap" pixmap="icons/mpeg2.png" position="e-190,68" size="80,28" alphatest="blend">
+            <convert type="ServiceInfo">IsVideoMPEG2</convert>
+            <convert type="ConditionalShowHide"/>
+        </widget>
+        <widget source="session.CurrentService" render="Pixmap" pixmap="icons/avc.png" position="e-190,68" size="80,28" alphatest="blend">
+            <convert type="ServiceInfo">IsVideoAVC</convert>
+            <convert type="ConditionalShowHide"/>
+        </widget>
+        <widget source="session.CurrentService" render="Pixmap" pixmap="icons/hevc.png" position="e-190,68" size="80,28" alphatest="blend">
+            <convert type="ServiceInfo">IsVideoHEVC</convert>
+            <convert type="ConditionalShowHide"/>
+        </widget>
+
+       <!-- HDR type -->
+
+        <widget source="session.CurrentService" render="Pixmap" pixmap="icons/sdr.png" position="e-100,68" size="60,28" alphatest="blend">
+            <convert type="ServiceInfo">IsSDR</convert>
+            <convert type="ConditionalShowHide"/>
+        </widget>
+        <widget source="session.CurrentService" render="Pixmap" pixmap="icons/hdr.png" position="e-100,68" size="60,28" alphatest="blend">
+            <convert type="ServiceInfo">IsHDR</convert>
+            <convert type="ConditionalShowHide"/>
+        </widget>
+        <widget source="session.CurrentService" render="Pixmap" pixmap="icons/hdr.png" position="e-100,68" size="60,28" alphatest="blend">
+            <convert type="ServiceInfo">IsHDR10</convert>
+            <convert type="ConditionalShowHide"/>
+        </widget>
+        <widget source="session.CurrentService" render="Pixmap" pixmap="icons/hlg.png" position="e-100,68" size="60,28" alphatest="blend">
+            <convert type="ServiceInfo">IsHLG</convert>
+            <convert type="ConditionalShowHide"/>
+        </widget>
+    </screen>
+
+    <screen name="InfoBarLeft" flags="wfNoBorder">
+
+        <!-- Default picon border -->
+
+        <!-- <eLabel position="40,44" size="220,132" backgroundColor="ThemeBG" zPosition="-20"/>
+        <eLabel position="45,45" size="210,122" backgroundColor="BG" zPosition="-15"/> -->
+
+        <!-- Picon -->
+
+        <widget source="session.CurrentService" render="Picon" position="40,e-186" size="220,132" alphatest="blend">
+            <convert type="ServiceName">Reference</convert>
+        </widget>
+    </screen>
+
+    <screen name="InfoBarMiddle" flags="wfNoBorder">
+        <widget source="session.CurrentService" render="ChannelNumber" position="300,e-221" size="80,80" font="SecTitle" foregroundColor="ThemeFG" valign="center"/>
+        <widget source="session.CurrentService" render="Label" position="390,e-224" size="700,80" font="Title" foregroundColor="ThemeFG" valign="center" noWrap="1">
+            <convert type="ServiceName">Name</convert>
+        </widget>
+
+        <!-- Recording state -->
+
+        <widget source="session.RecordState" render="Pixmap" pixmap="icons/rec.png" position="e-360-188,e-197" size="28,28" alphatest="blend">
+            <!--<convert type="ConditionalShowHide"/>-->
+            <convert type="ConditionalShowHide">Blink</convert>
+        </widget>
+
+        <!-- Crypted or Stream (99% chance we'll not have both) -->
+
+        <ePixmap pixmap="icons/icon_crypt_off.png" position="e-360-148,e-197" size="28,28" alphatest="blend" zPosition="-1"/>
+
+        <widget source="session.CurrentService" render="Pixmap" pixmap="icons/icon_crypt.png" position="e-360-148,e-197" size="28,28" alphatest="blend">
+            <convert type="ServiceInfo">IsCrypted</convert>
+            <convert type="ConditionalShowHide"/>
+        </widget>
+        <widget source="session.CurrentService" render="Pixmap" pixmap="icons/ico_stream-fs8.png" position="e-360-148,e-197" size="28,28" alphatest="blend">
+            <convert type="ServiceInfo">IsStream</convert>
+            <convert type="ConditionalShowHide"/>
+        </widget>
+
+        <!-- Basic service info -->
+
+        <ePixmap pixmap="icons/subservices_off.png" position="e-360-108,e-197" size="28,28" alphatest="blend" zPosition="-1"/>
+
+        <widget source="session.CurrentService" render="Pixmap" pixmap="icons/subservices.png" position="e-360-108,e-197" size="28,28" alphatest="blend">
+            <convert type="ServiceInfo">SubservicesAvailable</convert>
+            <convert type="ConditionalShowHide"/>
+        </widget>
+
+        <ePixmap pixmap="icons/audio_off.png" position="e-360-68,e-197" size="28,28" alphatest="blend" zPosition="-1"/>
+
+        <widget source="session.CurrentService" render="Pixmap" pixmap="icons/audio.png" position="e-360-68,e-197" size="28,28" alphatest="blend">
+            <convert type="ServiceInfo">AudioTracksAvailable</convert>
+            <convert type="ConditionalShowHide"/>
+        </widget>
+
+        <ePixmap pixmap="icons/subs_off.png" position="e-360-28,e-197" size="28,28" alphatest="blend" zPosition="-1"/>
+
+        <widget source="session.CurrentService" render="Pixmap" pixmap="icons/subs.png" position="e-360-28,e-197" size="28,28" alphatest="blend">
+            <convert type="ServiceInfo">SubtitlesAvailable</convert>
+            <convert type="ConditionalShowHide"/>
+        </widget>
+
+        <!-- Event info now -->
+
+        <widget source="session.Event_Now" render="Label" position="300,e-144" size="65,38" font="RM" halign="left" valign="center">
+            <convert type="EventTime">StartTime</convert>
+            <convert type="ClockToText">Format:%H:%M</convert>
+        </widget>
+        <widget source="session.Event_Now" render="Label" position="365,e-144" size="85,38" font="RM" halign="left" valign="center">
+            <convert type="EventTime">EndTime</convert>
+            <convert type="ClockToText">Format: - %H:%M</convert>
+        </widget>
+        <widget source="session.Event_Now" render="Label" position="470,e-144" size="920,38" font="RM" halign="left" valign="center">
+            <convert type="EventName">Name</convert>
+        </widget>
+        <widget source="session.Event_Now" render="Label" position="1410,e-144" size="150,38" font="RM" halign="right" valign="center">
+            <convert type="EventTime">Remaining</convert>
+            <convert type="RemainingToText">InMinutes</convert>
+        </widget>
+
+        <!-- Event info progress -->
+
+        <eLabel position="300,e-93" size="1260,12" backgroundColor="ThemeGrey" zPosition="-20"/> <!-- mimic progress bar, when no service event is available -->
+        <eLabel position="302,e-91" size="1256,8" zPosition="-15"/>
+        <widget source="session.Event_Now" render="Progress" position="300,e-93" size="1260,12" foregroundColor="White" borderColor="ThemeGrey" borderWidth="2">
+            <convert type="EventTime">Progress</convert>
+        </widget>
+
+        <!-- Event info next -->
+
+        <widget source="session.Event_Next" render="Label" position="300,e-68" size="65,38" font="RM" halign="left" valign="center" foregroundColor="ThemeGrey">
+            <convert type="EventTime">StartTime</convert>
+            <convert type="ClockToText">Format:%H:%M</convert>
+        </widget>
+        <widget source="session.Event_Next" render="Label" position="365,e-68" size="85,38" font="RM" halign="left" valign="center" foregroundColor="ThemeGrey">
+            <convert type="EventTime">EndTime</convert>
+            <convert type="ClockToText">Format: - %H:%M</convert>
+        </widget>
+        <widget source="session.Event_Next" render="Label" position="470,e-68" size="920,38" font="RM" halign="left" valign="center" foregroundColor="ThemeGrey">
+            <convert type="EventName">Name</convert>
+        </widget>
+        <widget source="session.Event_Next" render="Label" position="1410,e-68" size="150,38" font="RM" halign="right" valign="center" foregroundColor="ThemeGrey">
+            <convert type="EventTime">Remaining</convert>
+            <convert type="RemainingToText">InMinutes</convert>
+        </widget>
+    </screen>
+
+    <screen name="InfoBarRight" flags="wfNoBorder">
+        <widget source="global.CurrentTime" render="Label" position="e-320,e-221" size="280,80" font="SecTitle" halign="right" valign="center" noWrap="1">
+            <convert type="ClockToText">Format:%H:%M %a %e %b</convert>
+        </widget>
+
+        <!-- SNR, AGC, BER, tuners -->
+
+        <eLabel text="SNR" position="e-320,e-144" size="60,38" font="RM" foregroundColor="ThemeGrey" halign="left" valign="center"/>
+        <widget source="session.FrontendStatus" render="Label" position="e-250,e-144" size="90,38" font="RM" halign="left" valign="center">
+            <convert type="FrontendInfo">SNRdB</convert>
+        </widget>
+        <widget source="session.FrontendStatus" render="Progress" position="e-140,e-131" size="100,12" foregroundColor="White" borderColor="ThemeGrey" borderWidth="2">
+            <convert type="FrontendInfo">SNR</convert>
+        </widget>
+
+        <eLabel text="AGC" position="e-320,e-106" size="60,38" font="RM" foregroundColor="ThemeGrey" halign="left" valign="center"/>
+        <widget source="session.FrontendStatus" render="Label" position="e-250,e-106" size="90,38" font="RM" halign="left" valign="center">
+            <convert type="FrontendInfo">AGC</convert>
+        </widget>
+        <widget source="session.FrontendStatus" render="Progress" position="e-140,e-93" size="100,12" foregroundColor="White" borderColor="ThemeGrey" borderWidth="2">
+            <convert type="FrontendInfo">AGC</convert>
+        </widget>
+
+        <eLabel text="BER" position="e-320,e-68" size="60,38" font="RM" foregroundColor="ThemeGrey" halign="left" valign="center"/>
+        <widget source="session.FrontendStatus" render="Label" position="e-250,e-68" size="60,38" font="RM" halign="left" valign="center">
+            <convert type="FrontendInfo">BER</convert>
+        </widget>
+        <!-- <widget source="session.FrontendStatus" render="Progress" position="e-140,e-55" size="100,12" foregroundColor="White" borderColor="ThemeGrey" borderWidth="2">
+            <convert type="FrontendInfo">BER</convert>
+        </widget> -->
+
+        <!-- <widget source="session.CurrentService" render="Label" position="e-320,150" size="100,38" font="RM" halign="left" valign="center">
+            <convert type="PliExtraInfo">OrbitalPosition</convert>
+        </widget> -->
+        <widget source="session.FrontendInfo" render="Label" position="e-190,e-68" size="150,38" font="RM" halign="right" valign="center">
+            <convert type="FrontendInfo">STRING</convert>
+        </widget>
+    </screen>
+
+    <screen name="TemplateInfoBar" flags="wfNoBorder">
+        <eLabel position="center,e-240" size="1920,240" backgroundColor="BG" zPosition="-20"/>
+        <panel name="InfoBarLeft"/>
+        <panel name="InfoBarMiddle"/>
+        <panel name="InfoBarRight"/>
+    </screen>
+
+    <screen name="TemplateSecondInfoBar" flags="wfNoBorder">
+        <eLabel position="center,0" size="1920,136" backgroundColor="BG" zPosition="-20"/>
+        <panel name="InfoBarTop"/>
+        <panel name="TemplateInfoBar"/>
+    </screen>
+
+    <screen name="TemplateMediaPlayerInfoBar" flags="wfNoBorder">
+        <eLabel position="center,e-240" size="1920,240" backgroundColor="BG" zPosition="-20"/>
+
+        <widget source="session.CurrentService" render="Label" position="320,e-224" size="1000,80" font="Title" foregroundColor="ThemeFG" valign="center" noWrap="1">
+            <convert type="ServiceName">Name</convert>
+        </widget>
+
+        <!-- Recording state -->
+
+        <widget source="session.RecordState" render="Pixmap" pixmap="icons/rec.png" position="e-320-108,e-197" size="28,28" alphatest="blend">
+            <!-- <convert type="ConditionalShowHide"/> -->
+            <convert type="ConditionalShowHide">Blink</convert>
+        </widget>
+
+        <!-- Basic media info -->
+
+        <ePixmap pixmap="icons/audio_off.png" position="e-320-68,e-197" size="28,28" alphatest="blend" zPosition="-1"/>
+
+        <widget source="session.CurrentService" render="Pixmap" pixmap="icons/audio.png" position="e-320-68,e-197" size="28,28" alphatest="blend">
+            <convert type="ServiceInfo">AudioTracksAvailable</convert>
+            <convert type="ConditionalShowHide"/>
+        </widget>
+
+        <ePixmap pixmap="icons/subs_off.png" position="e-320-28,e-197" size="28,28" alphatest="blend" zPosition="-1"/>
+
+        <widget source="session.CurrentService" render="Pixmap" pixmap="icons/subs.png" position="e-320-28,e-197" size="28,28" alphatest="blend">
+            <convert type="ServiceInfo">SubtitlesAvailable</convert>
+            <convert type="ConditionalShowHide"/>
+        </widget>
+
+        <!-- Audio type -->
+
+        <widget source="session.CurrentService" render="FixedLabel" text="2.0" position="e-660,e-144" size="50,38" font="RM" halign="center" valign="center">
+            <convert type="ServiceInfo">IsStereo</convert>
+            <convert type="ConditionalShowHide"/>
+        </widget>
+        <widget source="session.CurrentService" render="FixedLabel" text="5.1" position="e-660,e-144" size="50,38" font="RM" halign="center" valign="center">
+            <convert type="ServiceInfo">IsMultichannel</convert>
+            <convert type="ConditionalShowHide"/>
+        </widget>
+
+         <!-- Resolution -->
+
+        <widget source="session.CurrentService" render="VideoSize" position="e-610,e-144" size="130,38" font="RM" halign="center" valign="center"/>
+
+        <!-- Video Codec -->
+
+        <widget source="session.CurrentService" render="FixedLabel" text="MPEG-2" position="e-480,e-144" size="90,38" font="RM" halign="center" valign="center">
+            <convert type="ServiceInfo">IsVideoMPEG2</convert>
+            <convert type="ConditionalShowHide"/>
+        </widget>
+        <widget source="session.CurrentService" render="FixedLabel" text="AVC" position="e-480,e-144" size="90,38" font="RM" halign="center" valign="center">
+            <convert type="ServiceInfo">IsVideoAVC</convert>
+            <convert type="ConditionalShowHide"/>
+        </widget>
+        <widget source="session.CurrentService" render="FixedLabel" text="HEVC" position="e-480,e-144" size="90,38" font="RM" halign="center" valign="center">
+            <convert type="ServiceInfo">IsVideoHEVC</convert>
+            <convert type="ConditionalShowHide"/>
+        </widget>
+
+       <!-- HDR type -->
+
+        <widget source="session.CurrentService" render="FixedLabel" text="SDR" position="e-390,e-144" size="70,38" font="RM" halign="right" valign="center">
+            <convert type="ServiceInfo">IsSDR</convert>
+            <convert type="ConditionalShowHide"/>
+        </widget>
+        <widget source="session.CurrentService" render="FixedLabel" text="HDR" position="e-390,e-144" size="70,38" font="RM" halign="right" valign="center">
+            <convert type="ServiceInfo">IsHDR</convert>
+            <convert type="ConditionalShowHide"/>
+        </widget>
+        <widget source="session.CurrentService" render="FixedLabel" text="HDR10" position="e-390,e-144" size="70,38" font="RM" halign="right" valign="center">
+            <convert type="ServiceInfo">IsHDR10</convert>
+            <convert type="ConditionalShowHide"/>
+        </widget>
+        <widget source="session.CurrentService" render="FixedLabel" text="HLG" position="e-390,e-144" size="70,38" font="RM" halign="right" valign="center">
+            <convert type="ServiceInfo">IsHLG</convert>
+            <convert type="ConditionalShowHide"/>
+        </widget>
+
+        <!-- Progress -->
+
+        <widget source="session.CurrentService" render="Progress" position="320,e-93" size="1280,12" foregroundColor="White" borderColor="ThemeGrey" borderWidth="2">
+            <convert type="ServicePosition">Position</convert>
+        </widget>
+        <widget source="session.CurrentService" render="PositionGauge" position="320,e-91" size="1280,8" zPosition="5" transparent="1"> <!--pointer="icons/position_pointer1024.png:1012,0"-->
+            <convert type="ServicePosition">Gauge</convert>
+        </widget>
+        <widget source="session.CurrentService" render="Label" position="320,e-68" size="120,38" font="RM" halign="left" valign="center">
+            <convert type="ServicePosition">Position</convert>
+        </widget>
+        <widget source="session.CurrentService" render="Label" position="1480,e-68" size="120,38" font="RM" halign="right" valign="center">
+            <convert type="ServicePosition">Remaining,Negate</convert>
+        </widget>
+
+        <!-- Duration -->
+
+        <widget source="session.CurrentService" render="Label" position="center,e-68" size="120,38" font="RM" halign="center" valign="center">
+            <convert type="ServicePosition">Length,ShowHours</convert>
+        </widget>
+    </screen>
+
+</skin>
