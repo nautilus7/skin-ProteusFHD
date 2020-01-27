@@ -1337,6 +1337,29 @@ self.instance.move(ePoint((1920 - wsizex) / 2, (1080 - wsizey) / 2))
 
     <screen name="SimpleSummary" flags="wfNoBorder" position="0,0" size="0,0"/>
 
+    <!-- .../python/Screens/SkinSelector.py -->
+
+    <screen name="SkinSelector" title="GUI Skin" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <panel name="TemplateSimpleDivided2To1"/>
+        <ePixmap pixmap="icons/panel/sliders-h.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget source="skins" render="Listbox" position="350,110" size="854,440" scrollbarMode="showOnDemand">
+            <convert type="TemplatedMultiContent">
+                {
+                    "template": [
+                        MultiContentEntryText(pos = (15,0), size = (570,44), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1), # name
+                        MultiContentEntryText(pos = (589,0), size = (250,44), font = 1, flags = RT_HALIGN_RIGHT|RT_VALIGN_CENTER, text = 2), # description
+                    ],
+                    "fonts": [ gFont("Regular", 32), gFont("Light", 27) ],
+                    "itemHeight": 44
+                }
+            </convert>
+        </widget>
+        <widget name="preview" position="1224,110" size="356,200" alphatest="blend"/>
+        <widget source="description" render="Label" position="350,600" size="1230,170" font="Description" valign="center" halign="center"/>
+    </screen>
+
+    <screen name="SkinSelectorSummary" flags="wfNoBorder" position="0,0" size="0,0"/>
+
     <!-- .../python/Screens/SoftcamSetup.py -->
 
     <screen name="SoftcamSetup" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
@@ -1991,16 +2014,6 @@ self.instance.move(ePoint((1920 - wsizex) / 2, (1080 - wsizey) / 2))
         <widget source="Frontend" render="Label" position="160+810,100+726" size="150,44" font="Body" valign="center">
             <convert type="FrontendInfo">BER</convert>
         </widget>
-    </screen>
-
-    <!-- .../python/Plugins/SystemPlugins/SkinSelector/plugin.py -->
-
-    <screen name="SkinSelector" title="Select your Skin" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
-        <ePixmap pixmap="icons/panel/sliders-h.png" position="40,center" size="240,240" alphatest="blend"/>
-        <widget name="SkinList" position="350,110" size="930,660" font="Body" itemHeight="44" textOffset="15,0" scrollbarMode="showOnDemand"/>
-        <widget name="Preview" position="1300,110" size="280,210" alphatest="blend"/>
-        <widget source="introduction" render="Label" position="0,0" size="0,0"/> <!-- hidden -->
-        <panel name="TemplateSimple"/>
     </screen>
 
     <!-- .../python/Plugins/SystemPlugins/SoftwareManager/plugin.py -->
