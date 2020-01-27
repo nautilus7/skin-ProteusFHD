@@ -836,9 +836,9 @@ self[&quot;list&quot;].instance.move(ePoint(30, wsizey - 30 - listlen))
         <panel name="TemplateSimpleDivided2To1"/>
     </screen>
 
-    <!-- .../python/Screens/Ipkg.py -->
+    <!-- .../python/Screens/Opkg.py -->
 
-    <screen name="Ipkg" title="Installing Software" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp"> <!-- untested -->
+    <screen name="Opkg" title="Installing Software" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp"> <!-- untested -->
         <ePixmap pixmap="icons/dummy.png" position="40,center" size="240,240" alphatest="blend"/>
         <widget name="package" position="350,110" size="1230,44" font="Body"/>
         <widget name="status" position="350,198" size="1230,88" font="Body"/>
@@ -2138,13 +2138,13 @@ self.instance.move(ePoint((1920 - wsizex) / 2, (1080 - wsizey) / 2))
         <panel name="TemplateSimple"/>
     </screen>
 
-    <screen name="IPKGMenu" title="Select upgrade source to edit" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+    <screen name="OPKGMenu" title="Select upgrade source to edit" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
         <ePixmap pixmap="icons/panel/sync-alt.png" position="40,center" size="240,240" alphatest="blend"/>
         <widget name="filelist" position="350,110" size="1230,660" font="Body" itemHeight="44" textOffset="15,0" scrollbarMode="showOnDemand"/>
         <panel name="TemplateSimple"/>
     </screen>
 
-    <screen name="IPKGSource" title="Edit upgrade source url" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+    <screen name="OPKGSource" title="Edit upgrade source url" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
         <ePixmap pixmap="icons/panel/sync-alt.png" position="40,center" size="240,240" alphatest="blend"/>
         <widget name="text" position="350,110" size="1230,44" font="Body" valign="center"/>
         <panel name="TemplateSimple"/>
@@ -2168,7 +2168,7 @@ self.instance.move(ePoint((1920 - wsizex) / 2, (1080 - wsizey) / 2))
         <panel name="TemplateSimple"/>
     </screen>
 
-    <screen name="IpkgInstaller" title="Install extensions from ..." flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+    <screen name="OpkgInstaller" title="Install extensions from ..." flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
         <ePixmap pixmap="icons/panel/sync-alt.png" position="40,center" size="240,240" alphatest="blend"/>
         <widget name="list" position="350,110" size="1230,440"/> <!-- SelectionList -->
         <widget source="introduction" render="Label" position="350,600" size="1230,170" font="Description" halign="center" valign="center"/> <!-- hide??? -->
