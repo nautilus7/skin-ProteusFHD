@@ -129,8 +129,8 @@
     </screen>
 
     <screen name="InfoBarMiddle" flags="wfNoBorder">
-        <widget source="session.CurrentService" render="ChannelNumber" position="300,e-221" size="80,80" font="SecTitle" foregroundColor="ThemeFG" valign="center"/>
-        <widget source="session.CurrentService" render="Label" position="390,e-224" size="700,80" font="Title" foregroundColor="ThemeFG" valign="center" noWrap="1">
+        <widget source="session.CurrentService" render="ChannelNumber" position="300,e-221" size="100,80" font="SecTitle" foregroundColor="ThemeFG" valign="center"/>
+        <widget source="session.CurrentService" render="Label" position="410,e-224" size="800,80" font="Title" foregroundColor="ThemeFG" valign="center" noWrap="1">
             <convert type="ServiceName">Name</convert>
         </widget>
 
