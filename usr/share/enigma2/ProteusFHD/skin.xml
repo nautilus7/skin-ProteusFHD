@@ -2218,7 +2218,7 @@ self.instance.move(ePoint((1920 - wsizex) / 2, (1080 - wsizey) / 2))
         <widget source="ESSID" render="Label" position="1100,154" size="480,44" font="ConfigList" valign="center" halign="right"/>
         <widget source="quality" render="Label" position="1100,198" size="480,44" font="ConfigList" valign="center" halign="right"/>
         <widget source="signal" render="Label" position="1100,242" size="480,44" font="ConfigList" valign="center" halign="right"/>
-        <widget source="bitrate" render="Label" position="1110,286" size="480,44" font="ConfigList" valign="center" halign="right"/>
+        <widget source="bitrate" render="Label" position="1100,286" size="480,44" font="ConfigList" valign="center" halign="right"/>
         <widget source="enc" render="Label" position="1100,330" size="480,44" font="ConfigList" valign="center" halign="right"/>
 
         <widget source="IFtext" render="Label" position="350,462" size="200,44" font="Body" valign="center"/>
