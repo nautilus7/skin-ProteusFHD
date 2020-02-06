@@ -1122,7 +1122,7 @@ self.instance.move(ePoint((1920 - wsizex) / 2, (1080 - wsizey) / 2))
         <widget source="IFtext" render="Label" position="350,462" size="200,44" font="Body" valign="center"/>
         <widget source="IF" render="Label" position="550,462" size="300,44" font="Body" valign="center"/>
         <widget source="Statustext" render="Label" position="350,506" size="200,44" font="Body" valign="center"/>
-        <widget name="statuspic" position="550,514" size="28,28" pixmaps="buttons/lock_on.png,buttons/lock_off.png" alphatest="blend"/>
+        <widget name="statuspic" position="550,514" size="28,28" pixmaps="icons/lock_on.png,icons/lock_off.png" alphatest="blend"/>
         <widget source="description" render="Label" position="350,600" size="1230,170" font="Description" halign="center" valign="center"/>
     </screen>
 
@@ -1136,11 +1136,11 @@ self.instance.move(ePoint((1920 - wsizex) / 2, (1080 - wsizey) / 2))
         <widget name="IPtext" position="350,242" size="300,44" font="Body" valign="center"/>
         <widget name="DNStext" position="350,286" size="300,44" font="Body" valign="center"/>
 
-        <widget name="AdapterInfo_OK" position="750,118" size="28,28" pixmap="buttons/lock_on.png" alphatest="blend"/>
-        <widget name="NetworkInfo_Check" position="750,162" size="28,28" pixmaps="buttons/lock_on.png,buttons/lock_error.png" alphatest="blend"/>
-        <widget name="DhcpInfo_Check" position="750,206" size="28,28" pixmaps="buttons/lock_on.png,buttons/lock_error.png" alphatest="blend"/>
-        <widget name="IPInfo_Check" position="750,250" size="28,28" pixmaps="buttons/lock_on.png,buttons/lock_error.png" alphatest="blend"/>
-        <widget name="DNSInfo_Check" position="750,294" size="28,28" pixmaps="buttons/lock_on.png,buttons/lock_error.png" alphatest="blend"/>
+        <widget name="AdapterInfo_OK" position="750,118" size="28,28" pixmap="icons/lock_on.png" alphatest="blend"/>
+        <widget name="NetworkInfo_Check" position="750,162" size="28,28" pixmaps="icons/lock_on.png,icons/lock_error.png" alphatest="blend"/>
+        <widget name="DhcpInfo_Check" position="750,206" size="28,28" pixmaps="icons/lock_on.png,icons/lock_error.png" alphatest="blend"/>
+        <widget name="IPInfo_Check" position="750,250" size="28,28" pixmaps="icons/lock_on.png,icons/lock_error.png" alphatest="blend"/>
+        <widget name="DNSInfo_Check" position="750,294" size="28,28" pixmaps="icons/lock_on.png,icons/lock_error.png" alphatest="blend"/>
 
         <widget name="Adapter" position="800,110" size="250,44" font="Body" foregroundColors="BG,Red,Green"/>
         <widget name="Network" position="800,154" size="250,44" font="Body" foregroundColors="BG,Red,Green"/>
@@ -1934,8 +1934,8 @@ self.instance.move(ePoint((1920 - wsizex) / 2, (1080 - wsizey) / 2))
         <widget name="AGC" position="160+350,100+682" size="100,44" font="Body" valign="center"/>
         <widget name="BER" position="160+350,100+726" size="100,44" font="Body" valign="center"/>
 
-        <widget name="lock_on" position="160+450,100+602" size="28,28" pixmap="buttons/lock_on.png" alphatest="blend"/>
-        <widget name="lock_off" position="160+450,100+602" size="28,28" pixmap="buttons/lock_off.png" alphatest="blend"/>
+        <widget name="lock_on" position="160+450,100+602" size="28,28" pixmap="icons/lock_on.png" alphatest="blend"/>
+        <widget name="lock_off" position="160+450,100+602" size="28,28" pixmap="icons/lock_off.png" alphatest="blend"/>
         <widget name="snr_bar" position="160+450,100+646" size="320,28" borderWidth="1"/>
         <widget name="agc_bar" position="160+450,100+690" size="320,28" borderWidth="1"/>
         <widget name="ber_bar" position="160+450,100+734" size="320,28" borderWidth="1"/>
@@ -1982,11 +1982,11 @@ self.instance.move(ePoint((1920 - wsizex) / 2, (1080 - wsizey) / 2))
         <widget name="introduction" position="0,0" size="0,0"/> <!-- hidden -->
 
         <eLabel text="LOCK:" position="160+350,100+594" size="100,44" font="Body" valign="center"/>
-        <widget source="Frontend" render="Pixmap" pixmap="buttons/lock_on.png" position="160+450,100+602" size="28,28" alphatest="blend">
+        <widget source="Frontend" render="Pixmap" pixmap="icons/lock_on.png" position="160+450,100+602" size="28,28" alphatest="blend">
             <convert type="FrontendInfo">LOCK</convert>
             <convert type="ConditionalShowHide"/>
         </widget>
-        <widget source="Frontend" render="Pixmap" pixmap="buttons/lock_off.png" position="160+450,100+602" size="28,28" alphatest="blend">
+        <widget source="Frontend" render="Pixmap" pixmap="icons/lock_off.png" position="160+450,100+602" size="28,28" alphatest="blend">
             <convert type="FrontendInfo">LOCK</convert>
             <convert type="ConditionalShowHide">Invert</convert>
         </widget>
@@ -2224,7 +2224,7 @@ self.instance.move(ePoint((1920 - wsizex) / 2, (1080 - wsizey) / 2))
         <widget source="IFtext" render="Label" position="350,462" size="200,44" font="Body" valign="center"/>
         <widget source="IF" render="Label" position="550,462" size="300,44" font="Body" valign="center"/>
         <widget source="Statustext" render="Label" position="350,506" size="200,44" font="Body" valign="center"/>
-        <widget name="statuspic" position="550,514" size="28,28" pixmaps="buttons/lock_on.png,buttons/lock_off.png" alphatest="blend"/>
+        <widget name="statuspic" position="550,514" size="28,28" pixmaps="icons/lock_on.png,icons/lock_off.png" alphatest="blend"/>
     </screen>
 
     <screen name="WlanScan" title="Select a wireless network" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">

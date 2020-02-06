@@ -10,9 +10,9 @@
         <widget name="AudioSlider" position="e-130,21" size="100,44" font="RM" foregroundColor="ThemeFG" valign="center" halign="right"/>
         <widget name="AudioSliderBar" pixmap="icons/dummy.png" position="0,0" size="0,0"/> <!-- hidden -->
 
-        <widget name="ChannelImg" pixmaps="buttons/lock_off.png,buttons/lock_on.png" position="30,e-146" size="28,28" alphatest="blend"/>
+        <widget name="ChannelImg" pixmaps="icons/lock_off.png,icons/lock_on.png" position="30,e-146" size="28,28" alphatest="blend"/>
         <widget name="ChannelLabel" position="70,e-154" size="(e-140)/2,44" font="RM" foregroundColors="White,White" valign="center"/>
-        <widget name="GlobalImg" pixmaps="buttons/lock_off.png,buttons/lock_on.png" position="c,e-146" size="28,28" alphatest="blend"/>
+        <widget name="GlobalImg" pixmaps="icons/lock_off.png,icons/lock_on.png" position="c,e-146" size="28,28" alphatest="blend"/>
         <widget name="GlobalLabel" position="c+40,e-154" size="(e-140)/2,44" font="RM" foregroundColors="White,White" valign="center"/>
 
         <ePixmap objectTypes="key_red,Button,Label" pixmap="buttons/key_red.png" position="30,e-102" size="28,28"/>
@@ -140,11 +140,11 @@
         <widget name="introduction" position="0,0" size="0,0"/> <!-- hidden -->
         <widget name="rotorstatus" position="350,726" size="750,44" font="Body" valign="center"/>
         <eLabel text="LOCK:" position="1100,726" size="280,44" font="Body" valign="center"/>
-        <widget source="Frontend" render="Pixmap" pixmap="buttons/lock_on.png" position="1200,734" size="28,28" alphatest="blend">
+        <widget source="Frontend" render="Pixmap" pixmap="icons/lock_on.png" position="1200,734" size="28,28" alphatest="blend">
             <convert type="FrontendInfo">LOCK</convert>
             <convert type="ConditionalShowHide"/>
         </widget>
-        <widget source="Frontend" render="Pixmap" pixmap="buttons/lock_off.png" position="1200,734" size="28,28" alphatest="blend">
+        <widget source="Frontend" render="Pixmap" pixmap="icons/lock_off.png" position="1200,734" size="28,28" alphatest="blend">
             <convert type="FrontendInfo">LOCK</convert>
             <convert type="ConditionalShowHide">Invert</convert>
         </widget>
