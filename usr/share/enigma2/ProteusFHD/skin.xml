@@ -1764,16 +1764,6 @@ self.instance.move(ePoint((1920 - wsizex) / 2, (1080 - wsizey) / 2))
         <panel name="TemplateSimple"/>
     </screen>
 
-    <!-- .../python/Plugins/SystemPlugins/HdmiCEC/plugin.py -->
-
-    <screen name="HdmiCECSetupScreen" title="HDMI-CEC Setup" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
-        <ePixmap pixmap="icons/panel/sliders-h.png" position="40,center" size="240,240" alphatest="blend"/>
-        <widget name="config" position="350,110" size="1230,440" font="Body" itemHeight="44" secondfont="ConfigList" scrollbarMode="showOnDemand"/>
-        <widget source="current_address" render="Label" position="350,600" size="1230,38" font="Description"/>
-        <widget source="fixed_address" render="Label" position="350,638" size="1230,38" font="Description"/>
-        <panel name="TemplateSimpleDivided2To1"/>
-    </screen>
-
     <!-- .../python/Plugins/SystemPlugins/MPHelp/MPHelp.py -->
 
     <screen name="MPHelp" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
