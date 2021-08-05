@@ -216,6 +216,7 @@
 
     <screen name="EPGImportConfig" title="EPG Import Configuration" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
         <ePixmap pixmap="icons/panel/table.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="description" position="350,600" size="1230,170" font="Description"/>
         <widget name="config" position="350,110" size="1230,440" font="Body" itemHeight="44" secondfont="ConfigList" scrollbarMode="showOnDemand"/>
         <widget name="status" position="350,732" size="600,38" font="Description" halign="left" valign="center"/>
         <widget name="statusbar" position="1000,732" size="580,38" font="Description" halign="right" valign="center"/>
