@@ -228,16 +228,6 @@
     <include filename="skin_plugins.xml"/>
     <include filename="skin_sdg_panel.xml"/>
 
-    <!-- unknown source - used in: AutoBackup screen -->
-
-    <screen name="Config" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
-        <ePixmap pixmap="icons/panel/sliders-h.png" position="40,center" size="240,240" alphatest="blend"/>
-        <widget name="config" position="350,110" size="1230,440" font="Body" itemHeight="44" secondfont="ConfigList" scrollbarMode="showOnDemand"/>
-        <widget name="status" position="350,600" size="1230,38" font="Description"/>
-        <widget name="statusbar" position="350,640" size="1230,38" font="Description"/>
-        <panel name="TemplateSimpleDivided2To1"/>
-    </screen>
-
     <!-- .../python/Screens/About.py -->
 
     <screen name="About" title="About" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
@@ -1500,6 +1490,18 @@ self.instance.move(ePoint((1920 - wsizex) / 2, (1080 - wsizey) / 2))
     <!-- pre-installed plugins -->
 
 
+    <!-- .../python/Plugins/Extensions/AutoBackup/ui.py -->
+
+    <screen name="Config" title="AutoBackup Configuration" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/sliders-h.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="config" position="350,110" size="1230,440" font="Body" itemHeight="44" secondfont="ConfigList" scrollbarMode="showOnDemand"/>
+        <widget name="status" position="350,600" size="1230,38" font="Description"/>
+        <widget name="statusbar" position="350,640" size="1230,38" font="Description"/>
+        <panel name="TemplateSimpleDivided2To1"/>
+    </screen>
+
+    <!-- There is also a BackupSelection screen (duplicate from BackupRestore plugin) -->
+
     <!-- .../python/Plugins/Extensions/DVDBurn/ProjectSettings.py --> <!-- more screens missing -->
 
     <screen name="FileBrowser" title="DVD file browser" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
@@ -2175,7 +2177,7 @@ self.instance.move(ePoint((1920 - wsizex) / 2, (1080 - wsizey) / 2))
         <panel name="TemplateSimpleDivided2To1"/>
     </screen>
 
-    <screen name="BackupSelection" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+    <screen name="BackupSelection" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp"> <!-- Same screen as in AutoBackup plugin -->>
         <ePixmap pixmap="icons/panel/save.png" position="40,center" size="240,240" alphatest="blend"/>
         <widget name="checkList" position="350,110" size="1230,660" font="Body" itemHeight="44" scrollbarMode="showOnDemand"/>
         <panel name="TemplateSimple"/>
