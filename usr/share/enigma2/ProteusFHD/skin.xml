@@ -595,7 +595,7 @@ self[&quot;list&quot;].instance.move(ePoint(30, wsizey - 30 - listlen))
     <screen name="Dishpip" title="DishPiP" flags="wfNoBorder" position="e-280,center" size="240,400" backgroundColor="ThemeBG" zPosition="99">
         <eLabel position="10,10" size="e-20,e-20" backgroundColor="BG" zPosition="-20"/>
         <widget source="Dishpixmap" render="Pixmap" position="center,30" size="120,120" pixmap="icons/other/compass_small.png" alphatest="blend">
-            <convert type="ConditionalShowHide">Blink</convert>
+            <convert type="ConditionalShowHide">Blink,250,250</convert>
         </widget>
         <widget name="tunerName" position="30,160" size="e-60,44" font="Body" valign="center" halign="center"/>
         <widget source="Frontend" render="Progress" position="30,210" size="e-60,28" borderWidth="1">

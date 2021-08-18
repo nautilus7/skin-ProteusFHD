@@ -137,8 +137,7 @@
         <!-- Recording state -->
 
         <widget source="session.RecordState" render="Pixmap" pixmap="icons/rec.png" position="e-360-228,e-197" size="28,28" alphatest="blend">
-            <!--<convert type="ConditionalShowHide"/>-->
-            <convert type="ConditionalShowHide">Blink</convert>
+            <convert type="ConditionalShowHide">Blink,500,500</convert>
         </widget>
 
         <!-- Stream -->
@@ -312,8 +311,7 @@
         <!-- Recording state -->
 
         <widget source="session.RecordState" render="Pixmap" pixmap="icons/rec.png" position="e-320-108,e-197" size="28,28" alphatest="blend">
-            <!-- <convert type="ConditionalShowHide"/> -->
-            <convert type="ConditionalShowHide">Blink</convert>
+            <convert type="ConditionalShowHide">Blink,500,500</convert>
         </widget>
 
         <!-- Basic media info -->
