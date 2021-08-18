@@ -230,37 +230,62 @@
             <convert type="ClockToText">Format:%H:%M %a %e %b</convert>
         </widget>
 
-        <!-- SNR, AGC, BER, tuners -->
+        <!-- SNR -->
 
-        <eLabel text="SNR" position="e-320,e-144" size="60,38" font="RM" foregroundColor="ThemeGrey" halign="left" valign="center"/>
+        <widget source="session.FrontendStatus" render="FixedLabel" text="SNR" position="e-320,e-144" size="60,38" font="RM" foregroundColor="ThemeGrey" halign="left" valign="center">
+            <convert type="FrontendInfo">SNRdB</convert>
+            <convert type="ConditionalShowHide"/>
+        </widget>
         <widget source="session.FrontendStatus" render="Label" position="e-250,e-144" size="90,38" font="RM" halign="left" valign="center">
             <convert type="FrontendInfo">SNRdB</convert>
+            <convert type="ConditionalShowHide"/>
         </widget>
         <widget source="session.FrontendStatus" render="Progress" position="e-140,e-131" size="100,12" foregroundColor="White" borderColor="ThemeGrey" borderWidth="2">
             <convert type="FrontendInfo">SNR</convert>
+            <convert type="ConditionalShowHide"/>
         </widget>
 
-        <eLabel text="AGC" position="e-320,e-106" size="60,38" font="RM" foregroundColor="ThemeGrey" halign="left" valign="center"/>
+        <!-- AGC -->
+
+        <widget source="session.FrontendStatus" render="FixedLabel" text="AGC" position="e-320,e-106" size="60,38" font="RM" foregroundColor="ThemeGrey" halign="left" valign="center">
+            <convert type="FrontendInfo">AGC</convert>
+            <convert type="ConditionalShowHide"/>
+        </widget>
         <widget source="session.FrontendStatus" render="Label" position="e-250,e-106" size="90,38" font="RM" halign="left" valign="center">
             <convert type="FrontendInfo">AGC</convert>
+            <convert type="ConditionalShowHide"/>
         </widget>
         <widget source="session.FrontendStatus" render="Progress" position="e-140,e-93" size="100,12" foregroundColor="White" borderColor="ThemeGrey" borderWidth="2">
             <convert type="FrontendInfo">AGC</convert>
+            <convert type="ConditionalShowHide"/>
         </widget>
 
-        <eLabel text="BER" position="e-320,e-68" size="60,38" font="RM" foregroundColor="ThemeGrey" halign="left" valign="center"/>
+        <!-- BER -->
+
+        <widget source="session.FrontendStatus" render="FixedLabel" text="BER" position="e-320,e-68" size="60,38" font="RM" foregroundColor="ThemeGrey" halign="left" valign="center">
+            <convert type="FrontendInfo">BER</convert>
+            <convert type="ConditionalShowHide"/>
+        </widget>
         <widget source="session.FrontendStatus" render="Label" position="e-250,e-68" size="60,38" font="RM" halign="left" valign="center">
             <convert type="FrontendInfo">BER</convert>
+            <convert type="ConditionalShowHide"/>
         </widget>
         <!-- <widget source="session.FrontendStatus" render="Progress" position="e-140,e-55" size="100,12" foregroundColor="White" borderColor="ThemeGrey" borderWidth="2">
             <convert type="FrontendInfo">BER</convert>
+            <convert type="ConditionalShowHide"/>
         </widget> -->
+
+        <!-- Orbital position -->
 
         <!-- <widget source="session.CurrentService" render="Label" position="e-320,150" size="100,38" font="RM" halign="left" valign="center">
             <convert type="PliExtraInfo">OrbitalPosition</convert>
         </widget> -->
+
+        <!-- Tuners -->
+
         <widget source="session.FrontendInfo" render="Label" position="e-190,e-68" size="150,38" font="RM" halign="right" valign="center">
             <convert type="FrontendInfo">STRING</convert>
+            <convert type="ConditionalShowHide"/>
         </widget>
     </screen>
 
