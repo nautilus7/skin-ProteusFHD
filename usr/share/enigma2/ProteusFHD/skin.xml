@@ -48,12 +48,11 @@
     <!-- Font files - attributes: filename, name, scale -->
 
     <fonts>
-        <!-- <font filename="fonts/SourceSansPro-Light.otf" name="Light"/> --> <!-- 300 -->
-        <font filename="fonts/SourceSansPro-Regular.otf" name="Light"/> <!-- 400 -->
-        <font filename="fonts/SourceSansPro-Semibold.otf" name="Regular"/> <!-- 600 -->
-        <font filename="fonts/SourceSansPro-Bold.otf" name="Medium"/> <!-- 700 -->
+        <!-- <font filename="fonts/SourceSans3-Light.otf" name="Light"/> --> <!-- 300 -->
+        <font filename="fonts/SourceSans3-Regular.otf" name="Light"/> <!-- 400 -->
+        <font filename="fonts/SourceSans3-Semibold.otf" name="Regular"/> <!-- 600 -->
+        <font filename="fonts/SourceSans3-Bold.otf" name="Medium"/> <!-- 700 -->
         <font filename="fonts/SourceCodePro-Regular.otf" name="Mono"/> <!-- 400 -->
-        <!-- <font filename="fonts/SourceCodePro-Medium.otf" name="Mono"/> --> <!-- 500 -->
 
         <!-- Font aliases - attributes: name, font, size (px), (item) height, width -->
 
