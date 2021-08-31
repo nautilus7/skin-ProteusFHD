@@ -108,6 +108,8 @@
     <parameters>
         <parameter name="AboutHddSplit" value="1"/> <!-- screen "About" -->
 
+        <parameter name="CiModuleControlColors" value="ThemeGrey,FG,ThemeFG,ThemeBG"/> <!-- no module, init, ready, error colors -->
+
         <parameter name="ChoicelistIcon" value="15,8,28,28"/> <!-- class ChoiceList -->
         <parameter name="ChoicelistDash" value="15,8,28,28"/>
         <parameter name="ChoicelistName" value="58,0,1000,44"/>
