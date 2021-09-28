@@ -733,7 +733,7 @@ self[&quot;list&quot;].instance.move(ePoint(30, wsizey - 30 - listlen))
         <ePixmap pixmap="icons/panel/fire-alt.png" position="40,center" size="240,240" alphatest="blend"/>
         <widget name="list" position="350,110" size="1230,440" scrollbarMode="showOnDemand" font="Body" itemHeight="44"/>
         <widget name="choosen" position="350,600" size="750,170" itemHeight="44"/> <!-- choicelist -->
-        <widget name="description" position="1100,668" size="480,102" font="Description"/>
+        <widget name="description" position="1100,618" size="480,152" font="Description" halign="right" valign="bottom"/>
         <panel name="TemplateSimpleDivided2To1"/>
     </screen>
 
@@ -741,7 +741,7 @@ self[&quot;list&quot;].instance.move(ePoint(30, wsizey - 30 - listlen))
         <ePixmap pixmap="icons/panel/fire-alt.png" position="40,center" size="240,240" alphatest="blend"/>
         <widget name="list" position="350,110" size="1230,440" font="Body" itemHeight="44" scrollbarMode="showOnDemand"/>
         <widget name="choosen" position="350,600" size="750,170" itemHeight="44"/> <!-- choicelist -->
-        <widget name="description" position="1100,668" size="480,102" font="Description"/>
+        <widget name="description" position="1100,618" size="480,152" font="Description" halign="right" valign="bottom"/>
         <widget name="h_prev" pixmap="icons/dummy.png" position="0,0" size="0,0"/> <!-- hidden -->
         <widget name="h_next" pixmap="icons/dummy.png" position="0,0" size="0,0"/> <!-- hidden -->
         <panel name="TemplateSimpleDivided2To1"/>
