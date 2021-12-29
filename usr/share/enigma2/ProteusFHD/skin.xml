@@ -130,6 +130,8 @@
 
         <parameter name="FrontendInfoColors" value="ThemeFG,FG,ThemeGrey"/> <!-- tuner active, busy, available colors -->
 
+        <parameter name="HddStateColors" value="FG,ThemeFG"/> <!-- hdd standby, active colors -->
+
         <parameter name="HelpMenuListHlp" value="15,0,910,44"/>
         <parameter name="HelpMenuListExtHlp0" value="15,3,910,44"/>
         <parameter name="HelpMenuListExtHlp1" value="15,47,910,38"/>
