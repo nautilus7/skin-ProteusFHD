@@ -3,7 +3,7 @@
 
     <!-- SatDreamGr Panel+ -->
 
-    <screen name="Panel" flags="wfNoBorder" position="center,center" size="1280,880" backgroundColor="Transp">
+    <screen name="SDGPanel" flags="wfNoBorder" position="center,center" size="1280,880" backgroundColor="Transp">
         <panel name="TemplateSimple"/>
         <ePixmap pixmap="icons/panel/layer-plus.png" position="40,center" size="240,240" alphatest="blend"/>
         <widget source="list" render="Listbox" position="350,110" size="910,660">
@@ -15,14 +15,6 @@
                 }
             </convert>
         </widget>
-    </screen>
-
-    <screen name="System_Panel" flags="wfNoBorder" position="center,center" size="1280,880" backgroundColor="Transp">
-        <panel name="Panel"/>
-    </screen>
-
-    <screen name="Plugins_Panel" flags="wfNoBorder" position="center,center" size="1280,880" backgroundColor="Transp">
-        <panel name="Panel"/>
     </screen>
 
     <!-- Archive explorer -->
