@@ -91,46 +91,6 @@
         </widget>
     </screen>
 
-    <!-- Enigma2 settings -->
-
-    <screen name="SDG_Menu" title="Enigma2 settings" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
-        <ePixmap pixmap="icons/panel/list-ul.png" position="40,center" size="240,240" alphatest="blend"/>
-        <widget source="list" render="Listbox" position="350,110" size="1230,660">
-            <convert type="TemplatedMultiContent">
-                {
-                    "template": [ MultiContentEntryText(pos = (15,0), size = (1200,44), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER, text = 1) ],
-                    "fonts": [ gFont("Regular", 31) ],
-                    "itemHeight": 44
-                }
-            </convert>
-        </widget>
-        <panel name="TemplateSimple"/>
-    </screen>
-
-    <screen name="SDG_ActionBox" title="Downloading..." flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
-        <ePixmap pixmap="icons/panel/list-ul.png" position="40,center" size="240,240" alphatest="blend"/>
-        <widget name="logo" position="0,0" size="0,0"/> <!-- hidden -->
-        <widget name="message" position="350,110" size="1230,44" font="Body" halign="center" valign="center"/>
-        <panel name="TemplateSimple"/>
-    </screen>
-
-    <screen name="SDG_SettingsList" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
-        <ePixmap pixmap="icons/panel/list-ul.png" position="40,center" size="240,240" alphatest="blend"/>
-        <widget source="list" render="Listbox" position="350,110" size="1230,660">
-            <convert type="TemplatedMultiContent">
-                {
-                    "template": [
-                        MultiContentEntryText(pos = (15,0),  size = (800,44), font = 0, flags = RT_HALIGN_LEFT|RT_VALIGN_CENTER,  text = 0),
-                        MultiContentEntryText(pos = (885,0), size = (300,44), font = 0, flags = RT_HALIGN_RIGHT|RT_VALIGN_CENTER, text = 1), # 25 px shorter to leave space for the scrollbar
-                    ],
-                    "fonts": [ gFont("Regular", 31) ],
-                    "itemHeight": 44
-                }
-            </convert>
-        </widget>
-        <panel name="TemplateSimple"/>
-    </screen>
-
     <!-- Remove opkg -->
 
     <screen name="Removeopkg" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
