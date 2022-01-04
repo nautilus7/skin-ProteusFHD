@@ -1266,8 +1266,8 @@ self.instance.move(ePoint((1920 - wsizex) / 2, (1080 - wsizey) / 2))
     <screen name="ScanSetup" title="Manual Scan" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
         <ePixmap pixmap="icons/panel/search.png" position="40,center" size="240,240" alphatest="blend"/>
         <widget name="config" position="350,110" size="1230,440" font="Body" itemHeight="44" secondfont="ConfigList" scrollbarMode="showOnDemand"/>
-        <widget name="description" position="350,600" size="1230,170" font="Description"/>
-        <widget name="introduction" position="350,600" size="1230,170" font="Description" halign="center" valign="center"/>
+        <widget name="description" position="350,600" size="1230,170" font="Description" zPosition="-1"/>
+        <widget name="introduction" position="350,600" size="1230,170" font="Description" halign="center" valign="center" transparent="1"/>
         <panel name="TemplateSimpleDivided2To1"/>
     </screen>
 
