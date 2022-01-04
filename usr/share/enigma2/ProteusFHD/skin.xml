@@ -1385,7 +1385,7 @@ self.instance.move(ePoint((1920 - wsizex) / 2, (1080 - wsizey) / 2))
     <screen name="StandbySummary" flags="wfNoBorder" position="0,0" size="0,0"/>
 
     <screen name="QuitMainloopScreen" flags="wfNoBorder" position="fill" backgroundColor="BG">
-        <widget name="text" position="center,center" size="960,480" font="Title" foregroundColor="ThemeFG" halign="center" valign="center"/>
+        <widget name="text" position="center,center" size="1280,480" font="Title" foregroundColor="ThemeFG" halign="center" valign="center"/>
     </screen>
 
     <!-- .../python/Screens/StreamingClientsInfo.py -->
