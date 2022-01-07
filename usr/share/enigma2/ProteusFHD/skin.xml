@@ -500,7 +500,7 @@ wsizex += 60 + scrollbar
 wsizey += 60 + 6 + listlen
 
 self.instance.resize(eSize(*(wsizex, wsizey)))
-self.instance.move(ePoint((1920 - wsizex) / 2, (1080 - wsizey) / 2))
+self.instance.move(ePoint((1920 - wsizex) // 2, (1080 - wsizey) // 2))
 self[&quot;autoresize&quot;].instance.resize(eSize(*(wsizex - 20, wsizey - 20)))
 self[&quot;text&quot;].instance.resize(eSize(*(wsizex - 60, textsize[1])))
 self[&quot;list&quot;].instance.resize(eSize(*(wsizex - 60, listlen)))
@@ -1012,7 +1012,7 @@ if self.type == self.TYPE_YESNO:
 self[&quot;autoresize&quot;].instance.resize(eSize(*(wsizex - 20, wsizey - 20)))
 self[&quot;text&quot;].instance.resize(eSize(*(wsizex - 200, 120)))
 self.instance.resize(eSize(*(wsizex, wsizey)))
-self.instance.move(ePoint((1920 - wsizex) / 2, (1080 - wsizey) / 2))
+self.instance.move(ePoint((1920 - wsizex) // 2, (1080 - wsizey) // 2))
         </applet>
     </screen>
 
