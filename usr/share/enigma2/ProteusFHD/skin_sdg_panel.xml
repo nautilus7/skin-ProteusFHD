@@ -101,7 +101,7 @@
 
     <!-- SDG radio -->
 
-    <screen name="SDGRadioScreen" title="SDG radio" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+    <!-- <screen name="SDGRadioScreen" title="SDG radio" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
         <panel name="TemplateSimpleDivided1To2"/>
         <ePixmap pixmap="icons/panel/radio.png" position="40,center" size="240,240" alphatest="blend"/>
         <panel name="ButtonsMenuInfo"/>
@@ -133,7 +133,7 @@
         <widget name="prog_type" position="350,330" size="1230,44" font="RL" valign="center" halign="center"/>
         <widget name="radiotext" position="350,374" size="800,396" font="RL" valign="center" halign="center"/>
         <widget name="pic" position="1150,374" size="430,396" alphatest="blend"/>
-    </screen>
+    </screen> -->
 
     <!-- Internet radio -->
 
