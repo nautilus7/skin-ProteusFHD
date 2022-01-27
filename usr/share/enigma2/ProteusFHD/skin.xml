@@ -526,53 +526,6 @@ self[&quot;list&quot;].instance.move(ePoint(30, wsizey - 30 - listlen))
         <panel name="TemplateSimpleDivided2To1"/>
     </screen>
 
-    <!-- .../python/Plugins/SystemPlugins/CommonInterfaceAssignment/plugin.py -->
-
-    <screen name="CIselectMainMenu" title="CI assignment" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
-        <ePixmap pixmap="icons/panel/key.png" position="40,center" size="240,240" alphatest="blend"/>
-        <widget name="CiList" position="350,110" size="1230,440" font="Body" itemHeight="44" scrollbarMode="showOnDemand"/>
-        <panel name="TemplateSimpleDivided2To1"/>
-    </screen>
-
-    <screen name="CIconfigMenu" title="CI assignment" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
-        <ePixmap pixmap="icons/panel/key.png" position="40,center" size="240,240" alphatest="blend"/>
-        <widget source="CAidList_desc" render="Label" position="350,110" size="1230,44" font="Body"/>
-        <widget source="CAidList" render="Label" position="350,150" size="1230,80" font="Body"/>
-        <widget source="ServiceList_desc" render="Label" position="350,230" size="1230,44" font="Body"/>
-        <widget source="ServiceList_info" render="Label" position="350,270" size="1230,120" font="Body"/>
-        <widget name="ServiceList" position="350,430" size="1230,240" font="Body" itemHeight="44" scrollbarMode="showOnDemand"/>
-        <panel name="TemplateSimple"/>
-    </screen>
-
-    <screen name="easyCIconfigMenu" title="CI assignment" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
-        <ePixmap pixmap="icons/panel/key.png" position="40,center" size="240,240" alphatest="blend"/>
-        <widget source="ServiceList_desc" render="Label" position="350,110" size="1230,44" font="Body"/>
-        <widget source="ServiceList_info" render="Label" position="350,150" size="1230,120" font="Body"/>
-        <widget name="ServiceList" position="350,310" size="1230,360" font="Body" itemHeight="44" scrollbarMode="showOnDemand"/>
-        <panel name="TemplateSimple"/>
-    </screen>
-
-    <screen name="CAidSelect" title="select CAId's" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
-        <ePixmap pixmap="icons/panel/key.png" position="40,center" size="240,240" alphatest="blend"/>
-        <widget name="list" position="350,110" size="1230,440" font="Body" itemHeight="44" scrollbarMode="showOnDemand"/>
-        <widget source="introduction" render="Label" position="350,600" size="1230,170" font="Description" halign="center" valign="center"/>
-        <panel name="TemplateSimpleDivided2To1"/>
-    </screen>
-
-    <!-- <screen name="myProviderSelection" title="Select provider to add..." flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
-        <ePixmap pixmap="icons/panel/key.png" position="40,center" size="240,240" alphatest="blend"/>
-        <widget name="list" position="350,110" size="1230,440" font="Body" itemHeight="44" scrollbarMode="showOnDemand"/>
-        <widget source="introduction" render="Label" position="350,600" size="1230,170" font="Description" halign="center" valign="center"/>
-        <panel name="TemplateSimpleDivided2To1"/>
-    </screen> -->
-
-    <!-- <screen name="myChannelSelection" title="Select service to add..." flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
-        <ePixmap pixmap="icons/panel/key.png" position="40,center" size="240,240" alphatest="blend"/>
-        <widget name="list" position="350,110" size="12230,440" font="Body" itemHeight="44" scrollbarMode="showOnDemand"/>
-        <widget source="introduction" render="Label" position="350,600" size="1230,170" font="Description" halign="center" valign="center"/>
-        <panel name="TemplateSimpleDivided2To1"/>
-    </screen> -->
-
     <!-- .../python/Screens/Console.py -->
 
     <screen name="Console" title="Command execution" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
@@ -829,17 +782,6 @@ self[&quot;list&quot;].instance.move(ePoint(30, wsizey - 30 - listlen))
         <widget name="config" position="350,110" size="1230,440" font="Body" itemHeight="44" secondfont="ConfigList" scrollbarMode="showOnDemand"/>
         <widget source="introduction" render="Label" position="350,600" size="1230,170" font="Description"/>
         <panel name="TemplateSimpleDivided2To1"/>
-    </screen>
-
-    <!-- .../python/Screens/Opkg.py -->
-
-    <screen name="Opkg" title="Installing Software" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp"> <!-- untested -->
-        <ePixmap pixmap="icons/dummy.png" position="40,center" size="240,240" alphatest="blend"/>
-        <widget name="package" position="350,110" size="1230,44" font="Body"/>
-        <widget name="status" position="350,198" size="1230,88" font="Body"/>
-        <widget name="slider" position="350,338" size="1230,28"/>
-        <widget name="activityslider" position="350,382" size="1230,28" borderWidth="1"/>
-        <panel name="TemplateSimple"/>
     </screen>
 
     <!-- .../python/Screens/LanguageSelection.py -->
@@ -1177,6 +1119,17 @@ self.instance.move(ePoint((1920 - wsizex) // 2, (1080 - wsizey) // 2))
         <widget name="help1" position="0,240" size="90,44" font="Description" halign="center" valign="center"/>
         <widget name="key0" position="90,240" size="90,44" font="Description" halign="center" valign="center"/>
         <widget name="help2" position="180,240" size="90,44" font="Description" halign="center" valign="center"/>
+    </screen>
+
+    <!-- .../python/Screens/Opkg.py -->
+
+    <screen name="Opkg" title="Installing Software" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp"> <!-- untested -->
+        <ePixmap pixmap="icons/dummy.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="package" position="350,110" size="1230,44" font="Body"/>
+        <widget name="status" position="350,198" size="1230,88" font="Body"/>
+        <widget name="slider" position="350,338" size="1230,28"/>
+        <widget name="activityslider" position="350,382" size="1230,28" borderWidth="1"/>
+        <panel name="TemplateSimple"/>
     </screen>
 
     <!-- .../python/Screens/ParentalControlSetup.py -->
@@ -1632,6 +1585,53 @@ self.instance.move(ePoint((1920 - wsizex) // 2, (1080 - wsizey) // 2))
         <widget name="scan_progress" position="350,156" size="1230,28" borderWidth="1"/>
         <panel name="TemplateSimple"/>
     </screen>
+
+    <!-- .../python/Plugins/SystemPlugins/CommonInterfaceAssignment/plugin.py -->
+
+    <screen name="CIselectMainMenu" title="CI assignment" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/key.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="CiList" position="350,110" size="1230,440" font="Body" itemHeight="44" scrollbarMode="showOnDemand"/>
+        <panel name="TemplateSimpleDivided2To1"/>
+    </screen>
+
+    <screen name="CIconfigMenu" title="CI assignment" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/key.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget source="CAidList_desc" render="Label" position="350,110" size="1230,44" font="Body"/>
+        <widget source="CAidList" render="Label" position="350,150" size="1230,80" font="Body"/>
+        <widget source="ServiceList_desc" render="Label" position="350,230" size="1230,44" font="Body"/>
+        <widget source="ServiceList_info" render="Label" position="350,270" size="1230,120" font="Body"/>
+        <widget name="ServiceList" position="350,430" size="1230,240" font="Body" itemHeight="44" scrollbarMode="showOnDemand"/>
+        <panel name="TemplateSimple"/>
+    </screen>
+
+    <screen name="easyCIconfigMenu" title="CI assignment" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/key.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget source="ServiceList_desc" render="Label" position="350,110" size="1230,44" font="Body"/>
+        <widget source="ServiceList_info" render="Label" position="350,150" size="1230,120" font="Body"/>
+        <widget name="ServiceList" position="350,310" size="1230,360" font="Body" itemHeight="44" scrollbarMode="showOnDemand"/>
+        <panel name="TemplateSimple"/>
+    </screen>
+
+    <screen name="CAidSelect" title="select CAId's" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/key.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="list" position="350,110" size="1230,440" font="Body" itemHeight="44" scrollbarMode="showOnDemand"/>
+        <widget source="introduction" render="Label" position="350,600" size="1230,170" font="Description" halign="center" valign="center"/>
+        <panel name="TemplateSimpleDivided2To1"/>
+    </screen>
+
+    <!-- <screen name="myProviderSelection" title="Select provider to add..." flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/key.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="list" position="350,110" size="1230,440" font="Body" itemHeight="44" scrollbarMode="showOnDemand"/>
+        <widget source="introduction" render="Label" position="350,600" size="1230,170" font="Description" halign="center" valign="center"/>
+        <panel name="TemplateSimpleDivided2To1"/>
+    </screen> -->
+
+    <!-- <screen name="myChannelSelection" title="Select service to add..." flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
+        <ePixmap pixmap="icons/panel/key.png" position="40,center" size="240,240" alphatest="blend"/>
+        <widget name="list" position="350,110" size="12230,440" font="Body" itemHeight="44" scrollbarMode="showOnDemand"/>
+        <widget source="introduction" render="Label" position="350,600" size="1230,170" font="Description" halign="center" valign="center"/>
+        <panel name="TemplateSimpleDivided2To1"/>
+    </screen> -->
 
     <!-- .../python/Plugins/SystemPlugins/DeviceManager/HddInfo.py -->
 
