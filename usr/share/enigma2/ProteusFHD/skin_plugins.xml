@@ -121,7 +121,7 @@
 
     <screen name="globalsConfigScreen" title="Oscam Status globals Setup" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
         <panel name="TemplateSimpleDivided2To1"/>
-        <ePixmap pixmap="icons/panel/dummy.png" position="40,center" size="240,240" alphatest="blend"/>
+        <ePixmap pixmap="icons/dummy.png" position="40,center" size="240,240" alphatest="blend"/>
         <widget name="config" position="350,110" size="1230,440" font="Body" itemHeight="44" secondfont="ConfigList" scrollbarMode="showOnDemand"/>
         <!-- fix in source -->
         <ePixmap name="ButtonRed" pixmap="buttons/red.png" position="320,831" size="28,28" alphatest="blend"/>

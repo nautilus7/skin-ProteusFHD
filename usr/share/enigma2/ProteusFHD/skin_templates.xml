@@ -167,7 +167,7 @@
     <!-- Special template for screens in need of a background, like signal finder, positioner setup, etc. -->
 
     <screen name="TemplateSpecial" flags="wfNoBorder">
-        <panel flags="wfNoBorder" position="center,center" size="1600,880">
+        <panel position="center,center" size="1600,880">
             <panel name="TopBar"/>
             <panel name="MainPanel"/>
             <panel name="ButtonsXFixedSize"/>

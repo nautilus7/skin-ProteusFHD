@@ -320,7 +320,7 @@
 
     <screen name="QuickSubtitlesConfigMenu" title="Subtitle settings" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
         <panel name="TemplateSimpleDivided2To1"/>
-        <ePixmap pixmap="icons/sliders-h.png" position="40,center" size="240,240" alphatest="blend"/>
+        <ePixmap pixmap="icons/panel/sliders-h.png" position="40,center" size="240,240" alphatest="blend"/>
         <widget name="config" position="350,110" size="1230,440" font="Body" itemHeight="44" secondfont="ConfigList" scrollbarMode="showOnDemand"/>
         <widget name="videofps" position="350,600" size="1230,170" font="Description" valign="center"/>
         <applet type="onLayoutFinish">
@@ -334,7 +334,7 @@ self.instance.resize(eSize(*(1600, 880)))
 
     <screen name="AutoDiseqc" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
         <panel name="TemplateSimpleDivided1To2"/>
-        <ePixmap pixmap="icons/sliders-h.png" position="40,center" size="240,240" alphatest="blend"/>
+        <ePixmap pixmap="icons/panel/sliders-h.png" position="40,center" size="240,240" alphatest="blend"/>
         <widget name="config" position="350,110" size="1230,440" font="Body" itemHeight="44" secondfont="ConfigList" scrollbarMode="showOnDemand"/>
         <widget source="statusbar" render="Label" position="350,600" size="1230,38" font="Description" valign="center"/>
         <widget source="tunerstatusbar" render="Label" position="350,638" size="1230,38" font="Description" valign="center"/>
@@ -1268,11 +1268,11 @@ self.instance.move(ePoint((1920 - wsizex) // 2, (1080 - wsizey) // 2))
     <screen name="ServiceScan" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
         <panel name="TemplateSimpleDivided1To2"/>
         <ePixmap pixmap="icons/panel/search.png" position="40,center" size="240,240" alphatest="blend"/>
-        <widget name="scan_state" position="350,110" size="1230,44" font="Body" valing="center"/>
+        <widget name="scan_state" position="350,110" size="1230,44" font="Body" valign="center"/>
         <widget name="scan_progress" position="350,162" size="1230,28" borderWidth="1"/>
-        <widget name="network" position="350,204" size="1000,38" font="Description" valing="center"/>
-        <widget name="pass" position="1400,204" size="180,38" font="Description" halign="right" valing="center"/>
-        <widget name="transponder" position="350,242" size="1230,38" font="Description" valing="center"/>
+        <widget name="network" position="350,204" size="1000,38" font="Description" valign="center"/>
+        <widget name="pass" position="1400,204" size="180,38" font="Description" halign="right" valign="center"/>
+        <widget name="transponder" position="350,242" size="1230,38" font="Description" valign="center"/>
         <widget name="servicelist" position="350,330" size="1230,440" font="Body" itemHeight="44" textOffset="15,0" scrollbarMode="showOnDemand" selectionDisabled="1"/>
     </screen>
 
@@ -1376,7 +1376,7 @@ self.instance.move(ePoint((1920 - wsizex) // 2, (1080 - wsizey) // 2))
     <!-- .../python/Screens/TimeDateInput.py -->
 
     <screen name="TimeDateInput" title="Date/time input" flags="wfNoBorder" position="center,center" size="1600,880" backgroundColor="Transp">
-        <ePixmap pixmap="icons/calendar-alt.png" position="40,center" size="240,240" alphatest="blend"/>
+        <ePixmap pixmap="icons/panel/calendar-alt.png" position="40,center" size="240,240" alphatest="blend"/>
         <widget name="config" position="350,110" size="1230,440" font="Body" itemHeight="44" secondfont="ConfigList" scrollbarMode="showOnDemand"/>
         <panel name="TemplateSimpleDivided2To1"/>
     </screen>
