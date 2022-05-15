@@ -1432,7 +1432,6 @@ self.instance.move(ePoint((1920 - wsizex) // 2, (1080 - wsizey) // 2))
         <widget name="list" position="489,330" size="952,340" selectionDisabled="1" transparent="1"/>
         <widget name="locale" position="350,730" size="800,44" font="Body" valign="center"/>
         <widget name="mode" position="1420,730" size="160,44" font="Body" valign="center" halign="right"/>
-        <widget name="language" position="0,0" size="0,0" font="Body"/>
         <panel name="TemplateSimpleDivided1To2"/>
     </screen>
 
